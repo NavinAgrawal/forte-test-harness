@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="fb8e0b6d-4314-4ba2-a76b-7596b52df7b2" activeEnvironment="Default" name="template - Client" resourceRoot="${projectDir}" soapui-version="5.8.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="cbeaa02c-b93e-449c-8c42-b6580675e737" wsaVersion="NONE" name="BasicHttpBinding_IClientService" type="wsdl" bindingName="{https://ws.paymentsgateway.net/v1}BasicHttpBinding_IClientService" soapVersion="1_1" anonymous="optional" definition="https://ws.paymentsgateway.net/Service/v1/Client.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://ws.paymentsgateway.net/Service/v1/Client.svc/basic</con:endpoint></con:endpoints><con:operation id="25d44dfd-1719-4a37-8229-f0ae7b2e330e" isOneWay="false" action="https://ws.paymentsgateway.net/v1/IClientService/createClient" name="createClient" bindingOperationName="createClient" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="cf93bcb9-a5db-4469-8d21-ba3b6ad29a69" name="template - createClient"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://sandbox.paymentsgateway.net/ws/Client.svc/basic</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="https://ws.paymentsgateway.net/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v1:createClient>
+         <v1:ticket>
+            <v1:APILoginID></v1:APILoginID>
+            <v1:TSHash></v1:TSHash>
+            <v1:UTCTime></v1:UTCTime>
+         </v1:ticket>
+         <v1:client>
+            <v1:MerchantID></v1:MerchantID>
+            <v1:ClientID></v1:ClientID>
+            <v1:FirstName></v1:FirstName>
+            <v1:LastName></v1:LastName>
+            <v1:CompanyName></v1:CompanyName>
+            <v1:Address1></v1:Address1>
+            <v1:Address2></v1:Address2>
+            <v1:City></v1:City>
+            <v1:State></v1:State>
+            <v1:PostalCode></v1:PostalCode>
+            <v1:CountryCode></v1:CountryCode>
+            <v1:PhoneNumber></v1:PhoneNumber>
+            <v1:FaxNumber></v1:FaxNumber>
+            <v1:EmailAddress></v1:EmailAddress>
+            <v1:ShiptoFirstName></v1:ShiptoFirstName>
+            <v1:ShiptoLastName></v1:ShiptoLastName>
+            <v1:ShiptoCompanyName></v1:ShiptoCompanyName>
+            <v1:ShiptoAddress1></v1:ShiptoAddress1>
+            <v1:ShiptoAddress2></v1:ShiptoAddress2>
+            <v1:ShiptoCity></v1:ShiptoCity>
+            <v1:ShiptoState></v1:ShiptoState>
+            <v1:ShiptoPostalCode></v1:ShiptoPostalCode>
+            <v1:ShiptoCountryCode></v1:ShiptoCountryCode>
+            <v1:ShiptoPhoneNumber></v1:ShiptoPhoneNumber>
+            <v1:ShiptoFaxNumber></v1:ShiptoFaxNumber>
+            <v1:ConsumerID></v1:ConsumerID>
+            <v1:Status></v1:Status>
+         </v1:client>
+      </v1:createClient>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/IClientService/createClient"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="dfc9cdbe-8248-4b83-9773-fc05cad04e5c" isOneWay="false" action="https://ws.paymentsgateway.net/v1/IClientService/createPaymentMethod" name="createPaymentMethod" bindingOperationName="createPaymentMethod" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="208adfd2-e57c-44d4-8d58-99b3fd8534d9" name="template - createPaymentMethod"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://sandbox.paymentsgateway.net/ws/Client.svc/basic</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="https://ws.paymentsgateway.net/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v1:createPaymentMethod>
+         <v1:ticket>
+            <v1:APILoginID></v1:APILoginID>
+            <v1:TSHash></v1:TSHash>
+            <v1:UTCTime></v1:UTCTime>
+         </v1:ticket>
+         <v1:payment>
+            <v1:MerchantID>191620</v1:MerchantID>
+            <v1:ClientID></v1:ClientID>
+            <v1:PaymentMethodID></v1:PaymentMethodID>
+            <v1:AcctHolderName></v1:AcctHolderName>
+            <v1:CcCardNumber>4111111111111111</v1:CcCardNumber>
+            <v1:CcExpirationDate>202612</v1:CcExpirationDate>
+            <v1:CcCardType>visa</v1:CcCardType>
+            <v1:CcProcurementCard>false</v1:CcProcurementCard>
+            <v1:EcAccountNumber></v1:EcAccountNumber>
+            <v1:EcAccountTRN></v1:EcAccountTRN>
+            <v1:EcAccountType></v1:EcAccountType>
+            <v1:Note></v1:Note>
+            <v1:IsDefault></v1:IsDefault>
+            <v1:SuppressAccountUpdater></v1:SuppressAccountUpdater>
+         </v1:payment>
+      </v1:createPaymentMethod>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/IClientService/createPaymentMethod"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="2ed5eeeb-693a-4337-a875-11e67a0f331e" isOneWay="false" action="https://ws.paymentsgateway.net/v1/IClientService/deleteClient" name="deleteClient" bindingOperationName="deleteClient" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b0872de9-0967-4e05-a3e7-554b97f2df35" name="template - deleteClient"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://sandbox.paymentsgateway.net/ws/Client.svc/basic</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="https://ws.paymentsgateway.net/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v1:deleteClient>
+         <v1:ticket>
+            <v1:APILoginID></v1:APILoginID>
+            <v1:TSHash></v1:TSHash>
+            <v1:UTCTime></v1:UTCTime>
+         </v1:ticket>
+         <v1:MerchantID></v1:MerchantID>
+         <v1:ClientID></v1:ClientID>
+      </v1:deleteClient>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/IClientService/deleteClient"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="7570f5ec-4609-4ec0-b017-69fed686e177" isOneWay="false" action="https://ws.paymentsgateway.net/v1/IClientService/deletePaymentMethod" name="deletePaymentMethod" bindingOperationName="deletePaymentMethod" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d30b2ee0-a177-4e72-934c-de654694be6e" name="template - deletePaymentMethod"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://sandbox.paymentsgateway.net/ws/Client.svc/basic</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="https://ws.paymentsgateway.net/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v1:deletePaymentMethod>
+         <v1:ticket>
+            <v1:APILoginID></v1:APILoginID>
+            <v1:TSHash></v1:TSHash>
+            <v1:UTCTime></v1:UTCTime>
+         </v1:ticket>
+         <v1:MerchantID></v1:MerchantID>
+         <v1:PaymentMethodID></v1:PaymentMethodID>
+      </v1:deletePaymentMethod>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/IClientService/deletePaymentMethod"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="e7c8a43b-b413-4f5c-aa1c-b6e935bf895c" isOneWay="false" action="https://ws.paymentsgateway.net/v1/IClientService/getClient" name="getClient" bindingOperationName="getClient" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="bcbc36f2-cfee-4741-a93d-e478d19bf760" name="template - getClient"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://sandbox.paymentsgateway.net/ws/Client.svc/basic</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="https://ws.paymentsgateway.net/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v1:getClient>
+         <v1:ticket>
+            <v1:APILoginID>YOUR_API_LOGIN_ID</v1:APILoginID>
+            <v1:TSHash>REDACTED_HASH</v1:TSHash>
+            <v1:UTCTime>636670279367702272</v1:UTCTime>
+         </v1:ticket>
+         <v1:MerchantID>191620</v1:MerchantID>
+         <v1:ClientID>4414975</v1:ClientID>
+      </v1:getClient>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/IClientService/getClient"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="da975aed-df19-4545-a2bf-c8e137695ae1" isOneWay="false" action="https://ws.paymentsgateway.net/v1/IClientService/getPaymentMethod" name="getPaymentMethod" bindingOperationName="getPaymentMethod" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9fc0d51e-9bea-4f59-bc95-25975abef240" name="template - getPaymentMethod"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://sandbox.paymentsgateway.net/ws/Client.svc/basic</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="https://ws.paymentsgateway.net/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v1:getPaymentMethod>
+         <v1:ticket>
+            <v1:APILoginID></v1:APILoginID>
+            <v1:TSHash></v1:TSHash>
+            <v1:UTCTime></v1:UTCTime>
+         </v1:ticket>
+         <v1:MerchantID></v1:MerchantID>
+         <v1:ClientID></v1:ClientID>
+         <v1:PaymentMethodID></v1:PaymentMethodID>
+      </v1:getPaymentMethod>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/IClientService/getPaymentMethod"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="941220d4-8e8e-4e56-889b-56b8188bc7bd" isOneWay="false" action="https://ws.paymentsgateway.net/v1/IClientService/updateClient" name="updateClient" bindingOperationName="updateClient" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="881d9915-60a6-45e2-81e0-24dbabdd49f0" name="template - updateClient"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://sandbox.paymentsgateway.net/ws/Client.svc/basic</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="https://ws.paymentsgateway.net/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v1:updateClient>
+         <v1:ticket>
+            <v1:APILoginID></v1:APILoginID>
+            <v1:TSHash></v1:TSHash>
+            <v1:UTCTime></v1:UTCTime>
+         </v1:ticket>
+         <v1:client>
+            <v1:MerchantID></v1:MerchantID>
+            <v1:ClientID></v1:ClientID>
+            <v1:FirstName></v1:FirstName>
+            <v1:LastName></v1:LastName>
+            <v1:CompanyName></v1:CompanyName>
+            <v1:Address1></v1:Address1>
+            <v1:Address2></v1:Address2>
+            <v1:City></v1:City>
+            <v1:State></v1:State>
+            <v1:PostalCode></v1:PostalCode>
+            <v1:CountryCode></v1:CountryCode>
+            <v1:PhoneNumber></v1:PhoneNumber>
+            <v1:FaxNumber></v1:FaxNumber>
+            <v1:EmailAddress></v1:EmailAddress>
+            <v1:ShiptoFirstName></v1:ShiptoFirstName>
+            <v1:ShiptoLastName></v1:ShiptoLastName>
+            <v1:ShiptoCompanyName></v1:ShiptoCompanyName>
+            <v1:ShiptoAddress1></v1:ShiptoAddress1>
+            <v1:ShiptoAddress2></v1:ShiptoAddress2>
+            <v1:ShiptoCity></v1:ShiptoCity>
+            <v1:ShiptoState></v1:ShiptoState>
+            <v1:ShiptoPostalCode></v1:ShiptoPostalCode>
+            <v1:ShiptoCountryCode></v1:ShiptoCountryCode>
+            <v1:ShiptoPhoneNumber></v1:ShiptoPhoneNumber>
+            <v1:ShiptoFaxNumber></v1:ShiptoFaxNumber>
+            <v1:ConsumerID></v1:ConsumerID>
+            <v1:Status></v1:Status>
+         </v1:client>
+      </v1:updateClient>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/IClientService/updateClient"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="eb104c5d-ccac-4501-adac-36de01e96bbc" isOneWay="false" action="https://ws.paymentsgateway.net/v1/IClientService/updatePaymentMethod" name="updatePaymentMethod" bindingOperationName="updatePaymentMethod" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="da9e1705-70cb-4f0c-a765-e3d887d8c0fd" name="template - updatePaymentMethod"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://sandbox.paymentsgateway.net/ws/Client.svc/basic</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="https://ws.paymentsgateway.net/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v1:updatePaymentMethod>
+         <v1:ticket>
+            <v1:APILoginID></v1:APILoginID>
+            <v1:TSHash></v1:TSHash>
+            <v1:UTCTime></v1:UTCTime>
+         </v1:ticket>
+         <v1:payment>
+            <v1:MerchantID></v1:MerchantID>
+            <v1:ClientID></v1:ClientID>
+            <v1:PaymentMethodID></v1:PaymentMethodID>
+            <v1:AcctHolderName></v1:AcctHolderName>
+            <v1:CcCardNumber></v1:CcCardNumber>
+            <v1:CcExpirationDate></v1:CcExpirationDate>
+            <v1:CcCardType></v1:CcCardType>
+            <v1:CcProcurementCard></v1:CcProcurementCard>
+            <v1:EcAccountNumber></v1:EcAccountNumber>
+            <v1:EcAccountTRN></v1:EcAccountTRN>
+            <v1:EcAccountType></v1:EcAccountType>
+            <v1:Note></v1:Note>
+            <v1:IsDefault></v1:IsDefault>
+            <v1:SuppressAccountUpdater></v1:SuppressAccountUpdater>
+         </v1:payment>
+      </v1:updatePaymentMethod>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/IClientService/updatePaymentMethod"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="77b68eee-80ad-40e8-8a95-d7c293764617" wsaVersion="200508" name="WSHttpBinding_IClientService" type="wsdl" bindingName="{https://ws.paymentsgateway.net/v1}WSHttpBinding_IClientService" soapVersion="1_2" anonymous="optional" definition="https://ws.paymentsgateway.net/Service/v1/Client.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://ws.paymentsgateway.net/Service/v1/Client.wsdl"><con:part><con:url>https://ws.paymentsgateway.net/Service/v1/Client.wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="ClientService" targetNamespace="https://ws.paymentsgateway.net/v1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="https://ws.paymentsgateway.net/v1" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+  <wsp:Policy wsu:Id="WSHttpBinding_IClientService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false"/>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256/>
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict/>
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing/>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="BasicHttpBinding_IClientService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false"/>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256/>
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict/>
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="https://ws.paymentsgateway.net/v1">
+      <xsd:element name="createClient">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ticket" type="tns:Authentication"/>
+            <xsd:element name="client" type="tns:ClientRecord"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="Authentication">
+        <xsd:sequence>
+          <xsd:element name="APILoginID" type="xsd:string"/>
+          <xsd:element name="TSHash" type="xsd:string"/>
+          <xsd:element name="UTCTime" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="Authentication" nillable="true" type="tns:Authentication"/>
+      <xsd:complexType name="ClientRecord">
+        <xsd:sequence>
+          <xsd:element name="MerchantID" type="xsd:int"/>
+          <xsd:element name="ClientID" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="FirstName" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="LastName" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CompanyName" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Address1" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Address2" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="City" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="State" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PostalCode" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CountryCode" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PhoneNumber" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="FaxNumber" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="EmailAddress" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ShiptoFirstName" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ShiptoLastName" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ShiptoCompanyName" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ShiptoAddress1" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ShiptoAddress2" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ShiptoCity" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ShiptoState" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ShiptoPostalCode" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ShiptoCountryCode" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ShiptoPhoneNumber" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ShiptoFaxNumber" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ConsumerID" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Status" nillable="true" type="tns:ClientStatus"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ClientRecord" nillable="true" type="tns:ClientRecord"/>
+      <xsd:simpleType name="ClientStatus">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Active">
+            <xsd:annotation>
+              <xsd:appinfo>
+                <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+              </xsd:appinfo>
+            </xsd:annotation>
+          </xsd:enumeration>
+          <xsd:enumeration value="Deleted">
+            <xsd:annotation>
+              <xsd:appinfo>
+                <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+              </xsd:appinfo>
+            </xsd:annotation>
+          </xsd:enumeration>
+          <xsd:enumeration value="Suspended">
+            <xsd:annotation>
+              <xsd:appinfo>
+                <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+              </xsd:appinfo>
+            </xsd:annotation>
+          </xsd:enumeration>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:element name="ClientStatus" nillable="true" type="tns:ClientStatus"/>
+      <xsd:element name="createClientResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="createClientResult" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="updateClient">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ticket" type="tns:Authentication"/>
+            <xsd:element name="client" type="tns:ClientRecord"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="updateClientResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="updateClientResult" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="deleteClient">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ticket" type="tns:Authentication"/>
+            <xsd:element name="MerchantID" type="xsd:int"/>
+            <xsd:element name="ClientID" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="deleteClientResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="deleteClientResult" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getClient">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ticket" type="tns:Authentication"/>
+            <xsd:element name="MerchantID" type="xsd:int"/>
+            <xsd:element name="ClientID" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getClientResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="getClientResult" nillable="true" type="tns:ArrayOfClientRecord"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="ArrayOfClientRecord">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="ClientRecord" nillable="true" type="tns:ClientRecord"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfClientRecord" nillable="true" type="tns:ArrayOfClientRecord"/>
+      <xsd:element name="createPaymentMethod">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ticket" type="tns:Authentication"/>
+            <xsd:element name="payment" type="tns:PaymentMethod"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="PaymentMethod">
+        <xsd:sequence>
+          <xsd:element name="MerchantID" type="xsd:int"/>
+          <xsd:element name="ClientID" type="xsd:int"/>
+          <xsd:element name="PaymentMethodID" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="AcctHolderName" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CcCardNumber" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CcExpirationDate" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CcCardType" nillable="true" type="tns:CcCardType"/>
+          <xsd:element minOccurs="0" name="CcProcurementCard" nillable="true" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="EcAccountNumber" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="EcAccountTRN" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="EcAccountType" nillable="true" type="tns:EcAccountType"/>
+          <xsd:element minOccurs="0" name="Note" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="IsDefault" nillable="true" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="SuppressAccountUpdater" nillable="true" type="xsd:boolean"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="PaymentMethod" nillable="true" type="tns:PaymentMethod"/>
+      <xsd:simpleType name="CcCardType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="VISA"/>
+          <xsd:enumeration value="MAST"/>
+          <xsd:enumeration value="DISC"/>
+          <xsd:enumeration value="AMER"/>
+          <xsd:enumeration value="DINE"/>
+          <xsd:enumeration value="JCB"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:element name="CcCardType" nillable="true" type="tns:CcCardType"/>
+      <xsd:simpleType name="EcAccountType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="CHECKING"/>
+          <xsd:enumeration value="SAVINGS"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:element name="EcAccountType" nillable="true" type="tns:EcAccountType"/>
+      <xsd:element name="createPaymentMethodResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="createPaymentMethodResult" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="updatePaymentMethod">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ticket" type="tns:Authentication"/>
+            <xsd:element name="payment" type="tns:PaymentMethod"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="updatePaymentMethodResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="updatePaymentMethodResult" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="deletePaymentMethod">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ticket" type="tns:Authentication"/>
+            <xsd:element name="MerchantID" type="xsd:int"/>
+            <xsd:element name="PaymentMethodID" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="deletePaymentMethodResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="deletePaymentMethodResult" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getPaymentMethod">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ticket" type="tns:Authentication"/>
+            <xsd:element name="MerchantID" type="xsd:int"/>
+            <xsd:element name="ClientID" type="xsd:int"/>
+            <xsd:element name="PaymentMethodID" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getPaymentMethodResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="getPaymentMethodResult" nillable="true" type="tns:ArrayOfPaymentMethod"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="ArrayOfPaymentMethod">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="PaymentMethod" nillable="true" type="tns:PaymentMethod"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfPaymentMethod" nillable="true" type="tns:ArrayOfPaymentMethod"/>
+    </xsd:schema>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/">
+      <xs:element name="anyType" nillable="true" type="xs:anyType"/>
+      <xs:element name="anyURI" nillable="true" type="xs:anyURI"/>
+      <xs:element name="base64Binary" nillable="true" type="xs:base64Binary"/>
+      <xs:element name="boolean" nillable="true" type="xs:boolean"/>
+      <xs:element name="byte" nillable="true" type="xs:byte"/>
+      <xs:element name="dateTime" nillable="true" type="xs:dateTime"/>
+      <xs:element name="decimal" nillable="true" type="xs:decimal"/>
+      <xs:element name="double" nillable="true" type="xs:double"/>
+      <xs:element name="float" nillable="true" type="xs:float"/>
+      <xs:element name="int" nillable="true" type="xs:int"/>
+      <xs:element name="long" nillable="true" type="xs:long"/>
+      <xs:element name="QName" nillable="true" type="xs:QName"/>
+      <xs:element name="short" nillable="true" type="xs:short"/>
+      <xs:element name="string" nillable="true" type="xs:string"/>
+      <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte"/>
+      <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt"/>
+      <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong"/>
+      <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort"/>
+      <xs:element name="char" nillable="true" type="tns:char"/>
+      <xs:simpleType name="char">
+        <xs:restriction base="xs:int"/>
+      </xs:simpleType>
+      <xs:element name="duration" nillable="true" type="tns:duration"/>
+      <xs:simpleType name="duration">
+        <xs:restriction base="xs:duration">
+          <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?"/>
+          <xs:minInclusive value="-P10675199DT2H48M5.4775808S"/>
+          <xs:maxInclusive value="P10675199DT2H48M5.4775807S"/>
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="guid" nillable="true" type="tns:guid"/>
+      <xs:simpleType name="guid">
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}"/>
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:attribute name="FactoryType" type="xs:QName"/>
+      <xs:attribute name="Id" type="xs:ID"/>
+      <xs:attribute name="Ref" type="xs:IDREF"/>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="IClientService_createClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:createClient"/>
+  </wsdl:message>
+  <wsdl:message name="IClientService_createClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createClientResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IClientService_updateClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateClient"/>
+  </wsdl:message>
+  <wsdl:message name="IClientService_updateClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateClientResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IClientService_deleteClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteClient"/>
+  </wsdl:message>
+  <wsdl:message name="IClientService_deleteClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteClientResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IClientService_getClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:getClient"/>
+  </wsdl:message>
+  <wsdl:message name="IClientService_getClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getClientResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IClientService_createPaymentMethod_InputMessage">
+    <wsdl:part name="parameters" element="tns:createPaymentMethod"/>
+  </wsdl:message>
+  <wsdl:message name="IClientService_createPaymentMethod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createPaymentMethodResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IClientService_updatePaymentMethod_InputMessage">
+    <wsdl:part name="parameters" element="tns:updatePaymentMethod"/>
+  </wsdl:message>
+  <wsdl:message name="IClientService_updatePaymentMethod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updatePaymentMethodResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IClientService_deletePaymentMethod_InputMessage">
+    <wsdl:part name="parameters" element="tns:deletePaymentMethod"/>
+  </wsdl:message>
+  <wsdl:message name="IClientService_deletePaymentMethod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deletePaymentMethodResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IClientService_getPaymentMethod_InputMessage">
+    <wsdl:part name="parameters" element="tns:getPaymentMethod"/>
+  </wsdl:message>
+  <wsdl:message name="IClientService_getPaymentMethod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getPaymentMethodResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="IClientService">
+    <wsdl:operation name="createClient">
+      <wsdl:input wsaw:Action="https://ws.paymentsgateway.net/v1/IClientService/createClient" message="tns:IClientService_createClient_InputMessage"/>
+      <wsdl:output wsaw:Action="https://ws.paymentsgateway.net/v1/IClientService/createClientResponse" message="tns:IClientService_createClient_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="updateClient">
+      <wsdl:input wsaw:Action="https://ws.paymentsgateway.net/v1/IClientService/updateClient" message="tns:IClientService_updateClient_InputMessage"/>
+      <wsdl:output wsaw:Action="https://ws.paymentsgateway.net/v1/IClientService/updateClientResponse" message="tns:IClientService_updateClient_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="deleteClient">
+      <wsdl:input wsaw:Action="https://ws.paymentsgateway.net/v1/IClientService/deleteClient" message="tns:IClientService_deleteClient_InputMessage"/>
+      <wsdl:output wsaw:Action="https://ws.paymentsgateway.net/v1/IClientService/deleteClientResponse" message="tns:IClientService_deleteClient_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="getClient">
+      <wsdl:input wsaw:Action="https://ws.paymentsgateway.net/v1/IClientService/getClient" message="tns:IClientService_getClient_InputMessage"/>
+      <wsdl:output wsaw:Action="https://ws.paymentsgateway.net/v1/IClientService/getClientResponse" message="tns:IClientService_getClient_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="createPaymentMethod">
+      <wsdl:input wsaw:Action="https://ws.paymentsgateway.net/v1/IClientService/createPaymentMethod" message="tns:IClientService_createPaymentMethod_InputMessage"/>
+      <wsdl:output wsaw:Action="https://ws.paymentsgateway.net/v1/IClientService/createPaymentMethodResponse" message="tns:IClientService_createPaymentMethod_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="updatePaymentMethod">
+      <wsdl:input wsaw:Action="https://ws.paymentsgateway.net/v1/IClientService/updatePaymentMethod" message="tns:IClientService_updatePaymentMethod_InputMessage"/>
+      <wsdl:output wsaw:Action="https://ws.paymentsgateway.net/v1/IClientService/updatePaymentMethodResponse" message="tns:IClientService_updatePaymentMethod_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="deletePaymentMethod">
+      <wsdl:input wsaw:Action="https://ws.paymentsgateway.net/v1/IClientService/deletePaymentMethod" message="tns:IClientService_deletePaymentMethod_InputMessage"/>
+      <wsdl:output wsaw:Action="https://ws.paymentsgateway.net/v1/IClientService/deletePaymentMethodResponse" message="tns:IClientService_deletePaymentMethod_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="getPaymentMethod">
+      <wsdl:input wsaw:Action="https://ws.paymentsgateway.net/v1/IClientService/getPaymentMethod" message="tns:IClientService_getPaymentMethod_InputMessage"/>
+      <wsdl:output wsaw:Action="https://ws.paymentsgateway.net/v1/IClientService/getPaymentMethodResponse" message="tns:IClientService_getPaymentMethod_OutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_IClientService" type="tns:IClientService">
+    <wsp:PolicyReference URI="#WSHttpBinding_IClientService_policy"/>
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="createClient">
+      <soap12:operation soapAction="https://ws.paymentsgateway.net/v1/IClientService/createClient" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateClient">
+      <soap12:operation soapAction="https://ws.paymentsgateway.net/v1/IClientService/updateClient" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteClient">
+      <soap12:operation soapAction="https://ws.paymentsgateway.net/v1/IClientService/deleteClient" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getClient">
+      <soap12:operation soapAction="https://ws.paymentsgateway.net/v1/IClientService/getClient" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createPaymentMethod">
+      <soap12:operation soapAction="https://ws.paymentsgateway.net/v1/IClientService/createPaymentMethod" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatePaymentMethod">
+      <soap12:operation soapAction="https://ws.paymentsgateway.net/v1/IClientService/updatePaymentMethod" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deletePaymentMethod">
+      <soap12:operation soapAction="https://ws.paymentsgateway.net/v1/IClientService/deletePaymentMethod" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPaymentMethod">
+      <soap12:operation soapAction="https://ws.paymentsgateway.net/v1/IClientService/getPaymentMethod" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IClientService" type="tns:IClientService">
+    <wsp:PolicyReference URI="#BasicHttpBinding_IClientService_policy"/>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="createClient">
+      <soap:operation soapAction="https://ws.paymentsgateway.net/v1/IClientService/createClient" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateClient">
+      <soap:operation soapAction="https://ws.paymentsgateway.net/v1/IClientService/updateClient" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteClient">
+      <soap:operation soapAction="https://ws.paymentsgateway.net/v1/IClientService/deleteClient" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getClient">
+      <soap:operation soapAction="https://ws.paymentsgateway.net/v1/IClientService/getClient" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createPaymentMethod">
+      <soap:operation soapAction="https://ws.paymentsgateway.net/v1/IClientService/createPaymentMethod" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatePaymentMethod">
+      <soap:operation soapAction="https://ws.paymentsgateway.net/v1/IClientService/updatePaymentMethod" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deletePaymentMethod">
+      <soap:operation soapAction="https://ws.paymentsgateway.net/v1/IClientService/deletePaymentMethod" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPaymentMethod">
+      <soap:operation soapAction="https://ws.paymentsgateway.net/v1/IClientService/getPaymentMethod" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ClientService">
+    <wsdl:port name="WSHttpBinding_IClientService" binding="tns:WSHttpBinding_IClientService">
+      <soap12:address location="https://ws.paymentsgateway.net/Service/v1/Client.svc"/>
+      <wsa10:EndpointReference>
+        <wsa10:Address>https://ws.paymentsgateway.net/Service/v1/Client.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IClientService" binding="tns:BasicHttpBinding_IClientService">
+      <soap:address location="https://ws.paymentsgateway.net/Service/v1/Client.svc/basic"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://ws.paymentsgateway.net/Service/v1/Client.svc</con:endpoint></con:endpoints><con:operation id="494aeb44-aa7d-4df2-b094-0b91ed61e117" isOneWay="false" action="https://ws.paymentsgateway.net/v1/IClientService/createClient" name="createClient" bindingOperationName="createClient" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f84ecaf7-8685-4f22-9c44-08919689e25a" name="Request 1" useWsAddressing="true"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.paymentsgateway.net/Service/v1/Client.svc</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v1="https://ws.paymentsgateway.net/v1">\r
+   <soap:Header/>\r
+   <soapenv:Body>
+      <v1:createClient>
+         <v1:ticket>
+            <v1:APILoginID>YOUR_API_LOGIN_ID</v1:APILoginID>
+            <v1:TSHash>REDACTED_HASH</v1:TSHash>
+            <v1:UTCTime>636350793718749952</v1:UTCTime>
+         </v1:ticket>
+         <v1:client>
+            <v1:MerchantID>191620</v1:MerchantID>
+            <v1:FirstName>Arnold</v1:FirstName>
+            <v1:LastName>Jones</v1:LastName>
+            <v1:PhoneNumber>444-444-4444</v1:PhoneNumber>
+            <v1:EmailAddress>karen@simple.com</v1:EmailAddress>
+            <v1:ShiptoFirstName>Arnold</v1:ShiptoFirstName>
+            <v1:ShiptoLastName>Jones</v1:ShiptoLastName>
+            <v1:ShiptoAddress1>11212 Street</v1:ShiptoAddress1>
+            <v1:ShiptoCity>Allen</v1:ShiptoCity>
+            <v1:ShiptoState>TX</v1:ShiptoState>
+            <v1:ShiptoPostalCode>75013</v1:ShiptoPostalCode>
+            <v1:ConsumerID>4444NNNN</v1:ConsumerID>
+         </v1:client>
+      </v1:createClient>
+   </soapenv:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/IClientService/createClient"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="825f1c08-4512-4d97-b6de-d3832ecf9535" isOneWay="false" action="https://ws.paymentsgateway.net/v1/IClientService/createPaymentMethod" name="createPaymentMethod" bindingOperationName="createPaymentMethod" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d11bb1e6-310f-4dbf-87b6-5c0e0f14c5df" name="Request 1" useWsAddressing="true"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.paymentsgateway.net/Service/v1/Client.svc</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v1="https://ws.paymentsgateway.net/v1">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <v1:createPaymentMethod>\r
+         <v1:ticket>\r
+            <v1:APILoginID>YOUR_API_LOGIN_ID</v1:APILoginID>\r
+            <v1:TSHash>?</v1:TSHash>\r
+            <v1:UTCTime>?</v1:UTCTime>\r
+         </v1:ticket>\r
+         <v1:payment>\r
+            <v1:MerchantID>191620</v1:MerchantID>\r
+            <v1:ClientID>?</v1:ClientID>\r
+            <v1:PaymentMethodID>?</v1:PaymentMethodID>\r
+            <!--Optional:-->\r
+            <v1:AcctHolderName>?</v1:AcctHolderName>\r
+            <!--Optional:-->\r
+            <v1:CcCardNumber>?</v1:CcCardNumber>\r
+            <!--Optional:-->\r
+            <v1:CcExpirationDate>?</v1:CcExpirationDate>\r
+            <!--Optional:-->\r
+            <v1:CcCardType>?</v1:CcCardType>\r
+            <!--Optional:-->\r
+            <v1:CcProcurementCard>?</v1:CcProcurementCard>\r
+            <!--Optional:-->\r
+            <v1:EcAccountNumber>?</v1:EcAccountNumber>\r
+            <!--Optional:-->\r
+            <v1:EcAccountTRN>?</v1:EcAccountTRN>\r
+            <!--Optional:-->\r
+            <v1:EcAccountType>?</v1:EcAccountType>\r
+            <!--Optional:-->\r
+            <v1:Note>?</v1:Note>\r
+            <!--Optional:-->\r
+            <v1:IsDefault>?</v1:IsDefault>\r
+            <!--Optional:-->\r
+            <v1:SuppressAccountUpdater>?</v1:SuppressAccountUpdater>\r
+         </v1:payment>\r
+      </v1:createPaymentMethod>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/IClientService/createPaymentMethod"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="ca402632-e452-47ff-971a-8b37c46ad53e" isOneWay="false" action="https://ws.paymentsgateway.net/v1/IClientService/deleteClient" name="deleteClient" bindingOperationName="deleteClient" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="59472971-1133-48bc-a509-bbcb50282656" name="Request 1" useWsAddressing="true"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.paymentsgateway.net/Service/v1/Client.svc</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v1="https://ws.paymentsgateway.net/v1">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <v1:deleteClient>\r
+         <v1:ticket>\r
+            <v1:APILoginID>YOUR_API_LOGIN_ID</v1:APILoginID>\r
+            <v1:TSHash>?</v1:TSHash>\r
+            <v1:UTCTime>?</v1:UTCTime>\r
+         </v1:ticket>\r
+         <v1:MerchantID>?</v1:MerchantID>\r
+         <v1:ClientID>?</v1:ClientID>\r
+      </v1:deleteClient>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/IClientService/deleteClient"/></con:call></con:operation><con:operation id="ec070f29-ca53-4fac-9a56-8c5481aa487d" isOneWay="false" action="https://ws.paymentsgateway.net/v1/IClientService/deletePaymentMethod" name="deletePaymentMethod" bindingOperationName="deletePaymentMethod" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="2a79eb1b-df09-4ded-aae8-2e62a380b212" name="Request 1" useWsAddressing="true"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.paymentsgateway.net/Service/v1/Client.svc</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v1="https://ws.paymentsgateway.net/v1">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <v1:deletePaymentMethod>\r
+         <v1:ticket>\r
+            <v1:APILoginID>YOUR_API_LOGIN_ID</v1:APILoginID>\r
+            <v1:TSHash>?</v1:TSHash>\r
+            <v1:UTCTime>?</v1:UTCTime>\r
+         </v1:ticket>\r
+         <v1:MerchantID>?</v1:MerchantID>\r
+         <v1:PaymentMethodID>?</v1:PaymentMethodID>\r
+      </v1:deletePaymentMethod>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/IClientService/deletePaymentMethod"/></con:call></con:operation><con:operation id="f48ea0f1-158b-4489-879e-d69c6b245572" isOneWay="false" action="https://ws.paymentsgateway.net/v1/IClientService/getClient" name="getClient" bindingOperationName="getClient" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="26afa31b-9d24-47a2-ba1d-9095374aabd2" name="Request 1" useWsAddressing="true"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.paymentsgateway.net/Service/v1/Client.svc</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v1="https://ws.paymentsgateway.net/v1">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <v1:getClient>\r
+         <v1:ticket>\r
+            <v1:APILoginID>YOUR_API_LOGIN_ID</v1:APILoginID>\r
+            <v1:TSHash>REDACTED_HASH</v1:TSHash>\r
+            <v1:UTCTime>636439502132347648</v1:UTCTime>\r
+         </v1:ticket>\r
+         <v1:MerchantID>173185</v1:MerchantID>\r
+         <v1:ClientID>25684196</v1:ClientID>\r
+      </v1:getClient>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/IClientService/getClient"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="dc2796aa-5652-45c4-af35-c8b9b0e380ef" isOneWay="false" action="https://ws.paymentsgateway.net/v1/IClientService/getPaymentMethod" name="getPaymentMethod" bindingOperationName="getPaymentMethod" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d8c2083f-9b6c-4897-9c1f-272b34238a3c" name="Request 1" useWsAddressing="true"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.paymentsgateway.net/Service/v1/Client.svc</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v1="https://ws.paymentsgateway.net/v1">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <v1:getPaymentMethod>\r
+         <v1:ticket>\r
+            <v1:APILoginID>YOUR_API_LOGIN_ID</v1:APILoginID>\r
+            <v1:TSHash>?</v1:TSHash>\r
+            <v1:UTCTime>?</v1:UTCTime>\r
+         </v1:ticket>\r
+         <v1:MerchantID>?</v1:MerchantID>\r
+         <v1:ClientID>?</v1:ClientID>\r
+         <v1:PaymentMethodID>?</v1:PaymentMethodID>\r
+      </v1:getPaymentMethod>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/IClientService/getPaymentMethod"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="b51f19fc-c586-49ff-8f35-d550acaccba4" isOneWay="false" action="https://ws.paymentsgateway.net/v1/IClientService/updateClient" name="updateClient" bindingOperationName="updateClient" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="313d5478-1941-4d9a-a218-8d71a24072aa" name="Request 1" useWsAddressing="true"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.paymentsgateway.net/Service/v1/Client.svc</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v1="https://ws.paymentsgateway.net/v1">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <v1:updateClient>\r
+         <v1:ticket>\r
+            <v1:APILoginID>YOUR_API_LOGIN_ID</v1:APILoginID>\r
+            <v1:TSHash>?</v1:TSHash>\r
+            <v1:UTCTime>?</v1:UTCTime>\r
+         </v1:ticket>\r
+         <v1:client>\r
+            <v1:MerchantID>?</v1:MerchantID>\r
+            <v1:ClientID>?</v1:ClientID>\r
+            <!--Optional:-->\r
+            <v1:FirstName>?</v1:FirstName>\r
+            <!--Optional:-->\r
+            <v1:LastName>?</v1:LastName>\r
+            <!--Optional:-->\r
+            <v1:CompanyName>?</v1:CompanyName>\r
+            <!--Optional:-->\r
+            <v1:Address1>?</v1:Address1>\r
+            <!--Optional:-->\r
+            <v1:Address2>?</v1:Address2>\r
+            <!--Optional:-->\r
+            <v1:City>?</v1:City>\r
+            <!--Optional:-->\r
+            <v1:State>?</v1:State>\r
+            <!--Optional:-->\r
+            <v1:PostalCode>?</v1:PostalCode>\r
+            <!--Optional:-->\r
+            <v1:CountryCode>?</v1:CountryCode>\r
+            <!--Optional:-->\r
+            <v1:PhoneNumber>?</v1:PhoneNumber>\r
+            <!--Optional:-->\r
+            <v1:FaxNumber>?</v1:FaxNumber>\r
+            <!--Optional:-->\r
+            <v1:EmailAddress>?</v1:EmailAddress>\r
+            <!--Optional:-->\r
+            <v1:ShiptoFirstName>?</v1:ShiptoFirstName>\r
+            <!--Optional:-->\r
+            <v1:ShiptoLastName>?</v1:ShiptoLastName>\r
+            <!--Optional:-->\r
+            <v1:ShiptoCompanyName>?</v1:ShiptoCompanyName>\r
+            <!--Optional:-->\r
+            <v1:ShiptoAddress1>?</v1:ShiptoAddress1>\r
+            <!--Optional:-->\r
+            <v1:ShiptoAddress2>?</v1:ShiptoAddress2>\r
+            <!--Optional:-->\r
+            <v1:ShiptoCity>?</v1:ShiptoCity>\r
+            <!--Optional:-->\r
+            <v1:ShiptoState>?</v1:ShiptoState>\r
+            <!--Optional:-->\r
+            <v1:ShiptoPostalCode>?</v1:ShiptoPostalCode>\r
+            <!--Optional:-->\r
+            <v1:ShiptoCountryCode>?</v1:ShiptoCountryCode>\r
+            <!--Optional:-->\r
+            <v1:ShiptoPhoneNumber>?</v1:ShiptoPhoneNumber>\r
+            <!--Optional:-->\r
+            <v1:ShiptoFaxNumber>?</v1:ShiptoFaxNumber>\r
+            <!--Optional:-->\r
+            <v1:ConsumerID>?</v1:ConsumerID>\r
+            <!--Optional:-->\r
+            <v1:Status>?</v1:Status>\r
+         </v1:client>\r
+      </v1:updateClient>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/IClientService/updateClient"/></con:call></con:operation><con:operation id="68ffb2dd-5e64-4d51-b906-fd946b20f6fc" isOneWay="false" action="https://ws.paymentsgateway.net/v1/IClientService/updatePaymentMethod" name="updatePaymentMethod" bindingOperationName="updatePaymentMethod" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="39e8d735-abfb-41db-bc32-1df442f67c45" name="Request 1" useWsAddressing="true"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.paymentsgateway.net/Service/v1/Client.svc</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v1="https://ws.paymentsgateway.net/v1">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <v1:updatePaymentMethod>\r
+         <v1:ticket>\r
+            <v1:APILoginID>YOUR_API_LOGIN_ID</v1:APILoginID>\r
+            <v1:TSHash>?</v1:TSHash>\r
+            <v1:UTCTime>?</v1:UTCTime>\r
+         </v1:ticket>\r
+         <v1:payment>\r
+            <v1:MerchantID>?</v1:MerchantID>\r
+            <v1:ClientID>?</v1:ClientID>\r
+            <v1:PaymentMethodID>?</v1:PaymentMethodID>\r
+            <!--Optional:-->\r
+            <v1:AcctHolderName>?</v1:AcctHolderName>\r
+            <!--Optional:-->\r
+            <v1:CcCardNumber>?</v1:CcCardNumber>\r
+            <!--Optional:-->\r
+            <v1:CcExpirationDate>?</v1:CcExpirationDate>\r
+            <!--Optional:-->\r
+            <v1:CcCardType>?</v1:CcCardType>\r
+            <!--Optional:-->\r
+            <v1:CcProcurementCard>?</v1:CcProcurementCard>\r
+            <!--Optional:-->\r
+            <v1:EcAccountNumber>?</v1:EcAccountNumber>\r
+            <!--Optional:-->\r
+            <v1:EcAccountTRN>?</v1:EcAccountTRN>\r
+            <!--Optional:-->\r
+            <v1:EcAccountType>?</v1:EcAccountType>\r
+            <!--Optional:-->\r
+            <v1:Note>?</v1:Note>\r
+            <!--Optional:-->\r
+            <v1:IsDefault>?</v1:IsDefault>\r
+            <!--Optional:-->\r
+            <v1:SuppressAccountUpdater>?</v1:SuppressAccountUpdater>\r
+         </v1:payment>\r
+      </v1:updatePaymentMethod>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/IClientService/updatePaymentMethod"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

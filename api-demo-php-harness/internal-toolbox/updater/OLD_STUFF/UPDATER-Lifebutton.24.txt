@@ -1,0 +1,26 @@
+
+///////////////////////////////////////////////////////////////////////
+/////////////////// ACCOUNT UPDATER REPORT BUILDER ////////////////////
+///////////////////////////////////////////////////////////////////////
+
+https://www.calligraphydallas.com/updater/UPDATER-form.php
+
+Lifebutton 24
+First AU run was December 2017
+
+Organization ID  = 350377
+Location ID      = 206783
+API Access ID    = REDACTED_HASH
+API Secure Key   = REDACTED_HASH
+
+SETTING UP THE REPORT BUILDER ON YOUR DOMAIN:
+1. Get an API key from "HTML 2 PDF Rocket" website (for the PDF conversion):
+      * go to https://www.html2pdfrocket.com
+      * topright corner click "Get API Key". It will be emailed to you
+      * 200 pdf's per month for free. More than that for a reasonable monthly charge
+2. Replace the API key on line 13 of the file "UPDATER-pdf.php" with your API key
+3. Change the URL on line 14 and line 20 of "UPDATER-pdf.php"
+      * change https://www.calligraphydallas.com/updater/ to point to your domain instead of calligraphydallas.com
+4. Upload the UPDATER files to your domain.
+5. Browse to "UPDATER-form.php"
+6. Select your date range, enter your REST credentials, run report.

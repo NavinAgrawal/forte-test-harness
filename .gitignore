@@ -1,0 +1,13 @@
+.DS_Store
+AGENTS.override.md
+.env
+.env.*
+*.log
+
+# Internal-only data
+api-demo-php-harness/internal-toolbox/uploads/
+api-demo-php-harness/internal-toolbox/WORKING_FILES/
+
+# Local artifacts
+*.tmp
+*.bak

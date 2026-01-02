@@ -1,0 +1,2798 @@
+<?xml version="1.0"?>
+<rows>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>John Conner</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****0851</Last_4>
+    <Mo>3</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>29559845</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Dallas Christenson</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****5672</Last_4>
+    <Mo>6</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>31712244</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Richard Carrico</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****7975</Last_4>
+    <Mo>3</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>31712542</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Josephine Wooten</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****3231</Last_4>
+    <Mo>2</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>31714758</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Kathryn Zimnick</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****0361</Last_4>
+    <Mo>4</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>31839112</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Genevieve Romanuski</Name_on_Card>
+    <Card>disc</Card>
+    <Last_4>****7654</Last_4>
+    <Mo>8</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>32211385</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Mary Jones</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****3757</Last_4>
+    <Mo>8</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>32293930</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Charlietta Parrish</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****2023</Last_4>
+    <Mo>1</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>32373737</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Reginald Benham</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****3079</Last_4>
+    <Mo>9</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>32515930</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Mary Mead</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****6759</Last_4>
+    <Mo>1</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>32641901</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Sophia Diakovasilis</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****6801</Last_4>
+    <Mo>1</Mo>
+    <Year>2023</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>32718862</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Rosanne Arnzen</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****2813</Last_4>
+    <Mo>1</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>32790636</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Joseph Jordan</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****2946</Last_4>
+    <Mo>2</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>32887908</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Mary Miller</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****6282</Last_4>
+    <Mo>3</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>32996843</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Mary Hand</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****1579</Last_4>
+    <Mo>1</Mo>
+    <Year>2023</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>33089639</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Mary Hand</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****1579</Last_4>
+    <Mo>1</Mo>
+    <Year>2023</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>33089642</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Hortense Terry</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****4828</Last_4>
+    <Mo>4</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>33256957</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Robert Eichstedt</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****7396</Last_4>
+    <Mo>12</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>33269808</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Jacqueline Mona Beach</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****8229</Last_4>
+    <Mo>5</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>33360222</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Gloria Laughman</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****3607</Last_4>
+    <Mo>8</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>33704309</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Jacqueline M. Barker</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****9697</Last_4>
+    <Mo>1</Mo>
+    <Year>2023</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>33704914</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Stacey Steven</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****4379</Last_4>
+    <Mo>8</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>33762370</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Lillian Reckner</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****0561</Last_4>
+    <Mo>2</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>33825074</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Sandra Aaron</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****5212</Last_4>
+    <Mo>2</Mo>
+    <Year>2023</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>33871062</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>leola oneal</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****8340</Last_4>
+    <Mo>2</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>34369828</Paymethod_Token>
+    <Customer_Token>25528289</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Louise Ramondino</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****8279</Last_4>
+    <Mo>1</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>34399391</Paymethod_Token>
+    <Customer_Token>25548524</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Louise ramondino</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****8279</Last_4>
+    <Mo>1</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>34399641</Paymethod_Token>
+    <Customer_Token>25548677</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>mary buerger</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****2678</Last_4>
+    <Mo>4</Mo>
+    <Year>2023</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>34401915</Paymethod_Token>
+    <Customer_Token>25550071</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>gerald johnston</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****4079</Last_4>
+    <Mo>1</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>34417048</Paymethod_Token>
+    <Customer_Token>25558413</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>leola oneal</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****8340</Last_4>
+    <Mo>2</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>34417848</Paymethod_Token>
+    <Customer_Token>25558888</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Louise Ramondino</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****8279</Last_4>
+    <Mo>1</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>34438128</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Mary Buerger</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****2678</Last_4>
+    <Mo>4</Mo>
+    <Year>2023</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>34494868</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Richard Brooks</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****5589</Last_4>
+    <Mo>10</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>34613720</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Joanne Haberland</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****4461</Last_4>
+    <Mo>9</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>34779675</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Harvey  Bratcher</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****6627</Last_4>
+    <Mo>1</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>34710814</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Nancy Jones</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****2145</Last_4>
+    <Mo>3</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>34872388</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>John Bohres</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****5409</Last_4>
+    <Mo>6</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35062624</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Jacqueline Turner</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****6519</Last_4>
+    <Mo>11</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35063362</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Annie Jones</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****4030</Last_4>
+    <Mo>3</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35097064</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Sammie Lancaster</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****6246</Last_4>
+    <Mo>8</Mo>
+    <Year>2018</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>35027836</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>GERALD JOHNSTON</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****4079</Last_4>
+    <Mo>1</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>34452430</Paymethod_Token>
+    <Customer_Token>25581251</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>LEOLA ONEAL</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****8340</Last_4>
+    <Mo>2</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>34452904</Paymethod_Token>
+    <Customer_Token>25581558</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>LEOLA ONEAL</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****8340</Last_4>
+    <Mo>2</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>34453036</Paymethod_Token>
+    <Customer_Token>25581647</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Mary Coleman</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****9954</Last_4>
+    <Mo>10</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>34457004</Paymethod_Token>
+    <Customer_Token>25584254</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Mary Coleman</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****9954</Last_4>
+    <Mo>10</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>34457044</Paymethod_Token>
+    <Customer_Token>25584275</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Mary Coleman</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****9954</Last_4>
+    <Mo>10</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>34457325</Paymethod_Token>
+    <Customer_Token>25584478</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Mary Coleman</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****9954</Last_4>
+    <Mo>10</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>34457481</Paymethod_Token>
+    <Customer_Token>25584614</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Mary Coleman</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****9954</Last_4>
+    <Mo>10</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>34457522</Paymethod_Token>
+    <Customer_Token>25584643</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Mary Coleman</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****9954</Last_4>
+    <Mo>10</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>34457677</Paymethod_Token>
+    <Customer_Token>25584746</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Lisa M Gambone</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****2869</Last_4>
+    <Mo>5</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>34483364</Paymethod_Token>
+    <Customer_Token>25603216</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Richard Brooks</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****5589</Last_4>
+    <Mo>10</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>34484751</Paymethod_Token>
+    <Customer_Token>25604057</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>EILEEN FARRAN</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****9399</Last_4>
+    <Mo>1</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>34590577</Paymethod_Token>
+    <Customer_Token>25672802</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Joanne Haberland</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****4461</Last_4>
+    <Mo>9</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>34655857</Paymethod_Token>
+    <Customer_Token>25716809</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Nancy Jones</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****2145</Last_4>
+    <Mo>3</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>34750983</Paymethod_Token>
+    <Customer_Token>25779394</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Albert Ballard</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****5557</Last_4>
+    <Mo>1</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>34821837</Paymethod_Token>
+    <Customer_Token>25823436</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Judy Pierce</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****8836</Last_4>
+    <Mo>5</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>34861305</Paymethod_Token>
+    <Customer_Token>25850736</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Merlin Webber</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****5592</Last_4>
+    <Mo>5</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>34862179</Paymethod_Token>
+    <Customer_Token>25851254</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Sammie Lancaster</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****6246</Last_4>
+    <Mo>8</Mo>
+    <Year>2018</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>34862226</Paymethod_Token>
+    <Customer_Token>25851282</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>John Bohres</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****5409</Last_4>
+    <Mo>6</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>34961710</Paymethod_Token>
+    <Customer_Token>25919260</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Marilyn Martens</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****9811</Last_4>
+    <Mo>2</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>34983556</Paymethod_Token>
+    <Customer_Token>25932989</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Wanda Kerns</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****2948</Last_4>
+    <Mo>6</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35061676</Paymethod_Token>
+    <Customer_Token>25983109</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>John Pazora</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****9313</Last_4>
+    <Mo>3</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>35106796</Paymethod_Token>
+    <Customer_Token>26013299</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Wanda Kerns</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****2948</Last_4>
+    <Mo>6</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35135766</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Ivy Mays</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****1530</Last_4>
+    <Mo>11</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35310882</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Carmine Barba</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****8347</Last_4>
+    <Mo>5</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35324385</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Thomas Carstens</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****3517</Last_4>
+    <Mo>1</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35324487</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Jeanne Walsh</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****9765</Last_4>
+    <Mo>2</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35325195</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Carole Witzel</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****1167</Last_4>
+    <Mo>12</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>35241683</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>John Robel</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****2285</Last_4>
+    <Mo>8</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>35243113</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Catherine Williams</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****3689</Last_4>
+    <Mo>1</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35254902</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Velva Foster</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****3458</Last_4>
+    <Mo>11</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>35224171</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Iris Stanfel</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****6818</Last_4>
+    <Mo>1</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35414146</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Mary Helen Garcia</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****7305</Last_4>
+    <Mo>12</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35499612</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Shirley Gentry</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****0380</Last_4>
+    <Mo>5</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>35499810</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Joseph Kennedy</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****2666</Last_4>
+    <Mo>1</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35650013</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Margaret Wilden</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****5375</Last_4>
+    <Mo>1</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35711862</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Harriet Kahn</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****7756</Last_4>
+    <Mo>4</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35726241</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Kenneth Martin</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****6101</Last_4>
+    <Mo>9</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35727296</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Edna Sparks</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****7568</Last_4>
+    <Mo>4</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>35825055</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Linda Green</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****3730</Last_4>
+    <Mo>11</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>35829453</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Edda Reeder</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****7916</Last_4>
+    <Mo>7</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>35740441</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Edna Jefferson</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****0789</Last_4>
+    <Mo>8</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>35740462</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Anita Furrow</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****8310</Last_4>
+    <Mo>1</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35462139</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Carole Witzel</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****1167</Last_4>
+    <Mo>12</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>35137166</Paymethod_Token>
+    <Customer_Token>26032136</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>John Robel</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****2285</Last_4>
+    <Mo>8</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>35146616</Paymethod_Token>
+    <Customer_Token>26038247</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Christie Gillas</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****7654</Last_4>
+    <Mo>2</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>35150688</Paymethod_Token>
+    <Customer_Token>26040733</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Charlotte  Howell</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****2234</Last_4>
+    <Mo>3</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35151846</Paymethod_Token>
+    <Customer_Token>26041447</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Ivy Mays</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****1530</Last_4>
+    <Mo>11</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35159228</Paymethod_Token>
+    <Customer_Token>26046058</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Peggy Anderson</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****8704</Last_4>
+    <Mo>1</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>35197597</Paymethod_Token>
+    <Customer_Token>26071211</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>THomas Carstens</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****3517</Last_4>
+    <Mo>1</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35213800</Paymethod_Token>
+    <Customer_Token>26081735</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Carmine Barba</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****8347</Last_4>
+    <Mo>5</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35215707</Paymethod_Token>
+    <Customer_Token>26082923</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>carole clifford</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****3383</Last_4>
+    <Mo>11</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-24</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>35217329</Paymethod_Token>
+    <Customer_Token>26084044</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Jeanne Walsh</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****9765</Last_4>
+    <Mo>2</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35232069</Paymethod_Token>
+    <Customer_Token>26093404</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Bettye Via</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****1065</Last_4>
+    <Mo>2</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>35232477</Paymethod_Token>
+    <Customer_Token>26093653</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Rena White</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****3559</Last_4>
+    <Mo>10</Mo>
+    <Year>2018</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>35284082</Paymethod_Token>
+    <Customer_Token>26128659</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Millard Howard</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****6693</Last_4>
+    <Mo>2</Mo>
+    <Year>2023</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35301517</Paymethod_Token>
+    <Customer_Token>26139608</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Anita Furrow</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****8310</Last_4>
+    <Mo>1</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35334579</Paymethod_Token>
+    <Customer_Token>26161026</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Elizabeth Parish</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****6443</Last_4>
+    <Mo>2</Mo>
+    <Year>2023</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>35348253</Paymethod_Token>
+    <Customer_Token>26169841</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Johnnie Pearson</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****5637</Last_4>
+    <Mo>7</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>35381093</Paymethod_Token>
+    <Customer_Token>26192200</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Mary Helen Garcia</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****7305</Last_4>
+    <Mo>12</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35397790</Paymethod_Token>
+    <Customer_Token>26202445</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Shirley Gentry</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****0380</Last_4>
+    <Mo>5</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>35404159</Paymethod_Token>
+    <Customer_Token>26206306</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Shirley Gentry</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****0380</Last_4>
+    <Mo>5</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>35405463</Paymethod_Token>
+    <Customer_Token>26207143</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Shirley Gentry</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****0380</Last_4>
+    <Mo>5</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>35405684</Paymethod_Token>
+    <Customer_Token>26207273</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Shirley Gentry</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****0380</Last_4>
+    <Mo>5</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>35405759</Paymethod_Token>
+    <Customer_Token>26207313</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Gail Decerbo</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****4693</Last_4>
+    <Mo>2</Mo>
+    <Year>2023</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>35413556</Paymethod_Token>
+    <Customer_Token>26212356</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Velva Sroufe</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****0885</Last_4>
+    <Mo>5</Mo>
+    <Year>2018</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>35429675</Paymethod_Token>
+    <Customer_Token>26222672</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Margaret Thibault Wilden</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****5375</Last_4>
+    <Mo>1</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35486820</Paymethod_Token>
+    <Customer_Token>26259811</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Harriet Kahn</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****7756</Last_4>
+    <Mo>4</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35581882</Paymethod_Token>
+    <Customer_Token>26322314</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Kenneth Martin</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****6101</Last_4>
+    <Mo>9</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35603493</Paymethod_Token>
+    <Customer_Token>26336687</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Edna Sparks</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****7568</Last_4>
+    <Mo>4</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>35734303</Paymethod_Token>
+    <Customer_Token>26421626</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Antoinetta Roma</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****0625</Last_4>
+    <Mo>7</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>35789451</Paymethod_Token>
+    <Customer_Token>26456888</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Orlinda Mcinnis</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****1257</Last_4>
+    <Mo>7</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>35813522</Paymethod_Token>
+    <Customer_Token>26472062</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Roseanne Peters</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****9866</Last_4>
+    <Mo>11</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35817018</Paymethod_Token>
+    <Customer_Token>26474187</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Helen Hinshaw</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****4840</Last_4>
+    <Mo>1</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>35867706</Paymethod_Token>
+    <Customer_Token>26507176</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Elizabeth F  Parish</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****6443</Last_4>
+    <Mo>2</Mo>
+    <Year>2023</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>35884434</Paymethod_Token>
+    <Customer_Token>26517134</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Martha Williams</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****1155</Last_4>
+    <Mo>4</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>35895549</Paymethod_Token>
+    <Customer_Token>26523892</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Martha Williams</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****1155</Last_4>
+    <Mo>4</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>35895646</Paymethod_Token>
+    <Customer_Token>26523955</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Martha Williams</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****1155</Last_4>
+    <Mo>4</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>35895679</Paymethod_Token>
+    <Customer_Token>26523977</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Cordelia Burke</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****1729</Last_4>
+    <Mo>11</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>35901547</Paymethod_Token>
+    <Customer_Token>26527451</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Geraldine Parker</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****3118</Last_4>
+    <Mo>10</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>35911651</Paymethod_Token>
+    <Customer_Token>26533741</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Geraldine Parker</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****3118</Last_4>
+    <Mo>10</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>35911689</Paymethod_Token>
+    <Customer_Token>26533756</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Geraldine Parker</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****3118</Last_4>
+    <Mo>10</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>35911713</Paymethod_Token>
+    <Customer_Token>26533766</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Leonard Rattini</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****1022</Last_4>
+    <Mo>12</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35929142</Paymethod_Token>
+    <Customer_Token>26544397</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Doris  Bower</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****0478</Last_4>
+    <Mo>2</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>35985393</Paymethod_Token>
+    <Customer_Token>26580660</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Virginia Chute</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****7996</Last_4>
+    <Mo>10</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>36011331</Paymethod_Token>
+    <Customer_Token>26597178</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Rachael Lavine</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****0393</Last_4>
+    <Mo>1</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>36014657</Paymethod_Token>
+    <Customer_Token>26599036</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>James Hanson</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****0223</Last_4>
+    <Mo>10</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>37390853</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>James Hall</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****2897</Last_4>
+    <Mo>5</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>37454146</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>James Hall</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****2897</Last_4>
+    <Mo>5</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>37454223</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Mary R Mead</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****6759</Last_4>
+    <Mo>1</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>37489199</Paymethod_Token>
+    <Customer_Token>27574778</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Joseph Jordan</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****2946</Last_4>
+    <Mo>2</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>37489215</Paymethod_Token>
+    <Customer_Token>27574794</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Dallas Christenson</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****5672</Last_4>
+    <Mo>6</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>37489234</Paymethod_Token>
+    <Customer_Token>27574813</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Jean Graham</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****3272</Last_4>
+    <Mo>2</Mo>
+    <Year>2023</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>37489243</Paymethod_Token>
+    <Customer_Token>27574822</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Josephine Wooten</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****3231</Last_4>
+    <Mo>2</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>37489329</Paymethod_Token>
+    <Customer_Token>27574895</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Margaret Wilden</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****5375</Last_4>
+    <Mo>1</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>37489369</Paymethod_Token>
+    <Customer_Token>27574935</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Mary Jones</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****3757</Last_4>
+    <Mo>8</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>37489380</Paymethod_Token>
+    <Customer_Token>27574946</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>John Conner</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****0851</Last_4>
+    <Mo>3</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>37489392</Paymethod_Token>
+    <Customer_Token>27574958</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Reginald Benham</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****3079</Last_4>
+    <Mo>9</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>37489475</Paymethod_Token>
+    <Customer_Token>27575015</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Jacqueline Turner</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****6519</Last_4>
+    <Mo>11</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>37489484</Paymethod_Token>
+    <Customer_Token>27575024</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Velva Foster</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****3458</Last_4>
+    <Mo>11</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>37489495</Paymethod_Token>
+    <Customer_Token>27575035</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Rosanne Arnzen</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****2813</Last_4>
+    <Mo>1</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>37489502</Paymethod_Token>
+    <Customer_Token>27575042</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Mary Miller</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****6282</Last_4>
+    <Mo>3</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>37489508</Paymethod_Token>
+    <Customer_Token>27575048</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Mary Hand</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****1579</Last_4>
+    <Mo>1</Mo>
+    <Year>2023</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>37489510</Paymethod_Token>
+    <Customer_Token>27575050</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Robert Eichstedt</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****7396</Last_4>
+    <Mo>12</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>37489520</Paymethod_Token>
+    <Customer_Token>27575060</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Steve Stacey</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****4379</Last_4>
+    <Mo>8</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>37489530</Paymethod_Token>
+    <Customer_Token>27575070</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Catherine Williams</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****3689</Last_4>
+    <Mo>1</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>37489537</Paymethod_Token>
+    <Customer_Token>27575077</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Harvey Bratcher</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****6627</Last_4>
+    <Mo>1</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>37489554</Paymethod_Token>
+    <Customer_Token>27575094</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Edda Reeder</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****7916</Last_4>
+    <Mo>7</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>37491436</Paymethod_Token>
+    <Customer_Token>27576147</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Linda Green</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****3730</Last_4>
+    <Mo>11</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>37491455</Paymethod_Token>
+    <Customer_Token>27576166</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Genevieve Romanuski</Name_on_Card>
+    <Card>disc</Card>
+    <Last_4>****7654</Last_4>
+    <Mo>8</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>37491471</Paymethod_Token>
+    <Customer_Token>27576182</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Kathryn Zimnick</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****0361</Last_4>
+    <Mo>4</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>37491532</Paymethod_Token>
+    <Customer_Token>27576227</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>James Hanson</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****0223</Last_4>
+    <Mo>10</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>37491534</Paymethod_Token>
+    <Customer_Token>27576229</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Penny Helms</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****4712</Last_4>
+    <Mo>8</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>37491873</Paymethod_Token>
+    <Customer_Token>27576456</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Annie Jones</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****4030</Last_4>
+    <Mo>3</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>37491877</Paymethod_Token>
+    <Customer_Token>27576460</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Lisa Gambone</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****2869</Last_4>
+    <Mo>5</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>37492101</Paymethod_Token>
+    <Customer_Token>27576685</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Edna Jefferson</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****0789</Last_4>
+    <Mo>8</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>37492170</Paymethod_Token>
+    <Customer_Token>27576754</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Barbara Zerby</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****3447</Last_4>
+    <Mo>10</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>37492178</Paymethod_Token>
+    <Customer_Token>27576762</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Charlietta Parrish</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****2023</Last_4>
+    <Mo>1</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>37492190</Paymethod_Token>
+    <Customer_Token>27576774</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Barbara Zerby</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****3447</Last_4>
+    <Mo>10</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>37522377</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Penny Helms</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****4712</Last_4>
+    <Mo>8</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>36065931</Paymethod_Token>
+    <Customer_Token></Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Molly Long</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****8673</Last_4>
+    <Mo>11</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>37376358</Paymethod_Token>
+    <Customer_Token>26585946</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Gloria Hunt</Name_on_Card>
+    <Card>disc</Card>
+    <Last_4>****5592</Last_4>
+    <Mo>1</Mo>
+    <Year>2023</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>36016820</Paymethod_Token>
+    <Customer_Token>26600461</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Larinda Smith</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****6232</Last_4>
+    <Mo>2</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>36030651</Paymethod_Token>
+    <Customer_Token>26609717</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Terry Pagan</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****3887</Last_4>
+    <Mo>12</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>36034294</Paymethod_Token>
+    <Customer_Token>26612093</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Cheri Ray</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****9657</Last_4>
+    <Mo>3</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>36069181</Paymethod_Token>
+    <Customer_Token>26634583</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>STEVE MAYS</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****1999</Last_4>
+    <Mo>5</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>36070015</Paymethod_Token>
+    <Customer_Token>26635106</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Graham Drout</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****2515</Last_4>
+    <Mo>2</Mo>
+    <Year>2023</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>36070389</Paymethod_Token>
+    <Customer_Token>26635326</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Norma Morrell</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****3657</Last_4>
+    <Mo>2</Mo>
+    <Year>2023</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>36117926</Paymethod_Token>
+    <Customer_Token>26664968</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Mona Serpa</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****4999</Last_4>
+    <Mo>1</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>36170101</Paymethod_Token>
+    <Customer_Token>26697474</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Nancy Whybrew</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****7782</Last_4>
+    <Mo>10</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>36180198</Paymethod_Token>
+    <Customer_Token>26703689</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Jerry Hayes</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****0137</Last_4>
+    <Mo>5</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>36265530</Paymethod_Token>
+    <Customer_Token>26756919</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Jerry Hayes</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****0137</Last_4>
+    <Mo>5</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>36265548</Paymethod_Token>
+    <Customer_Token>26756925</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Mildred Hong</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****2374</Last_4>
+    <Mo>2</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>36266570</Paymethod_Token>
+    <Customer_Token>26757505</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Betty Cunningham</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****2674</Last_4>
+    <Mo>1</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>36311961</Paymethod_Token>
+    <Customer_Token>26785755</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Glenda Drennen</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****7141</Last_4>
+    <Mo>3</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>36429146</Paymethod_Token>
+    <Customer_Token>26860099</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>James Butler</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****2092</Last_4>
+    <Mo>3</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>36891054</Paymethod_Token>
+    <Customer_Token>27162698</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>James Butler</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****2092</Last_4>
+    <Mo>3</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>36891059</Paymethod_Token>
+    <Customer_Token>27162701</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Sharon Hunter</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****8208</Last_4>
+    <Mo>9</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>37550448</Paymethod_Token>
+    <Customer_Token>27169687</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Steven Schwarting</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****7917</Last_4>
+    <Mo>2</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>36911080</Paymethod_Token>
+    <Customer_Token>27174878</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Helen Watanabe</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****1422</Last_4>
+    <Mo>6</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-24</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>36956516</Paymethod_Token>
+    <Customer_Token>27203639</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Susan Knight</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****8478</Last_4>
+    <Mo>1</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>36958453</Paymethod_Token>
+    <Customer_Token>27204742</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Rodney Hill</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****9502</Last_4>
+    <Mo>1</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>36960640</Paymethod_Token>
+    <Customer_Token>27206030</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>JOHN FARMAN</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****6941</Last_4>
+    <Mo>1</Mo>
+    <Year>2023</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>36961624</Paymethod_Token>
+    <Customer_Token>27206593</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Gerome Robinson</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****7740</Last_4>
+    <Mo>5</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>36965000</Paymethod_Token>
+    <Customer_Token>27208492</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>STEVE MAYS</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****1999</Last_4>
+    <Mo>5</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>36973875</Paymethod_Token>
+    <Customer_Token>27213728</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>STEVE MAYS</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****1999</Last_4>
+    <Mo>7</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>36973910</Paymethod_Token>
+    <Customer_Token>27213751</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>STEVE MAYS</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****1999</Last_4>
+    <Mo>7</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>36974274</Paymethod_Token>
+    <Customer_Token>27213928</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>James Schmidt</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****6269</Last_4>
+    <Mo>9</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>36981700</Paymethod_Token>
+    <Customer_Token>27218102</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Judy Helsley</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****7001</Last_4>
+    <Mo>9</Mo>
+    <Year>2019</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>36999747</Paymethod_Token>
+    <Customer_Token>27228751</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Pauline Chambers</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****9911</Last_4>
+    <Mo>3</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>37016184</Paymethod_Token>
+    <Customer_Token>27239106</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Cheryl Diane Jetmund</Name_on_Card>
+    <Card>disc</Card>
+    <Last_4>****4028</Last_4>
+    <Mo>9</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>37095442</Paymethod_Token>
+    <Customer_Token>27289901</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Jade Graves</Name_on_Card>
+    <Card>disc</Card>
+    <Last_4>****4028</Last_4>
+    <Mo>9</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>37096904</Paymethod_Token>
+    <Customer_Token>27290799</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Carol Thornton</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****2131</Last_4>
+    <Mo>11</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>37129536</Paymethod_Token>
+    <Customer_Token>27310160</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Iris Stanfel</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****6818</Last_4>
+    <Mo>1</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>37938301</Paymethod_Token>
+    <Customer_Token>27575014</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Thomas Williams</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****2167</Last_4>
+    <Mo>12</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>38277166</Paymethod_Token>
+    <Customer_Token>27576491</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Shirley Meyer</Name_on_Card>
+    <Card>disc</Card>
+    <Last_4>****6634</Last_4>
+    <Mo>8</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>37784628</Paymethod_Token>
+    <Customer_Token>27776844</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Reva Golden</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****0435</Last_4>
+    <Mo>2</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>37802956</Paymethod_Token>
+    <Customer_Token>27787651</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Reva Golden</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****0435</Last_4>
+    <Mo>2</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>37802982</Paymethod_Token>
+    <Customer_Token>27787664</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Golden</Name_on_Card>
+    <Card> Reva</Card>
+    <Last_4>visa</Last_4>
+    <Mo>****0435</Mo>
+    <Year>2</Year>
+    <Updated>2021</Updated>
+    <AU_Code>2018-02-17</AU_Code>
+    <AU_Description>Closed</AU_Description>
+    <Paymethod_Token>Account closed</Paymethod_Token>
+    <Customer_Token>37807694</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Jean Franco</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****8268</Last_4>
+    <Mo>12</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>37924023</Paymethod_Token>
+    <Customer_Token>27862414</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Jean Franco</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****8268</Last_4>
+    <Mo>12</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>37924031</Paymethod_Token>
+    <Customer_Token>27862416</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Jean Franco</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****8268</Last_4>
+    <Mo>12</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>37924361</Paymethod_Token>
+    <Customer_Token>27862630</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Jean Franco</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****8268</Last_4>
+    <Mo>12</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>37924374</Paymethod_Token>
+    <Customer_Token>27862636</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Jean Franco</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****8268</Last_4>
+    <Mo>12</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>37924386</Paymethod_Token>
+    <Customer_Token>27862643</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Priscilla Cooper</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****1529</Last_4>
+    <Mo>11</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>37926558</Paymethod_Token>
+    <Customer_Token>27863968</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Barbara Zerby</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****3447</Last_4>
+    <Mo>10</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>37976987</Paymethod_Token>
+    <Customer_Token>27897499</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Jean Franco</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****8268</Last_4>
+    <Mo>12</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>37988357</Paymethod_Token>
+    <Customer_Token>27904062</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Jean Franco</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****8268</Last_4>
+    <Mo>12</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>37988370</Paymethod_Token>
+    <Customer_Token>27904070</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Jean Franco</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****8268</Last_4>
+    <Mo>12</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>37988377</Paymethod_Token>
+    <Customer_Token>27904072</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>James Hall</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****2897</Last_4>
+    <Mo>5</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Closed</AU_Code>
+    <AU_Description>Account closed</AU_Description>
+    <Paymethod_Token>38005602</Paymethod_Token>
+    <Customer_Token>27914889</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Jean Franco</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****8268</Last_4>
+    <Mo>12</Mo>
+    <Year>2021</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>38013901</Paymethod_Token>
+    <Customer_Token>27920274</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Shirley Meyer</Name_on_Card>
+    <Card>disc</Card>
+    <Last_4>****6634</Last_4>
+    <Mo>8</Mo>
+    <Year>2022</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>38013957</Paymethod_Token>
+    <Customer_Token>27920314</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>James Hanson</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****0223</Last_4>
+    <Mo>10</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>38053452</Paymethod_Token>
+    <Customer_Token>27944994</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>James Hanson</Name_on_Card>
+    <Card>mast</Card>
+    <Last_4>****0223</Last_4>
+    <Mo>10</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>New</AU_Code>
+    <AU_Description>New account number</AU_Description>
+    <Paymethod_Token>38053496</Paymethod_Token>
+    <Customer_Token>27945014</Customer_Token>
+  </row>
+  <row>
+    <MID>206783</MID>
+    <Name_on_Card>Fred Burke</Name_on_Card>
+    <Card>visa</Card>
+    <Last_4>****0330</Last_4>
+    <Mo>11</Mo>
+    <Year>2020</Year>
+    <Updated>2018-02-17</Updated>
+    <AU_Code>Expiry</AU_Code>
+    <AU_Description>Expiration date updated</AU_Description>
+    <Paymethod_Token>38114580</Paymethod_Token>
+    <Customer_Token>27984886</Customer_Token>
+  </row>
+</rows>

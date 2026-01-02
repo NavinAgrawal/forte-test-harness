@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="bfe95694-91cc-41e8-a849-0f8b46c9213c" activeEnvironment="Default" name="sandbox - Merchant" resourceRoot="${projectDir}" soapui-version="5.8.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="f8ff0d07-504f-46a2-8017-aa6ca52c873d" wsaVersion="NONE" name="BasicHttpBinding_IMerchantService" type="wsdl" bindingName="{https://ws.paymentsgateway.net/v1}BasicHttpBinding_IMerchantService" soapVersion="1_1" anonymous="optional" definition="https://sandbox.paymentsgateway.net/WS/Merchant.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://sandbox.paymentsgateway.net/WS/Merchant.wsdl"><con:part><con:url>https://sandbox.paymentsgateway.net/WS/Merchant.wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="MerchantService" targetNamespace="https://ws.paymentsgateway.net/v1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="https://ws.paymentsgateway.net/v1" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+  <wsp:Policy wsu:Id="WSHttpBinding_IMerchantService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false"/>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256/>
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict/>
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing/>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="BasicHttpBinding_IMerchantService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false"/>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256/>
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict/>
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="https://ws.paymentsgateway.net/v1">
+      <xsd:element name="getHierarchyTree">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ticket" type="tns:Authentication"/>
+            <xsd:element name="MerchantID" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="Authentication">
+        <xsd:sequence>
+          <xsd:element name="APILoginID" type="xsd:string"/>
+          <xsd:element name="TSHash" type="xsd:string"/>
+          <xsd:element name="UTCTime" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="Authentication" type="tns:Authentication"/>
+      <xsd:element name="getHierarchyTreeResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="getHierarchyTreeResult" nillable="true" type="tns:Hierarchy"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="Hierarchy">
+        <xsd:sequence>
+          <xsd:element name="Folder" nillable="true" type="tns:Folder"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="Hierarchy" nillable="true" type="tns:Hierarchy"/>
+      <xsd:complexType name="Folder">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Name" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="HID" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="Folders" nillable="true" type="tns:ArrayOfFolder"/>
+          <xsd:element minOccurs="0" name="Merchants" nillable="true" type="tns:ArrayOfMerchant"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="Folder" nillable="true" type="tns:Folder"/>
+      <xsd:complexType name="ArrayOfFolder">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="Folder" nillable="true" type="tns:Folder"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfFolder" nillable="true" type="tns:ArrayOfFolder"/>
+      <xsd:complexType name="ArrayOfMerchant">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="Merchant" nillable="true" type="tns:Merchant"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfMerchant" nillable="true" type="tns:ArrayOfMerchant"/>
+      <xsd:complexType name="Merchant">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Name" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ID" type="xsd:int"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="Merchant" nillable="true" type="tns:Merchant"/>
+    </xsd:schema>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/">
+      <xs:element name="anyType" nillable="true" type="xs:anyType"/>
+      <xs:element name="anyURI" nillable="true" type="xs:anyURI"/>
+      <xs:element name="base64Binary" nillable="true" type="xs:base64Binary"/>
+      <xs:element name="boolean" nillable="true" type="xs:boolean"/>
+      <xs:element name="byte" nillable="true" type="xs:byte"/>
+      <xs:element name="dateTime" nillable="true" type="xs:dateTime"/>
+      <xs:element name="decimal" nillable="true" type="xs:decimal"/>
+      <xs:element name="double" nillable="true" type="xs:double"/>
+      <xs:element name="float" nillable="true" type="xs:float"/>
+      <xs:element name="int" nillable="true" type="xs:int"/>
+      <xs:element name="long" nillable="true" type="xs:long"/>
+      <xs:element name="QName" nillable="true" type="xs:QName"/>
+      <xs:element name="short" nillable="true" type="xs:short"/>
+      <xs:element name="string" nillable="true" type="xs:string"/>
+      <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte"/>
+      <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt"/>
+      <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong"/>
+      <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort"/>
+      <xs:element name="char" nillable="true" type="tns:char"/>
+      <xs:simpleType name="char">
+        <xs:restriction base="xs:int"/>
+      </xs:simpleType>
+      <xs:element name="duration" nillable="true" type="tns:duration"/>
+      <xs:simpleType name="duration">
+        <xs:restriction base="xs:duration">
+          <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?"/>
+          <xs:minInclusive value="-P10675199DT2H48M5.4775808S"/>
+          <xs:maxInclusive value="P10675199DT2H48M5.4775807S"/>
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="guid" nillable="true" type="tns:guid"/>
+      <xs:simpleType name="guid">
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}"/>
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:attribute name="FactoryType" type="xs:QName"/>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="IMerchantService_getHierarchyTree_InputMessage">
+    <wsdl:part name="parameters" element="tns:getHierarchyTree"/>
+  </wsdl:message>
+  <wsdl:message name="IMerchantService_getHierarchyTree_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getHierarchyTreeResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="IMerchantService">
+    <wsdl:operation name="getHierarchyTree">
+      <wsdl:input wsaw:Action="https://ws.paymentsgateway.net/v1/IMerchantService/getHierarchyTree" message="tns:IMerchantService_getHierarchyTree_InputMessage"/>
+      <wsdl:output wsaw:Action="https://ws.paymentsgateway.net/v1/IMerchantService/getHierarchyTreeResponse" message="tns:IMerchantService_getHierarchyTree_OutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_IMerchantService" type="tns:IMerchantService">
+    <wsp:PolicyReference URI="#WSHttpBinding_IMerchantService_policy"/>
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getHierarchyTree">
+      <soap12:operation soapAction="https://ws.paymentsgateway.net/v1/IMerchantService/getHierarchyTree" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IMerchantService" type="tns:IMerchantService">
+    <wsp:PolicyReference URI="#BasicHttpBinding_IMerchantService_policy"/>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getHierarchyTree">
+      <soap:operation soapAction="https://ws.paymentsgateway.net/v1/IMerchantService/getHierarchyTree" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MerchantService">
+    <wsdl:port name="WSHttpBinding_IMerchantService" binding="tns:WSHttpBinding_IMerchantService">
+      <soap12:address location="https://sandbox.paymentsgateway.net/ws/Merchant.svc"/>
+      <wsa10:EndpointReference>
+        <wsa10:Address>https://sandbox.paymentsgateway.net/ws/Merchant.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IMerchantService" binding="tns:BasicHttpBinding_IMerchantService">
+      <soap:address location="https://sandbox.paymentsgateway.net/ws/Merchant.svc/basic"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://sandbox.paymentsgateway.net/ws/Merchant.svc/basic</con:endpoint></con:endpoints><con:operation id="0ad8d21d-7492-40e0-a3df-a2c748e77ce5" isOneWay="false" action="https://ws.paymentsgateway.net/v1/IMerchantService/getHierarchyTree" name="getHierarchyTree" bindingOperationName="getHierarchyTree" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="cc5c30e3-a8c0-4a74-a5e3-f3bbffd9814f" name="sandbox - getHierarchyTree"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://sandbox.paymentsgateway.net/ws/Merchant.svc/basic</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="https://ws.paymentsgateway.net/v1">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <v1:getHierarchyTree>\r
+         <v1:ticket>\r
+            <v1:APILoginID>YOUR_API_LOGIN_ID</v1:APILoginID>\r
+            <v1:TSHash>REDACTED_HASH</v1:TSHash>\r
+            <v1:UTCTime>637224321718387968</v1:UTCTime>\r
+         </v1:ticket>\r
+         <v1:MerchantID>191620</v1:MerchantID>\r
+      </v1:getHierarchyTree>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/IMerchantService/getHierarchyTree"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

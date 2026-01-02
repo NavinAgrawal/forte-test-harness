@@ -1,0 +1,1154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="3b74b754-df6b-44c1-a69a-0b94bf3c0fb4" activeEnvironment="Default" name="template - Transaction" resourceRoot="${projectDir}" soapui-version="5.8.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="3798d71e-a2c6-4305-9543-54caf570e7f6" wsaVersion="NONE" name="BasicHttpBinding_ITransactionService" type="wsdl" bindingName="{https://ws.paymentsgateway.net/v1}BasicHttpBinding_ITransactionService" soapVersion="1_1" anonymous="optional" definition="https://ws.paymentsgateway.net/Service/v1/Transaction.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://ws.paymentsgateway.net/Service/v1/Transaction.svc/basic</con:endpoint></con:endpoints><con:operation id="8000e677-0d15-44f3-92c0-37b203806510" isOneWay="false" action="https://ws.paymentsgateway.net/v1/ITransactionService/getOriginationSummary" name="getOriginationSummary" bindingOperationName="getOriginationSummary" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="252b9b66-0e88-4680-bb7c-b8486ffcb874" name="template - getOriginationSummay"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://sandbox.paymentsgateway.net/ws/Transaction.svc/basic</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="https://ws.paymentsgateway.net/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v1:getOriginationSummary>
+         <v1:ticket>
+            <v1:APILoginID></v1:APILoginID>
+            <v1:TSHash></v1:TSHash>
+            <v1:UTCTime></v1:UTCTime>
+         </v1:ticket>
+         <v1:range>
+            <v1:MerchantIDs></v1:MerchantIDs>
+            <v1:StartDate></v1:StartDate>
+            <v1:EndDate></v1:EndDate>
+            <v1:ChildMID></v1:ChildMID>
+            <v1:EntryType></v1:EntryType>
+            <v1:TransactionType></v1:TransactionType>
+         </v1:range>
+         <v1:PageIndex></v1:PageIndex>
+         <v1:PageSize></v1:PageSize>
+      </v1:getOriginationSummary>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/ITransactionService/getOriginationSummary"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="4d5900ad-b126-4138-aed7-d7d0bfb83f64" isOneWay="false" action="https://ws.paymentsgateway.net/v1/ITransactionService/getReceivedDetail" name="getReceivedDetail" bindingOperationName="getReceivedDetail" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d1163885-bcbd-4b61-b11d-ad98d9ee86bb" name="template - getReceivedDetail"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://sandbox.paymentsgateway.net/ws/Transaction.svc/basic</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="https://ws.paymentsgateway.net/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v1:getReceivedDetail>
+         <v1:ticket>
+            <v1:APILoginID></v1:APILoginID>
+            <v1:TSHash></v1:TSHash>
+            <v1:UTCTime></v1:UTCTime>
+         </v1:ticket>
+         <v1:MerchantID></v1:MerchantID>
+         <v1:Day></v1:Day>
+         <v1:PageIndex></v1:PageIndex>
+         <v1:PageSize></v1:PageSize>
+      </v1:getReceivedDetail>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/ITransactionService/getReceivedDetail"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="593b16c2-5cef-4267-8f82-592ac09ad410" isOneWay="false" action="https://ws.paymentsgateway.net/v1/ITransactionService/getReceivedSummary" name="getReceivedSummary" bindingOperationName="getReceivedSummary" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="cb65f4b2-69ab-4ea4-99ed-c551513c57c8" name="template - getReceivedSummary"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://sandbox.paymentsgateway.net/ws/Transaction.svc/basic</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="https://ws.paymentsgateway.net/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v1:getReceivedSummary>
+         <v1:ticket>
+            <v1:APILoginID></v1:APILoginID>
+            <v1:TSHash></v1:TSHash>
+            <v1:UTCTime></v1:UTCTime>
+         </v1:ticket>
+         <v1:range>
+            <v1:MerchantIDs></v1:MerchantIDs>
+            <v1:StartDate></v1:StartDate>
+            <v1:EndDate></v1:EndDate>
+            <v1:ChildMID></v1:ChildMID>
+            <v1:EntryType></v1:EntryType>
+            <v1:TransactionType></v1:TransactionType>
+         </v1:range>
+         <v1:PageIndex></v1:PageIndex>
+         <v1:PageSize></v1:PageSize>
+      </v1:getReceivedSummary>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/ITransactionService/getReceivedSummary"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="37519c35-61f8-464e-8e34-84418c7d0444" isOneWay="false" action="https://ws.paymentsgateway.net/v1/ITransactionService/getSettleDetail" name="getSettleDetail" bindingOperationName="getSettleDetail" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="dca9c4a8-8c8d-4625-a436-de32ca407f4a" name="template - getSettleDetail"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://sandbox.paymentsgateway.net/ws/Transaction.svc/basic</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="https://ws.paymentsgateway.net/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v1:getSettleDetail>
+         <v1:ticket>
+            <v1:APILoginID></v1:APILoginID>
+            <v1:TSHash></v1:TSHash>
+            <v1:UTCTime></v1:UTCTime>
+         </v1:ticket>
+         <v1:MerchantID></v1:MerchantID>
+         <v1:Day></v1:Day>
+         <v1:PageIndex></v1:PageIndex>
+         <v1:PageSize></v1:PageSize>
+      </v1:getSettleDetail>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/ITransactionService/getSettleDetail"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="f8d52e5b-c8e3-4bc1-aa1a-611cd5702230" isOneWay="false" action="https://ws.paymentsgateway.net/v1/ITransactionService/getSettleSummary" name="getSettleSummary" bindingOperationName="getSettleSummary" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d2c16eb4-4f65-48f5-9e16-d9498e3b988a" name="template - getSettleSummary"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://sandbox.paymentsgateway.net/ws/Transaction.svc/basic</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="https://ws.paymentsgateway.net/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v1:getSettleSummary>
+         <v1:ticket>
+            <v1:APILoginID></v1:APILoginID>
+            <v1:TSHash></v1:TSHash>
+            <v1:UTCTime></v1:UTCTime>
+         </v1:ticket>
+         <v1:range>
+            <v1:MerchantIDs></v1:MerchantIDs>
+            <v1:StartDate></v1:StartDate>
+            <v1:EndDate></v1:EndDate>
+            <v1:ChildMID></v1:ChildMID>
+            <v1:EntryType></v1:EntryType>
+            <v1:TransactionType></v1:TransactionType>
+         </v1:range>
+         <v1:PageIndex></v1:PageIndex>
+         <v1:PageSize></v1:PageSize>
+      </v1:getSettleSummary>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/ITransactionService/getSettleSummary"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="10f75857-fe55-4fce-94e9-4eb52381e570" isOneWay="false" action="https://ws.paymentsgateway.net/v1/ITransactionService/getTransaction" name="getTransaction" bindingOperationName="getTransaction" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c8f0b4e8-a4ce-454b-8445-8503216e7c41" name="template - getTransaction"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://sandbox.paymentsgateway.net/ws/Transaction.svc/basic</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="https://ws.paymentsgateway.net/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v1:getTransaction>
+         <v1:ticket>
+            <v1:APILoginID></v1:APILoginID>
+            <v1:TSHash></v1:TSHash>
+            <v1:UTCTime></v1:UTCTime>
+         </v1:ticket>
+         <v1:MerchantID></v1:MerchantID>
+         <v1:TransactionID></v1:TransactionID>
+      </v1:getTransaction>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/ITransactionService/getTransaction"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="3c4dba4e-a667-49f6-96a8-7fc3c8012f76" isOneWay="false" action="https://ws.paymentsgateway.net/v1/ITransactionService/searchSettleActivity" name="searchSettleActivity" bindingOperationName="searchSettleActivity" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c126b220-ebc4-4a21-8590-b780bcb54aa5" name="template - searchSettleActivity"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://sandbox.paymentsgateway.net/ws/Transaction.svc/basic</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="https://ws.paymentsgateway.net/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v1:searchSettleActivity>
+         <v1:ticket>
+            <v1:APILoginID></v1:APILoginID>
+            <v1:TSHash></v1:TSHash>
+            <v1:UTCTime></v1:UTCTime>
+         </v1:ticket>
+         <v1:range>
+            <v1:MerchantIDs></v1:MerchantIDs>
+            <v1:StartDate></v1:StartDate>
+            <v1:EndDate></v1:EndDate>
+            <v1:ChildMID></v1:ChildMID>
+            <v1:EntryType></v1:EntryType>
+            <v1:TransactionType></v1:TransactionType>
+         </v1:range>
+         <v1:paymentType></v1:paymentType>
+         <v1:fundingType></v1:fundingType>
+         <v1:PageIndex></v1:PageIndex>
+         <v1:PageSize></v1:PageSize>
+      </v1:searchSettleActivity>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/ITransactionService/searchSettleActivity"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="d985c483-4b6a-4492-9880-5b311eb501b3" isOneWay="false" action="https://ws.paymentsgateway.net/v1/ITransactionService/searchTransactions" name="searchTransactions" bindingOperationName="searchTransactions" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="18e57107-fd29-4eca-a2b5-4e7e17b8cab5" name="template - searchTransactions"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://sandbox.paymentsgateway.net/ws/Transaction.svc/basic</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="https://ws.paymentsgateway.net/v1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v1:searchTransactions>
+         <v1:ticket>
+            <v1:APILoginID></v1:APILoginID>
+            <v1:TSHash></v1:TSHash>
+            <v1:UTCTime></v1:UTCTime>
+         </v1:ticket>
+         <v1:range>
+            <v1:MerchantIDs></v1:MerchantIDs>
+            <v1:StartDate></v1:StartDate>
+            <v1:EndDate></v1:EndDate>
+            <v1:ChildMID></v1:ChildMID>
+            <v1:EntryType></v1:EntryType>
+            <v1:TransactionType></v1:TransactionType>
+         </v1:range>
+         <v1:page>
+            <v1:PageSize></v1:PageSize>
+            <v1:PageIndex></v1:PageIndex>
+            <v1:SortBy></v1:SortBy>
+            <v1:SortDirection></v1:SortDirection>
+         </v1:page>
+         <v1:SearchType></v1:SearchType>
+         <v1:paymenttype></v1:paymenttype>
+         <v1:sFilter>
+            <!--Zero or more repetitions:-->
+            <v1:TransactionSearchFilter>
+               <v1:FieldName></v1:FieldName>
+               <v1:CompareOperator></v1:CompareOperator>
+               <v1:SearchOperator></v1:SearchOperator>
+               <v1:SearchText></v1:SearchText>
+            </v1:TransactionSearchFilter>
+         </v1:sFilter>
+      </v1:searchTransactions>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/ITransactionService/searchTransactions"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="3bdedbb8-5d7c-40d0-9b95-9e837be85d3c" wsaVersion="200508" name="WSHttpBinding_ITransactionService" type="wsdl" bindingName="{https://ws.paymentsgateway.net/v1}WSHttpBinding_ITransactionService" soapVersion="1_2" anonymous="optional" definition="https://ws.paymentsgateway.net/Service/v1/Transaction.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://ws.paymentsgateway.net/Service/v1/Transaction.wsdl"><con:part><con:url>https://ws.paymentsgateway.net/Service/v1/Transaction.wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="TransactionService" targetNamespace="https://ws.paymentsgateway.net/v1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="https://ws.paymentsgateway.net/v1" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+  <wsp:Policy wsu:Id="WSHttpBinding_ITransactionService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false"/>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256/>
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict/>
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing/>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="BasicHttpBinding_ITransactionService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false"/>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256/>
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict/>
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="https://ws.paymentsgateway.net/v1" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/">
+      <xsd:element name="getTransaction">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ticket" type="tns:Authentication"/>
+            <xsd:element name="MerchantID" type="xsd:int"/>
+            <xsd:element name="TransactionID" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="Authentication">
+        <xsd:sequence>
+          <xsd:element name="APILoginID" type="xsd:string"/>
+          <xsd:element name="TSHash" type="xsd:string"/>
+          <xsd:element name="UTCTime" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="Authentication" nillable="true" type="tns:Authentication"/>
+      <xsd:element name="getTransactionResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="getTransactionResult" nillable="true" type="tns:Transaction"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="Transaction">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="AccountType" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="AcctTRN" nillable="true" type="xsd:string"/>
+          <xsd:element name="Amount" type="xsd:double"/>
+          <xsd:element name="AttemptNumber" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="BilltoAddress" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="BilltoAddress2" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="BilltoCity" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="BilltoCompanyName" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="BilltoEmailAddress" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="BilltoFirstName" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="BilltoLastName" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="BilltoPhone" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="BilltoPostalCode" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="BilltoState" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CardExpDate" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CardType" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CardholderName" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CheckNumber" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ConsumerID" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ConsumerOrderID" nillable="true" type="xsd:string"/>
+          <xsd:element name="ConvenienceFee" type="xsd:double"/>
+          <xsd:element name="ConvenienceFeePrincipal" type="xsd:double"/>
+          <xsd:element minOccurs="0" name="DebitCredit" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="EnteredBy" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="EntryClassCode" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="EntryDescription" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="IPAddress" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ItemDescription" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="LineItems" nillable="true" type="tns:ArrayOfLineItem"/>
+          <xsd:element minOccurs="0" name="MerchantData1" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="MerchantData2" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="MerchantData3" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="MerchantData4" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="MerchantData5" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="MerchantData6" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="MerchantData7" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="MerchantData8" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="MerchantData9" nillable="true" type="xsd:string"/>
+          <xsd:element name="MerchantID" type="xsd:int"/>
+          <xsd:element name="OriginationDate" type="xsd:dateTime"/>
+          <xsd:element minOccurs="0" name="Response" nillable="true" type="tns:TransactionResponse"/>
+          <xsd:element name="SalesTaxAmount" type="xsd:double"/>
+          <xsd:element name="ServiceFee" type="xsd:double"/>
+          <xsd:element name="ServiceFeePrincipal" type="xsd:double"/>
+          <xsd:element minOccurs="0" name="ShiptoAddress" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ShiptoAddress2" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ShiptoCity" nillable="true" type="xsd:string"/>
+          <xsd:element name="ShiptoFreightAmount" type="xsd:double"/>
+          <xsd:element minOccurs="0" name="ShiptoName" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ShiptoPostalCode" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ShiptoState" nillable="true" type="xsd:string"/>
+          <xsd:element name="TotalAmount" type="xsd:double"/>
+          <xsd:element minOccurs="0" name="TransactionID" nillable="true" type="xsd:string"/>
+          <xsd:element name="TsCreated" type="xsd:dateTime"/>
+          <xsd:element name="UpdatedDate" type="xsd:dateTime"/>
+          <xsd:element minOccurs="0" name="UserDefined" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="WalletID" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="Transaction" nillable="true" type="tns:Transaction"/>
+      <xsd:complexType name="ArrayOfLineItem">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="LineItem" nillable="true" type="tns:LineItem"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfLineItem" nillable="true" type="tns:ArrayOfLineItem"/>
+      <xsd:complexType name="LineItem">
+        <xsd:sequence>
+          <xsd:element name="Headers" type="xsd:string"/>
+          <xsd:element name="Items" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="LineItem" nillable="true" type="tns:LineItem"/>
+      <xsd:complexType name="TransactionResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="AuthCode" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="AvsResult" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Last4" nillable="true" type="xsd:string"/>
+          <xsd:element name="MerchantClientID" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="PreauthCode" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PreauthDescription" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PreauthNegReport" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="PreauthResult" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ResponseCode" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ResponseDescription" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ResponseType" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Status" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="TransactionID" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="TransactionResponse" nillable="true" type="tns:TransactionResponse"/>
+      <xsd:element name="getReceivedSummary">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ticket" type="tns:Authentication"/>
+            <xsd:element name="range" type="tns:Range"/>
+            <xsd:element name="PageIndex" type="xsd:int"/>
+            <xsd:element name="PageSize" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="Range">
+        <xsd:sequence>
+          <xsd:element name="MerchantIDs" type="xsd:string"/>
+          <xsd:element name="StartDate" type="xsd:dateTime"/>
+          <xsd:element name="EndDate" type="xsd:dateTime"/>
+          <xsd:element name="ChildMID" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="EntryType" nillable="true" type="tns:EntryType"/>
+          <xsd:element minOccurs="0" name="TransactionType" nillable="true" type="tns:TransactionType"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="Range" nillable="true" type="tns:Range"/>
+      <xsd:element name="getReceivedSummaryResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="getReceivedSummaryResult" nillable="true" type="tns:ArrayOfReceivedSummary"/>
+            <xsd:element name="TotalRecords" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="ArrayOfReceivedSummary">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="ReceivedSummary" nillable="true" type="tns:ReceivedSummary"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfReceivedSummary" nillable="true" type="tns:ArrayOfReceivedSummary"/>
+      <xsd:complexType name="ReceivedSummary">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Code" nillable="true" type="xsd:string"/>
+          <xsd:element name="ConvFeeAmount" type="xsd:double"/>
+          <xsd:element name="Count" type="xsd:int"/>
+          <xsd:element name="DateSum" type="xsd:dateTime"/>
+          <xsd:element minOccurs="0" name="EntryType" nillable="true" type="xsd:string"/>
+          <xsd:element name="MerchantID" type="xsd:int"/>
+          <xsd:element name="ServiceFeeAmount" type="xsd:double"/>
+          <xsd:element minOccurs="0" name="Status" nillable="true" type="xsd:string"/>
+          <xsd:element name="TotalAmount" type="xsd:double"/>
+          <xsd:element name="TransactionType" type="xsd:int"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ReceivedSummary" nillable="true" type="tns:ReceivedSummary"/>
+      <xsd:element name="getOriginationSummary">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ticket" type="tns:Authentication"/>
+            <xsd:element name="range" type="tns:Range"/>
+            <xsd:element name="PageIndex" type="xsd:int"/>
+            <xsd:element name="PageSize" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getOriginationSummaryResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="getOriginationSummaryResult" nillable="true" type="tns:ArrayOfOriginationSummary"/>
+            <xsd:element name="TotalRecords" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="ArrayOfOriginationSummary">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="OriginationSummary" nillable="true" type="tns:OriginationSummary"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfOriginationSummary" nillable="true" type="tns:ArrayOfOriginationSummary"/>
+      <xsd:complexType name="OriginationSummary">
+        <xsd:sequence>
+          <xsd:element name="ConvFeeAmount" type="xsd:double"/>
+          <xsd:element name="Count" type="xsd:int"/>
+          <xsd:element name="DateSum" type="xsd:dateTime"/>
+          <xsd:element minOccurs="0" name="EntryType" nillable="true" type="xsd:string"/>
+          <xsd:element name="MerchantID" type="xsd:int"/>
+          <xsd:element name="ServiceFeeAmount" type="xsd:double"/>
+          <xsd:element minOccurs="0" name="Status" nillable="true" type="xsd:string"/>
+          <xsd:element name="TotalAmount" type="xsd:double"/>
+          <xsd:element name="TransactionType" type="xsd:int"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="OriginationSummary" nillable="true" type="tns:OriginationSummary"/>
+      <xsd:element name="getSettleSummary">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ticket" type="tns:Authentication"/>
+            <xsd:element name="range" type="tns:Range"/>
+            <xsd:element name="PageIndex" type="xsd:int"/>
+            <xsd:element name="PageSize" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getSettleSummaryResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="getSettleSummaryResult" nillable="true" type="tns:ArrayOfSettleSummary"/>
+            <xsd:element name="TotalRecords" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="ArrayOfSettleSummary">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="SettleSummary" nillable="true" type="tns:SettleSummary"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfSettleSummary" nillable="true" type="tns:ArrayOfSettleSummary"/>
+      <xsd:complexType name="ArrayOfTransaction">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="Transaction" nillable="true" type="tns:Transaction"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfTransaction" nillable="true" type="tns:ArrayOfTransaction"/>
+      <xsd:complexType name="SettleSummary">
+        <xsd:sequence>
+          <xsd:element name="ConvFeeAmount" type="xsd:double"/>
+          <xsd:element name="ConvFeeAmountFunded" type="xsd:double"/>
+          <xsd:element name="Count" type="xsd:int"/>
+          <xsd:element name="EntryType" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="FundingType" nillable="true" type="xsd:string"/>
+          <xsd:element name="MerchantID" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="ResponseCode" nillable="true" type="xsd:string"/>
+          <xsd:element name="ServiceFeeAmount" type="xsd:double"/>
+          <xsd:element name="ServiceFeeAmountFunded" type="xsd:double"/>
+          <xsd:element name="SettleDate" type="xsd:dateTime"/>
+          <xsd:element name="TotalAmount" type="xsd:double"/>
+          <xsd:element name="TotalAmountFunded" type="xsd:double"/>
+          <xsd:element name="TransactionType" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="SettleSummary" nillable="true" type="tns:SettleSummary"/>
+      <xsd:element name="searchTransactions">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ticket" type="tns:Authentication"/>
+            <xsd:element name="range" type="tns:Range"/>
+            <xsd:element name="page" type="tns:Page"/>
+            <xsd:element name="SearchType" type="tns:SearchType"/>
+            <xsd:element minOccurs="0" name="paymenttype" nillable="true" type="tns:PaymentType"/>
+            <xsd:element name="sFilter" type="tns:ArrayOfTransactionSearchFilter"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="Page">
+        <xsd:sequence>
+          <xsd:element name="PageSize" type="xsd:int"/>
+          <xsd:element name="PageIndex" type="xsd:int"/>
+          <xsd:element name="SortBy" type="tns:TransactionColumn"/>
+          <xsd:element name="SortDirection" type="tns:SortDirection"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="Page" nillable="true" type="tns:Page"/>
+      <xsd:simpleType name="TransactionColumn">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="BillToFirstName"/>
+          <xsd:enumeration value="BillToLastName"/>
+          <xsd:enumeration value="BillToCompanyName"/>
+          <xsd:enumeration value="EnteredBy"/>
+          <xsd:enumeration value="Last4"/>
+          <xsd:enumeration value="Amount"/>
+          <xsd:enumeration value="ConsumerOrderID"/>
+          <xsd:enumeration value="Status"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:element name="TransactionColumn" nillable="true" type="tns:TransactionColumn"/>
+      <xsd:simpleType name="SortDirection">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="ascending"/>
+          <xsd:enumeration value="descending"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:element name="SortDirection" nillable="true" type="tns:SortDirection"/>
+      <xsd:simpleType name="SearchType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Received"/>
+          <xsd:enumeration value="Originated"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:element name="SearchType" nillable="true" type="tns:SearchType"/>
+      <xsd:simpleType name="PaymentType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="eCheck"/>
+          <xsd:enumeration value="CreditCard"/>
+          <xsd:enumeration value="Unsettled"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:element name="PaymentType" nillable="true" type="tns:PaymentType"/>
+      <xsd:simpleType name="EntryType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="VISA"/>
+          <xsd:enumeration value="MAST"/>
+          <xsd:enumeration value="DISC"/>
+          <xsd:enumeration value="AMER"/>
+          <xsd:enumeration value="DINE"/>
+          <xsd:enumeration value="JCB"/>
+          <xsd:enumeration value="PPD"/>
+          <xsd:enumeration value="CCD"/>
+          <xsd:enumeration value="POP"/>
+          <xsd:enumeration value="RCK"/>
+          <xsd:enumeration value="WEB"/>
+          <xsd:enumeration value="TEL"/>
+          <xsd:enumeration value="CTX"/>
+          <xsd:enumeration value="CIE"/>
+          <xsd:enumeration value="POS"/>
+          <xsd:enumeration value="ARC"/>
+          <xsd:enumeration value="BOC"/>
+          <xsd:enumeration value="None"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:element name="EntryType" nillable="true" type="tns:EntryType"/>
+      <xsd:simpleType name="TransactionType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="CC_Sale_10"/>
+          <xsd:enumeration value="CC_Auth_Only_11"/>
+          <xsd:enumeration value="CC_Credit_13"/>
+          <xsd:enumeration value="CC_Ext_Authorization_15"/>
+          <xsd:enumeration value="eCheck_Sale_20"/>
+          <xsd:enumeration value="eCheck_Auth_Only_21"/>
+          <xsd:enumeration value="eCheck_Credit_23"/>
+          <xsd:enumeration value="eCheck_Force_25"/>
+          <xsd:enumeration value="None"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:element name="TransactionType" nillable="true" type="tns:TransactionType"/>
+      <xsd:simpleType name="FundingType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Funded"/>
+          <xsd:enumeration value="Rejected"/>
+          <xsd:enumeration value="Previously_Funded_Reject"/>
+          <xsd:enumeration value="Settled"/>
+          <xsd:enumeration value="Chargeback"/>
+          <xsd:enumeration value="UnChargeback"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:element name="FundingType" nillable="true" type="tns:FundingType"/>
+      <xsd:complexType name="ArrayOfTransactionSearchFilter">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="TransactionSearchFilter" nillable="true" type="tns:TransactionSearchFilter"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfTransactionSearchFilter" nillable="true" type="tns:ArrayOfTransactionSearchFilter"/>
+      <xsd:complexType name="TransactionSearchFilter">
+        <xsd:sequence>
+          <xsd:element name="FieldName" type="tns:TransactionColumn"/>
+          <xsd:element name="CompareOperator" type="tns:CompareOperators"/>
+          <xsd:element name="SearchOperator" type="tns:SearchOperator"/>
+          <xsd:element name="SearchText" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="TransactionSearchFilter" nillable="true" type="tns:TransactionSearchFilter"/>
+      <xsd:simpleType name="CompareOperators">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Equal"/>
+          <xsd:enumeration value="NotEqual"/>
+          <xsd:enumeration value="GreaterThan"/>
+          <xsd:enumeration value="LessThan"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:element name="CompareOperators" nillable="true" type="tns:CompareOperators"/>
+      <xsd:simpleType name="SearchOperator">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="And"/>
+          <xsd:enumeration value="Or"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:element name="SearchOperator" nillable="true" type="tns:SearchOperator"/>
+      <xsd:element name="searchTransactionsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="searchTransactionsResult" nillable="true" type="tns:ArrayOfTransactionSummary"/>
+            <xsd:element name="TotalRecords" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="ArrayOfTransactionSummary">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="TransactionSummary" nillable="true" type="tns:TransactionSummary"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfTransactionSummary" nillable="true" type="tns:ArrayOfTransactionSummary"/>
+      <xsd:complexType name="TransactionSummary">
+        <xsd:sequence>
+          <xsd:element name="TsCreated" type="xsd:dateTime"/>
+          <xsd:element name="MerchantID" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="Status" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Last4" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="BillToFirstName" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="BillToLastName" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="BillToCompanyName" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="DebitCredit" nillable="true" type="xsd:string"/>
+          <xsd:element name="Amount" type="xsd:decimal"/>
+          <xsd:element name="ConvenienceFeePrincipal" type="xsd:decimal"/>
+          <xsd:element minOccurs="0" name="ConsumerOrderID" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ConsumerID" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="EnteredBy" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CardType" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="TransactionID" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ResponseCode" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="AuthCode" nillable="true" type="xsd:string"/>
+          <xsd:element name="ServiceFeePrincipal" type="xsd:decimal"/>
+          <xsd:element name="TotalAmount" type="xsd:decimal"/>
+          <xsd:element minOccurs="0" name="WalletID" nillable="true" type="xsd:string"/>
+          <xsd:element name="MerchantClientID" type="xsd:int"/>
+          <xsd:element name="TransactionType" type="xsd:short"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="TransactionSummary" nillable="true" type="tns:TransactionSummary"/>
+      <xsd:element name="searchSettleActivity">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ticket" type="tns:Authentication"/>
+            <xsd:element name="range" type="tns:Range"/>
+            <xsd:element minOccurs="0" name="paymentType" nillable="true" type="tns:PaymentType"/>
+            <xsd:element minOccurs="0" name="fundingType" nillable="true" type="tns:FundingType"/>
+            <xsd:element name="PageIndex" type="xsd:int"/>
+            <xsd:element name="PageSize" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="searchSettleActivityResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="searchSettleActivityResult" nillable="true" type="tns:ArrayOfSettle"/>
+            <xsd:element name="TotalRecords" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="ArrayOfSettle">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="Settle" nillable="true" type="tns:Settle"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfSettle" nillable="true" type="tns:ArrayOfSettle"/>
+      <xsd:complexType name="Settle">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="FundingType" nillable="true" type="xsd:string"/>
+          <xsd:element name="MerchantID" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="PaymentType" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ResponseCode" nillable="true" type="xsd:string"/>
+          <xsd:element name="SettleDate" type="xsd:dateTime"/>
+          <xsd:element minOccurs="0" name="TransSettleID" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Transaction" nillable="true" type="tns:Transaction"/>
+          <xsd:element minOccurs="0" name="TransactionID" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="Settle" nillable="true" type="tns:Settle"/>
+      <xsd:element name="getSettleDetail">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ticket" type="tns:Authentication"/>
+            <xsd:element name="MerchantID" type="xsd:int"/>
+            <xsd:element name="Day" type="xsd:dateTime"/>
+            <xsd:element name="PageIndex" type="xsd:int"/>
+            <xsd:element name="PageSize" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getSettleDetailResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="getSettleDetailResult" nillable="true" type="tns:ArrayOfSettle"/>
+            <xsd:element name="TotalRecords" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getReceivedDetail">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ticket" type="tns:Authentication"/>
+            <xsd:element name="MerchantID" type="xsd:int"/>
+            <xsd:element name="Day" type="xsd:dateTime"/>
+            <xsd:element name="PageIndex" type="xsd:int"/>
+            <xsd:element name="PageSize" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getReceivedDetailResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="getReceivedDetailResult" nillable="true" type="tns:ArrayOfTransaction"/>
+            <xsd:element name="TotalRecords" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/">
+      <xs:element name="anyType" nillable="true" type="xs:anyType"/>
+      <xs:element name="anyURI" nillable="true" type="xs:anyURI"/>
+      <xs:element name="base64Binary" nillable="true" type="xs:base64Binary"/>
+      <xs:element name="boolean" nillable="true" type="xs:boolean"/>
+      <xs:element name="byte" nillable="true" type="xs:byte"/>
+      <xs:element name="dateTime" nillable="true" type="xs:dateTime"/>
+      <xs:element name="decimal" nillable="true" type="xs:decimal"/>
+      <xs:element name="double" nillable="true" type="xs:double"/>
+      <xs:element name="float" nillable="true" type="xs:float"/>
+      <xs:element name="int" nillable="true" type="xs:int"/>
+      <xs:element name="long" nillable="true" type="xs:long"/>
+      <xs:element name="QName" nillable="true" type="xs:QName"/>
+      <xs:element name="short" nillable="true" type="xs:short"/>
+      <xs:element name="string" nillable="true" type="xs:string"/>
+      <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte"/>
+      <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt"/>
+      <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong"/>
+      <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort"/>
+      <xs:element name="char" nillable="true" type="tns:char"/>
+      <xs:simpleType name="char">
+        <xs:restriction base="xs:int"/>
+      </xs:simpleType>
+      <xs:element name="duration" nillable="true" type="tns:duration"/>
+      <xs:simpleType name="duration">
+        <xs:restriction base="xs:duration">
+          <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?"/>
+          <xs:minInclusive value="-P10675199DT2H48M5.4775808S"/>
+          <xs:maxInclusive value="P10675199DT2H48M5.4775807S"/>
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="guid" nillable="true" type="tns:guid"/>
+      <xs:simpleType name="guid">
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}"/>
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:attribute name="FactoryType" type="xs:QName"/>
+      <xs:attribute name="Id" type="xs:ID"/>
+      <xs:attribute name="Ref" type="xs:IDREF"/>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="ITransactionService_getTransaction_InputMessage">
+    <wsdl:part name="parameters" element="tns:getTransaction"/>
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_getTransaction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getTransactionResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_getReceivedSummary_InputMessage">
+    <wsdl:part name="parameters" element="tns:getReceivedSummary"/>
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_getReceivedSummary_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getReceivedSummaryResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_getOriginationSummary_InputMessage">
+    <wsdl:part name="parameters" element="tns:getOriginationSummary"/>
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_getOriginationSummary_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getOriginationSummaryResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_getSettleSummary_InputMessage">
+    <wsdl:part name="parameters" element="tns:getSettleSummary"/>
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_getSettleSummary_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getSettleSummaryResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_searchTransactions_InputMessage">
+    <wsdl:part name="parameters" element="tns:searchTransactions"/>
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_searchTransactions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:searchTransactionsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_searchSettleActivity_InputMessage">
+    <wsdl:part name="parameters" element="tns:searchSettleActivity"/>
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_searchSettleActivity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:searchSettleActivityResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_getSettleDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:getSettleDetail"/>
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_getSettleDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getSettleDetailResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_getReceivedDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:getReceivedDetail"/>
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_getReceivedDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getReceivedDetailResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="ITransactionService">
+    <wsdl:operation name="getTransaction">
+      <wsdl:input wsaw:Action="https://ws.paymentsgateway.net/v1/ITransactionService/getTransaction" message="tns:ITransactionService_getTransaction_InputMessage"/>
+      <wsdl:output wsaw:Action="https://ws.paymentsgateway.net/v1/ITransactionService/getTransactionResponse" message="tns:ITransactionService_getTransaction_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="getReceivedSummary">
+      <wsdl:input wsaw:Action="https://ws.paymentsgateway.net/v1/ITransactionService/getReceivedSummary" message="tns:ITransactionService_getReceivedSummary_InputMessage"/>
+      <wsdl:output wsaw:Action="https://ws.paymentsgateway.net/v1/ITransactionService/getReceivedSummaryResponse" message="tns:ITransactionService_getReceivedSummary_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="getOriginationSummary">
+      <wsdl:input wsaw:Action="https://ws.paymentsgateway.net/v1/ITransactionService/getOriginationSummary" message="tns:ITransactionService_getOriginationSummary_InputMessage"/>
+      <wsdl:output wsaw:Action="https://ws.paymentsgateway.net/v1/ITransactionService/getOriginationSummaryResponse" message="tns:ITransactionService_getOriginationSummary_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="getSettleSummary">
+      <wsdl:input wsaw:Action="https://ws.paymentsgateway.net/v1/ITransactionService/getSettleSummary" message="tns:ITransactionService_getSettleSummary_InputMessage"/>
+      <wsdl:output wsaw:Action="https://ws.paymentsgateway.net/v1/ITransactionService/getSettleSummaryResponse" message="tns:ITransactionService_getSettleSummary_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="searchTransactions">
+      <wsdl:input wsaw:Action="https://ws.paymentsgateway.net/v1/ITransactionService/searchTransactions" message="tns:ITransactionService_searchTransactions_InputMessage"/>
+      <wsdl:output wsaw:Action="https://ws.paymentsgateway.net/v1/ITransactionService/searchTransactionsResponse" message="tns:ITransactionService_searchTransactions_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="searchSettleActivity">
+      <wsdl:input wsaw:Action="https://ws.paymentsgateway.net/v1/ITransactionService/searchSettleActivity" message="tns:ITransactionService_searchSettleActivity_InputMessage"/>
+      <wsdl:output wsaw:Action="https://ws.paymentsgateway.net/v1/ITransactionService/searchSettleActivityResponse" message="tns:ITransactionService_searchSettleActivity_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="getSettleDetail">
+      <wsdl:input wsaw:Action="https://ws.paymentsgateway.net/v1/ITransactionService/getSettleDetail" message="tns:ITransactionService_getSettleDetail_InputMessage"/>
+      <wsdl:output wsaw:Action="https://ws.paymentsgateway.net/v1/ITransactionService/getSettleDetailResponse" message="tns:ITransactionService_getSettleDetail_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="getReceivedDetail">
+      <wsdl:input wsaw:Action="https://ws.paymentsgateway.net/v1/ITransactionService/getReceivedDetail" message="tns:ITransactionService_getReceivedDetail_InputMessage"/>
+      <wsdl:output wsaw:Action="https://ws.paymentsgateway.net/v1/ITransactionService/getReceivedDetailResponse" message="tns:ITransactionService_getReceivedDetail_OutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_ITransactionService" type="tns:ITransactionService">
+    <wsp:PolicyReference URI="#WSHttpBinding_ITransactionService_policy"/>
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getTransaction">
+      <soap12:operation soapAction="https://ws.paymentsgateway.net/v1/ITransactionService/getTransaction" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getReceivedSummary">
+      <soap12:operation soapAction="https://ws.paymentsgateway.net/v1/ITransactionService/getReceivedSummary" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOriginationSummary">
+      <soap12:operation soapAction="https://ws.paymentsgateway.net/v1/ITransactionService/getOriginationSummary" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSettleSummary">
+      <soap12:operation soapAction="https://ws.paymentsgateway.net/v1/ITransactionService/getSettleSummary" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchTransactions">
+      <soap12:operation soapAction="https://ws.paymentsgateway.net/v1/ITransactionService/searchTransactions" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchSettleActivity">
+      <soap12:operation soapAction="https://ws.paymentsgateway.net/v1/ITransactionService/searchSettleActivity" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSettleDetail">
+      <soap12:operation soapAction="https://ws.paymentsgateway.net/v1/ITransactionService/getSettleDetail" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getReceivedDetail">
+      <soap12:operation soapAction="https://ws.paymentsgateway.net/v1/ITransactionService/getReceivedDetail" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_ITransactionService" type="tns:ITransactionService">
+    <wsp:PolicyReference URI="#BasicHttpBinding_ITransactionService_policy"/>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getTransaction">
+      <soap:operation soapAction="https://ws.paymentsgateway.net/v1/ITransactionService/getTransaction" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getReceivedSummary">
+      <soap:operation soapAction="https://ws.paymentsgateway.net/v1/ITransactionService/getReceivedSummary" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOriginationSummary">
+      <soap:operation soapAction="https://ws.paymentsgateway.net/v1/ITransactionService/getOriginationSummary" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSettleSummary">
+      <soap:operation soapAction="https://ws.paymentsgateway.net/v1/ITransactionService/getSettleSummary" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchTransactions">
+      <soap:operation soapAction="https://ws.paymentsgateway.net/v1/ITransactionService/searchTransactions" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchSettleActivity">
+      <soap:operation soapAction="https://ws.paymentsgateway.net/v1/ITransactionService/searchSettleActivity" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSettleDetail">
+      <soap:operation soapAction="https://ws.paymentsgateway.net/v1/ITransactionService/getSettleDetail" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getReceivedDetail">
+      <soap:operation soapAction="https://ws.paymentsgateway.net/v1/ITransactionService/getReceivedDetail" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TransactionService">
+    <wsdl:port name="WSHttpBinding_ITransactionService" binding="tns:WSHttpBinding_ITransactionService">
+      <soap12:address location="https://ws.paymentsgateway.net/Service/v1/Transaction.svc"/>
+      <wsa10:EndpointReference>
+        <wsa10:Address>https://ws.paymentsgateway.net/Service/v1/Transaction.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_ITransactionService" binding="tns:BasicHttpBinding_ITransactionService">
+      <soap:address location="https://ws.paymentsgateway.net/Service/v1/Transaction.svc/basic"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://ws.paymentsgateway.net/Service/v1/Transaction.svc</con:endpoint></con:endpoints><con:operation id="823b8dca-4ec5-4d1e-83a1-6f0c372ec7e8" isOneWay="false" action="https://ws.paymentsgateway.net/v1/ITransactionService/getOriginationSummary" name="getOriginationSummary" bindingOperationName="getOriginationSummary" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b7eb0cab-0c1d-4b3c-92df-bf0d3724e106" name="Request 1" useWsAddressing="true"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.paymentsgateway.net/Service/v1/Transaction.svc</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v1="https://ws.paymentsgateway.net/v1">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <v1:getOriginationSummary>\r
+         <v1:ticket>\r
+            <v1:APILoginID>YOUR_API_LOGIN_ID</v1:APILoginID>\r
+            <v1:TSHash>?</v1:TSHash>\r
+            <v1:UTCTime>?</v1:UTCTime>\r
+         </v1:ticket>\r
+         <v1:range>\r
+            <v1:MerchantIDs>?</v1:MerchantIDs>\r
+            <v1:StartDate>?</v1:StartDate>\r
+            <v1:EndDate>?</v1:EndDate>\r
+            <v1:ChildMID>?</v1:ChildMID>\r
+            <!--Optional:-->\r
+            <v1:EntryType>?</v1:EntryType>\r
+            <!--Optional:-->\r
+            <v1:TransactionType>?</v1:TransactionType>\r
+         </v1:range>\r
+         <v1:PageIndex>?</v1:PageIndex>\r
+         <v1:PageSize>?</v1:PageSize>\r
+      </v1:getOriginationSummary>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/ITransactionService/getOriginationSummary"/></con:call></con:operation><con:operation id="a1956153-21a4-46a1-9b0a-c6711a4e1f66" isOneWay="false" action="https://ws.paymentsgateway.net/v1/ITransactionService/getReceivedDetail" name="getReceivedDetail" bindingOperationName="getReceivedDetail" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="dbf551f0-ad2b-4247-82e3-bda2010418b4" name="Request 1" useWsAddressing="true"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.paymentsgateway.net/Service/v1/Transaction.svc</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v1="https://ws.paymentsgateway.net/v1">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <v1:getReceivedDetail>\r
+         <v1:ticket>\r
+            <v1:APILoginID>YOUR_API_LOGIN_ID</v1:APILoginID>\r
+            <v1:TSHash>?</v1:TSHash>\r
+            <v1:UTCTime>?</v1:UTCTime>\r
+         </v1:ticket>\r
+         <v1:MerchantID>?</v1:MerchantID>\r
+         <v1:Day>?</v1:Day>\r
+         <v1:PageIndex>?</v1:PageIndex>\r
+         <v1:PageSize>?</v1:PageSize>\r
+      </v1:getReceivedDetail>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/ITransactionService/getReceivedDetail"/></con:call></con:operation><con:operation id="9724c3ab-ba58-4ff9-b534-18f3e75c054a" isOneWay="false" action="https://ws.paymentsgateway.net/v1/ITransactionService/getReceivedSummary" name="getReceivedSummary" bindingOperationName="getReceivedSummary" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="2acfe985-8437-4ec9-9724-12d94755c227" name="Request 1" useWsAddressing="true"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.paymentsgateway.net/Service/v1/Transaction.svc</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v1="https://ws.paymentsgateway.net/v1">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <v1:getReceivedSummary>\r
+         <v1:ticket>\r
+            <v1:APILoginID>YOUR_API_LOGIN_ID</v1:APILoginID>\r
+            <v1:TSHash>?</v1:TSHash>\r
+            <v1:UTCTime>?</v1:UTCTime>\r
+         </v1:ticket>\r
+         <v1:range>\r
+            <v1:MerchantIDs>?</v1:MerchantIDs>\r
+            <v1:StartDate>?</v1:StartDate>\r
+            <v1:EndDate>?</v1:EndDate>\r
+            <v1:ChildMID>?</v1:ChildMID>\r
+            <!--Optional:-->\r
+            <v1:EntryType>?</v1:EntryType>\r
+            <!--Optional:-->\r
+            <v1:TransactionType>?</v1:TransactionType>\r
+         </v1:range>\r
+         <v1:PageIndex>?</v1:PageIndex>\r
+         <v1:PageSize>?</v1:PageSize>\r
+      </v1:getReceivedSummary>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/ITransactionService/getReceivedSummary"/></con:call></con:operation><con:operation id="249e4626-e29b-4ed8-9eda-17b9861e2ea6" isOneWay="false" action="https://ws.paymentsgateway.net/v1/ITransactionService/getSettleDetail" name="getSettleDetail" bindingOperationName="getSettleDetail" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="eae29994-15e8-4107-926b-4a7b7accb7d3" name="Request 1" useWsAddressing="true"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.paymentsgateway.net/Service/v1/Transaction.svc</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v1="https://ws.paymentsgateway.net/v1">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <v1:getSettleDetail>\r
+         <v1:ticket>\r
+            <v1:APILoginID>YOUR_API_LOGIN_ID</v1:APILoginID>\r
+            <v1:TSHash>?</v1:TSHash>\r
+            <v1:UTCTime>?</v1:UTCTime>\r
+         </v1:ticket>\r
+         <v1:MerchantID>?</v1:MerchantID>\r
+         <v1:Day>?</v1:Day>\r
+         <v1:PageIndex>?</v1:PageIndex>\r
+         <v1:PageSize>?</v1:PageSize>\r
+      </v1:getSettleDetail>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/ITransactionService/getSettleDetail"/></con:call></con:operation><con:operation id="ec8cbbc7-34ea-49e0-9fce-81e1acdc650f" isOneWay="false" action="https://ws.paymentsgateway.net/v1/ITransactionService/getSettleSummary" name="getSettleSummary" bindingOperationName="getSettleSummary" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="17dffac1-ec94-4cd0-9761-41e5ea5eb780" name="Request 1" useWsAddressing="true"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.paymentsgateway.net/Service/v1/Transaction.svc</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v1="https://ws.paymentsgateway.net/v1">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <v1:getSettleSummary>\r
+         <v1:ticket>\r
+            <v1:APILoginID>YOUR_API_LOGIN_ID</v1:APILoginID>\r
+            <v1:TSHash>?</v1:TSHash>\r
+            <v1:UTCTime>?</v1:UTCTime>\r
+         </v1:ticket>\r
+         <v1:range>\r
+            <v1:MerchantIDs>?</v1:MerchantIDs>\r
+            <v1:StartDate>?</v1:StartDate>\r
+            <v1:EndDate>?</v1:EndDate>\r
+            <v1:ChildMID>?</v1:ChildMID>\r
+            <!--Optional:-->\r
+            <v1:EntryType>?</v1:EntryType>\r
+            <!--Optional:-->\r
+            <v1:TransactionType>?</v1:TransactionType>\r
+         </v1:range>\r
+         <v1:PageIndex>?</v1:PageIndex>\r
+         <v1:PageSize>?</v1:PageSize>\r
+      </v1:getSettleSummary>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/ITransactionService/getSettleSummary"/></con:call></con:operation><con:operation id="f6f2e588-4dca-4893-b7c8-0c5ed4acb485" isOneWay="false" action="https://ws.paymentsgateway.net/v1/ITransactionService/getTransaction" name="getTransaction" bindingOperationName="getTransaction" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="84f03f1b-5024-43a1-a42e-75326e322d47" name="Request 1" useWsAddressing="true"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.paymentsgateway.net/Service/v1/Transaction.svc</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v1="https://ws.paymentsgateway.net/v1">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <v1:getTransaction>\r
+         <v1:ticket>\r
+            <v1:APILoginID>YOUR_API_LOGIN_ID</v1:APILoginID>\r
+            <v1:TSHash>?</v1:TSHash>\r
+            <v1:UTCTime>?</v1:UTCTime>\r
+         </v1:ticket>\r
+         <v1:MerchantID>?</v1:MerchantID>\r
+         <v1:TransactionID>?</v1:TransactionID>\r
+      </v1:getTransaction>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/ITransactionService/getTransaction"/></con:call></con:operation><con:operation id="b17cfb9d-c2d1-4eff-a598-25700adf58ca" isOneWay="false" action="https://ws.paymentsgateway.net/v1/ITransactionService/searchSettleActivity" name="searchSettleActivity" bindingOperationName="searchSettleActivity" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ed87f315-b24f-449c-ab3b-d9c7213d2a52" name="Request 1" useWsAddressing="true"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.paymentsgateway.net/Service/v1/Transaction.svc</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:v1="https://ws.paymentsgateway.net/v1">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <v1:searchSettleActivity>\r
+         <v1:ticket>\r
+            <v1:APILoginID>YOUR_API_LOGIN_ID</v1:APILoginID>\r
+            <v1:TSHash>?</v1:TSHash>\r
+            <v1:UTCTime>?</v1:UTCTime>\r
+         </v1:ticket>\r
+         <v1:range>\r
+            <v1:MerchantIDs>?</v1:MerchantIDs>\r
+            <v1:StartDate>?</v1:StartDate>\r
+            <v1:EndDate>?</v1:EndDate>\r
+            <v1:ChildMID>?</v1:ChildMID>\r
+            <!--Optional:-->\r
+            <v1:EntryType>?</v1:EntryType>\r
+            <!--Optional:-->\r
+            <v1:TransactionType>?</v1:TransactionType>\r
+         </v1:range>\r
+         <!--Optional:-->\r
+         <v1:paymentType>?</v1:paymentType>\r
+         <!--Optional:-->\r
+         <v1:fundingType>?</v1:fundingType>\r
+         <v1:PageIndex>?</v1:PageIndex>\r
+         <v1:PageSize>?</v1:PageSize>\r
+      </v1:searchSettleActivity>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/ITransactionService/searchSettleActivity"/></con:call></con:operation><con:operation id="8cd5092e-526c-4293-a90e-af2768966833" isOneWay="false" action="https://ws.paymentsgateway.net/v1/ITransactionService/searchTransactions" name="searchTransactions" bindingOperationName="searchTransactions" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c02fe409-ed8a-4535-bb8b-5311c3b18d6f" name="Request 1" useWsAddressing="true"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.paymentsgateway.net/Service/v1/Transaction.svc</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://ws.paymentsgateway.net/v1/ITransactionService/searchTransactions"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

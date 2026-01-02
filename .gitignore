@@ -7,6 +7,9 @@ AGENTS.override.md
 # Internal-only data
 api-demo-php-harness/internal-toolbox/uploads/
 api-demo-php-harness/internal-toolbox/WORKING_FILES/
+api-demo-php-harness/internal-toolbox/importer/**/*.csv
+api-demo-php-harness/internal-toolbox/importer/**/*.xlsx
+api-demo-php-harness/internal-toolbox/updater/**/AU.Report*
 
 # Local artifacts
 *.tmp

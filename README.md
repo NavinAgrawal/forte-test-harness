@@ -21,4 +21,4 @@ Open `http://localhost:8080/` in a browser.
 
 ## Security
 
-This repo is sanitized. Replace placeholders locally only and never commit credentials or IDs.
+Sensitive files remain local and are ignored by `.gitignore`. Do not commit credentials, IDs, or client data.

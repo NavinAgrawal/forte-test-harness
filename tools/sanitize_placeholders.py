@@ -60,11 +60,18 @@ def should_process(path: str) -> bool:
 def sanitize_text(text: str) -> str:
     new_text = text
     for pattern, repl in REPLACEMENTS:
-        new_text = pattern.sub(repl, new_text)
+        def _replace(match):
+            if match.lastindex and match.lastindex >= 2:
+                value = match.group(2)
+                if value and ("<?" in value or "?>" in value or "$" in value):
+                    return match.group(0)
+            return match.expand(repl)
+
+        new_text = pattern.sub(_replace, new_text)
     return new_text
 
 
-def process_file(path: str) -> bool:
+def process_file(path: str, check: bool = False) -> bool:
     if not should_process(path):
         return False
     try:
@@ -85,37 +92,53 @@ def process_file(path: str) -> bool:
             return False
     new_text = sanitize_text(text)
     if new_text != text:
-        with open(path, "w", encoding=encoding) as f:
-            f.write(new_text)
+        if not check:
+            with open(path, "w", encoding=encoding) as f:
+                f.write(new_text)
         return True
     return False
 
 
-def walk_and_sanitize(root: str) -> int:
+def walk_and_sanitize(root: str, check: bool = False, changed_paths=None) -> int:
     changed = 0
     for dirpath, _, filenames in os.walk(root):
         for name in filenames:
             path = os.path.join(dirpath, name)
-            if process_file(path):
+            if process_file(path, check=check):
                 changed += 1
+                if changed_paths is not None:
+                    changed_paths.append(path)
     return changed
 
 
 def main() -> None:
     parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help="Detect files that would be updated without modifying them.",
+    )
     parser.add_argument("roots", nargs="+", help="Root folders to sanitize")
     args = parser.parse_args()
 
     total_changed = 0
+    changed_paths = []
     for root in args.roots:
         if not os.path.isdir(root):
             print(f"[WARN] Not a directory: {root}")
             continue
-        changed = walk_and_sanitize(root)
+        per_root_paths = [] if args.check else None
+        changed = walk_and_sanitize(root, check=args.check, changed_paths=per_root_paths)
         print(f"[INFO] {root}: updated {changed} files")
         total_changed += changed
+        if args.check and per_root_paths:
+            changed_paths.extend(per_root_paths)
 
     print(f"[DONE] total updated files: {total_changed}")
+    if args.check and total_changed > 0:
+        for path in changed_paths:
+            print(f"[CHECK] would update: {path}")
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

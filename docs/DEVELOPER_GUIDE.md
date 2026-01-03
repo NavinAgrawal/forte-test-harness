@@ -12,9 +12,12 @@ Confidentiality: Internal / Do Not Distribute
 
 1. Ensure PHP is installed:
    - `php -v`
-2. Start a local server from repo root:
-   - `php -S localhost:8080 -t api-demo-php-harness`
-3. Open examples:
+2. Create a local config:
+   - `make config`
+   - Edit `api-demo-php-harness/config/config.local.php` with your credentials.
+3. Start a local server from repo root:
+   - `make run`
+4. Open examples:
    - Main demos: `http://localhost:8080/`
    - Internal toolbox: `http://localhost:8080/internal-toolbox/index.php`
 
@@ -28,17 +31,13 @@ Import the XMLs into SoapUI:
 
 Before running, replace placeholders (e.g., `YOUR_API_ACCESS_ID`, `YOUR_PG_PASSWORD`, `org_xxxxx`, `loc_xxxxx`).
 
-## Credential placeholders
+## Central config and placeholders
 
-This repo intentionally uses placeholders. To run locally:
+This repo uses placeholders and a central config. To run locally:
 
-- Search for:
-  - `YOUR_API_ACCESS_ID`
-  - `YOUR_API_SECURE_KEY`
-  - `YOUR_API_LOGIN_ID`
-  - `YOUR_PG_PASSWORD`
-  - `org_xxxxx`, `loc_xxxxx`, `cst_xxxxx`, `trn_xxxxx`
-- Replace values locally only (do not commit).
+- Put real values in `api-demo-php-harness/config/config.local.php` (gitignored).
+- You can also override values via environment variables (see `api-demo-php-harness/config/README.md`).
+- SoapUI XMLs use placeholders; replace locally in SoapUI or via project properties.
 
 ## Sanitization
 

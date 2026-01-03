@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/config/bootstrap.php';
 
 //this script calculates the UTC time and hash required for SOAP calls
 
@@ -21,7 +22,7 @@
 	}
 
 $merchantID       = 173185;
-$APILoginID       = 'YOUR_API_LOGIN_ID';
+$APILoginID       = forte_config('api_login_id');
 $SecureTransKey   = 'X2sMcZJaYO';
 //$millitime        = microtime(true) * 1000;
 //$utc              = number_format(($millitime * 10000) + 621355968000000000 , 0, '.', '');
@@ -30,7 +31,7 @@ $data             = "$APILoginID|$utc";
 $hash             = hash_hmac('md5', $data, $SecureTransKey);
 
 /* $merchantID       = 252862;
-$APILoginID       = 'YOUR_API_LOGIN_ID';
+$APILoginID       = forte_config('api_login_id');
 $SecureTransKey   = 'JFihJjmXn24K6URBNcc4G';
 //$millitime        = microtime(true) * 1000;
 //$utc              = number_format(($millitime * 10000) + 621355968000000000 , 0, '.', '');
@@ -39,7 +40,7 @@ $data             = "$APILoginID|$utc";
 $hash             = hash_hmac('md5', $data, $SecureTransKey);  */
 
 /* $merchantID       = 173185;
-$APILoginID       = 'YOUR_API_LOGIN_ID';
+$APILoginID       = forte_config('api_login_id');
 $SecureTransKey   = 'xbTFuKFI4eVYjb';
 //$millitime        = microtime(true) * 1000;
 //$utc              = number_format(($millitime * 10000) + 621355968000000000 , 0, '.', '');

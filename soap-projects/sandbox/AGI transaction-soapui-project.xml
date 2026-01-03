@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="762f6adb-d295-4236-8350-4fe1dad79b5a" activeEnvironment="Default" name="sandbox - AGI transaction" resourceRoot="${projectDir}" soapui-version="5.8.0" abortOnError="false" runType="SEQUENTIAL" defaultScriptLanguage="Groovy" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="7b828c8f-abf3-4c14-a1b8-9e79c9a723b5" wsaVersion="NONE" name="PaymentGatewaySoap12" type="wsdl" bindingName="{http://paymentsgateway.achdirect.com}PaymentGatewaySoap12" soapVersion="1_2" anonymous="optional" definition="https://ws.paymentsgateway.net/pgtest/paymentsgateway.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://ws.paymentsgateway.net/pgtest/paymentsgateway.asmx?WSDL"><con:part><con:url>https://ws.paymentsgateway.net/pgtest/paymentsgateway.asmx?WSDL</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://paymentsgateway.achdirect.com" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://paymentsgateway.achdirect.com" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://paymentsgateway.achdirect.com">
+      <s:element name="ExecuteSocketDelimitedQuery">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strParameters" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="strDelimiter" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteSocketDelimitedQueryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteSocketDelimitedQueryResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteSocketQuery">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_merchant_id" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_password" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_transaction_type" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_merchant_data_1" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_merchant_data_2" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_merchant_data_3" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_merchant_data_4" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_merchant_data_5" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_merchant_data_6" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_merchant_data_7" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_merchant_data_8" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_merchant_data_9" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_total_amount" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_sales_tax_amount" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_convenience_fee" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_consumer_id" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ecom_consumerorderid" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ecom_walletid" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_billto_postal_name_company" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ecom_billto_postal_name_first" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ecom_billto_postal_name_last" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ecom_billto_postal_street_line1" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ecom_billto_postal_street_line2" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ecom_billto_postal_city" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ecom_billto_postal_stateprov" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ecom_billto_postal_postalcode" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ecom_billto_postal_countrycode" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ecom_billto_telecom_phone_number" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ecom_billto_online_email" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_billto_ssn" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_billto_dl_number" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_billto_dl_state" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_billto_date_of_birth" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_entered_by" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_schedule_quantity" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_schedule_frequency" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_schedule_recurring_amount" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_schedule_start_date" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_customer_ip_address" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_preauth_no_decline_on_fail" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_preauth_decline_on_noanswer" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_avs_method" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ecom_payment_card_type" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ecom_payment_card_name" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ecom_payment_card_number" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ecom_payment_card_expdate_month" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ecom_payment_card_expdate_year" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ecom_payment_card_verification" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_procurement_card" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_customer_acct_code" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_cc_swipe_data" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_mail_or_phone_order" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ecom_payment_check_trn" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ecom_payment_check_account" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ecom_payment_check_account_type" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ecom_payment_check_checkno" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_original_trace_number" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_original_authorization_code" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_client_id" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_payment_method_id" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="pg_entry_class_code" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteSocketQueryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteSocketQueryResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ExecuteSocketDelimitedQuerySoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteSocketDelimitedQuery"/>
+  </wsdl:message>
+  <wsdl:message name="ExecuteSocketDelimitedQuerySoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteSocketDelimitedQueryResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ExecuteSocketQuerySoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteSocketQuery"/>
+  </wsdl:message>
+  <wsdl:message name="ExecuteSocketQuerySoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteSocketQueryResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="PaymentGatewaySoap">
+    <wsdl:operation name="ExecuteSocketDelimitedQuery">
+      <wsdl:input message="tns:ExecuteSocketDelimitedQuerySoapIn"/>
+      <wsdl:output message="tns:ExecuteSocketDelimitedQuerySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSocketQuery">
+      <wsdl:input message="tns:ExecuteSocketQuerySoapIn"/>
+      <wsdl:output message="tns:ExecuteSocketQuerySoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PaymentGatewaySoap" type="tns:PaymentGatewaySoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="ExecuteSocketDelimitedQuery">
+      <soap:operation soapAction="http://paymentsgateway.achdirect.com/ExecuteSocketDelimitedQuery" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSocketQuery">
+      <soap:operation soapAction="http://paymentsgateway.achdirect.com/ExecuteSocketQuery" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PaymentGatewaySoap12" type="tns:PaymentGatewaySoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="ExecuteSocketDelimitedQuery">
+      <soap12:operation soapAction="http://paymentsgateway.achdirect.com/ExecuteSocketDelimitedQuery" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSocketQuery">
+      <soap12:operation soapAction="http://paymentsgateway.achdirect.com/ExecuteSocketQuery" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PaymentGateway">
+    <wsdl:port name="PaymentGatewaySoap" binding="tns:PaymentGatewaySoap">
+      <soap:address location="https://ws.paymentsgateway.net/pgtest/paymentsgateway.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="PaymentGatewaySoap12" binding="tns:PaymentGatewaySoap12">
+      <soap12:address location="https://ws.paymentsgateway.net/pgtest/paymentsgateway.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://ws.paymentsgateway.net/pgtest/paymentsgateway.asmx</con:endpoint></con:endpoints><con:operation id="e06c8551-c6e0-44c5-8155-591fca97393b" isOneWay="false" action="http://paymentsgateway.achdirect.com/ExecuteSocketDelimitedQuery" name="ExecuteSocketDelimitedQuery" bindingOperationName="ExecuteSocketDelimitedQuery" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6c1a143a-174d-403d-87b0-af7ee9644821" name="sandbox - postTransaction delimited"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.paymentsgateway.net/pgtest/paymentsgateway.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pay="http://paymentsgateway.achdirect.com">
+   <soap:Header/>
+   <soap:Body>
+      <pay:ExecuteSocketDelimitedQuery>
+         <pay:strParameters>pg_merchant_id=YOUR_PG_MERCHANT_ID|pg_password=YOUR_PG_PASSWORD|pg_transaction_type=20|pg_entry_class_code=CCD|pg_create_token=cst_|ecom_payment_check_trn=000000000|ecom_payment_check_account=0000000000|ecom_payment_check_account_type=C|pg_total_amount=1.01|ecom_billto_postal_name_first=Brian|ecom_billto_postal_name_last=Morales|ecom_billto_postal_street_line1=1616 Main Street|ecom_billto_postal_city=Clark|ecom_billto_postal_stateprov=CO|ecom_billto_postal_postalcode=80111|endofdata|</pay:strParameters>
+         <pay:strDelimiter>|</pay:strDelimiter>
+      </pay:ExecuteSocketDelimitedQuery>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://paymentsgateway.achdirect.com/PaymentGatewaySoap/ExecuteSocketDelimitedQueryRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="00837a63-4b1d-4bb7-9ce1-c2b3c5a99940" isOneWay="false" action="http://paymentsgateway.achdirect.com/ExecuteSocketQuery" name="ExecuteSocketQuery" bindingOperationName="ExecuteSocketQuery" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c97aa311-ee43-4992-ae94-a88b6e3cb533" name="sandbox - postTransaction xml -- ACH"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">&#13;
+  &lt;con:entry key="User-Agent" value="Apache-HttpClient/4.1.1"/>&#13;
+  &lt;con:entry key="Accept-Encoding" value="gzip,deflate"/>&#13;
+  &lt;con:entry key="Content-Type" value="text/xml;charset=UTF-8"/>&#13;
+&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.paymentsgateway.net/pgtest/paymentsgateway.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pay="http://paymentsgateway.achdirect.com">
+   <soap:Header/>
+   <soap:Body>
+      <pay:ExecuteSocketQuery>
+         <pay:pg_merchant_id>YOUR_PG_MERCHANT_ID</pay:pg_merchant_id>
+         <pay:pg_password>YOUR_PG_PASSWORD</pay:pg_password>
+         <pay:pg_transaction_type>10</pay:pg_transaction_type>
+         <pay:pg_merchant_data_1></pay:pg_merchant_data_1>
+         <pay:pg_merchant_data_2></pay:pg_merchant_data_2>
+         <pay:pg_merchant_data_3></pay:pg_merchant_data_3>
+         <pay:pg_merchant_data_4></pay:pg_merchant_data_4>
+         <pay:pg_merchant_data_5></pay:pg_merchant_data_5>
+         <pay:pg_merchant_data_6></pay:pg_merchant_data_6>
+         <pay:pg_merchant_data_7></pay:pg_merchant_data_7>
+         <pay:pg_merchant_data_8></pay:pg_merchant_data_8>
+         <pay:pg_merchant_data_9></pay:pg_merchant_data_9>
+         <pay:pg_total_amount>0.06</pay:pg_total_amount>
+         <pay:pg_sales_tax_amount></pay:pg_sales_tax_amount>
+         <pay:pg_convenience_fee></pay:pg_convenience_fee>
+         <pay:pg_consumer_id></pay:pg_consumer_id>
+         <pay:ecom_consumerorderid></pay:ecom_consumerorderid>
+         <pay:ecom_walletid></pay:ecom_walletid>
+         <pay:pg_billto_postal_name_company></pay:pg_billto_postal_name_company>
+         <pay:ecom_billto_postal_name_first>Goober</pay:ecom_billto_postal_name_first>
+         <pay:ecom_billto_postal_name_last>Trans</pay:ecom_billto_postal_name_last>
+         <pay:ecom_billto_postal_street_line1></pay:ecom_billto_postal_street_line1>
+         <pay:ecom_billto_postal_street_line2></pay:ecom_billto_postal_street_line2>
+         <pay:ecom_billto_postal_city></pay:ecom_billto_postal_city>
+         <pay:ecom_billto_postal_stateprov></pay:ecom_billto_postal_stateprov>
+         <pay:ecom_billto_postal_postalcode></pay:ecom_billto_postal_postalcode>
+         <pay:ecom_billto_postal_countrycode></pay:ecom_billto_postal_countrycode>
+         <pay:ecom_billto_telecom_phone_number></pay:ecom_billto_telecom_phone_number>
+         <pay:ecom_billto_online_email></pay:ecom_billto_online_email>
+         <pay:pg_billto_ssn></pay:pg_billto_ssn>
+         <pay:pg_billto_dl_number></pay:pg_billto_dl_number>
+         <pay:pg_billto_dl_state></pay:pg_billto_dl_state>
+         <pay:pg_billto_date_of_birth></pay:pg_billto_date_of_birth>
+         <pay:pg_entered_by></pay:pg_entered_by>
+         <pay:pg_schedule_quantity></pay:pg_schedule_quantity>
+         <pay:pg_schedule_frequency></pay:pg_schedule_frequency>
+         <pay:pg_schedule_recurring_amount></pay:pg_schedule_recurring_amount>
+         <pay:pg_schedule_start_date></pay:pg_schedule_start_date>
+         <pay:pg_customer_ip_address></pay:pg_customer_ip_address>
+         <pay:pg_preauth_no_decline_on_fail></pay:pg_preauth_no_decline_on_fail>
+         <pay:pg_preauth_decline_on_noanswer></pay:pg_preauth_decline_on_noanswer>
+         <pay:pg_avs_method></pay:pg_avs_method>
+         <pay:ecom_payment_card_type></pay:ecom_payment_card_type>
+         <pay:ecom_payment_card_name></pay:ecom_payment_card_name>
+         <pay:ecom_payment_card_number></pay:ecom_payment_card_number>
+         <pay:ecom_payment_card_expdate_month></pay:ecom_payment_card_expdate_month>
+         <pay:ecom_payment_card_expdate_year></pay:ecom_payment_card_expdate_year>
+         <pay:ecom_payment_card_verification></pay:ecom_payment_card_verification>
+         <pay:pg_procurement_card></pay:pg_procurement_card>
+         <pay:pg_customer_acct_code></pay:pg_customer_acct_code>
+         <pay:pg_cc_swipe_data></pay:pg_cc_swipe_data>
+         <pay:pg_mail_or_phone_order></pay:pg_mail_or_phone_order>
+         <pay:ecom_payment_check_trn></pay:ecom_payment_check_trn>
+         <pay:ecom_payment_check_account></pay:ecom_payment_check_account>
+         <pay:ecom_payment_check_account_type></pay:ecom_payment_check_account_type>
+         <pay:ecom_payment_check_checkno></pay:ecom_payment_check_checkno>
+         <pay:pg_entry_class_code></pay:pg_entry_class_code>
+         <pay:pg_original_trace_number></pay:pg_original_trace_number>
+         <pay:pg_original_authorization_code></pay:pg_original_authorization_code>
+         <pay:pg_client_id></pay:pg_client_id>
+         <pay:pg_payment_method_id></pay:pg_payment_method_id>
+         <pay:pg_payment_token>YOUR_PG_PAYMENT_TOKEN</pay:pg_payment_token>
+         <pay:pg_entry_class_code></pay:pg_entry_class_code>
+      </pay:ExecuteSocketQuery>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://paymentsgateway.achdirect.com/PaymentGatewaySoap/ExecuteSocketQueryRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="b0698045-3060-4ab6-944d-4038832b2064" name="sandbox - postTransaction xml -- CARD"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">&#13;
+  &lt;con:entry key="User-Agent" value="Apache-HttpClient/4.1.1"/>&#13;
+  &lt;con:entry key="Accept-Encoding" value="gzip,deflate"/>&#13;
+  &lt;con:entry key="Content-Type" value="text/xml;charset=UTF-8"/>&#13;
+&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.paymentsgateway.net/pgtest/paymentsgateway.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pay="http://paymentsgateway.achdirect.com">
+   <soap:Header/>
+   <soap:Body>
+      <pay:ExecuteSocketQuery>
+         <pay:pg_merchant_id>YOUR_PG_MERCHANT_ID</pay:pg_merchant_id>
+         <pay:pg_password>YOUR_PG_PASSWORD</pay:pg_password>
+         <pay:pg_transaction_type>10</pay:pg_transaction_type>
+         <pay:pg_total_amount>0.02</pay:pg_total_amount>
+         <pay:ecom_payment_card_type>AMER</pay:ecom_payment_card_type>
+         <pay:ecom_payment_card_number>377936004453593</pay:ecom_payment_card_number>
+         <pay:ecom_payment_card_expdate_month>06</pay:ecom_payment_card_expdate_month>
+         <pay:ecom_payment_card_expdate_year>2030</pay:ecom_payment_card_expdate_year>
+         <pay:ecom_payment_card_verification>0179</pay:ecom_payment_card_verification>
+         <pay:pg_entry_class_code></pay:pg_entry_class_code>
+         <pay:pg_billto_postal_name_company></pay:pg_billto_postal_name_company>
+         <pay:ecom_billto_postal_name_first>Forte</pay:ecom_billto_postal_name_first>
+         <pay:ecom_billto_postal_name_last>James</pay:ecom_billto_postal_name_last>
+         <pay:ecom_payment_card_type></pay:ecom_payment_card_type>
+         <pay:ecom_payment_card_name></pay:ecom_payment_card_name>
+      </pay:ExecuteSocketQuery>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://paymentsgateway.achdirect.com/PaymentGatewaySoap/ExecuteSocketQueryRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="99dd8018-a219-4599-8d79-4576093f13f8" name="Copy of sandbox - postTransaction xml -- ACH"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="User-Agent" value="Apache-HttpClient/4.1.1"/>
+  &lt;con:entry key="Accept-Encoding" value="gzip,deflate"/>
+  &lt;con:entry key="Content-Type" value="text/xml;charset=UTF-8"/>
+&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.paymentsgateway.net/pgtest/paymentsgateway.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pay="http://paymentsgateway.achdirect.com">
+   <soap:Header/>
+   <soap:Body>
+      <pay:ExecuteSocketQuery>
+         <pay:pg_merchant_id>YOUR_PG_MERCHANT_ID</pay:pg_merchant_id>
+         <pay:pg_password>YOUR_PG_PASSWORD</pay:pg_password>
+         <pay:pg_transaction_type>20</pay:pg_transaction_type>
+         <pay:pg_merchant_data_1></pay:pg_merchant_data_1>
+         <pay:pg_merchant_data_2></pay:pg_merchant_data_2>
+         <pay:pg_merchant_data_3></pay:pg_merchant_data_3>
+         <pay:pg_merchant_data_4></pay:pg_merchant_data_4>
+         <pay:pg_merchant_data_5></pay:pg_merchant_data_5>
+         <pay:pg_merchant_data_6></pay:pg_merchant_data_6>
+         <pay:pg_merchant_data_7></pay:pg_merchant_data_7>
+         <pay:pg_merchant_data_8></pay:pg_merchant_data_8>
+         <pay:pg_merchant_data_9></pay:pg_merchant_data_9>
+         <pay:pg_total_amount>0.06</pay:pg_total_amount>
+         <pay:pg_sales_tax_amount></pay:pg_sales_tax_amount>
+         <pay:pg_convenience_fee></pay:pg_convenience_fee>
+         <pay:pg_consumer_id></pay:pg_consumer_id>
+         <pay:ecom_consumerorderid></pay:ecom_consumerorderid>
+         <pay:ecom_walletid></pay:ecom_walletid>
+         <pay:pg_billto_postal_name_company>James Inc.</pay:pg_billto_postal_name_company>
+         <pay:ecom_billto_postal_name_first>Goober</pay:ecom_billto_postal_name_first>
+         <pay:ecom_billto_postal_name_last>Trans</pay:ecom_billto_postal_name_last>
+         <pay:ecom_billto_postal_street_line1></pay:ecom_billto_postal_street_line1>
+         <pay:ecom_billto_postal_street_line2></pay:ecom_billto_postal_street_line2>
+         <pay:ecom_billto_postal_city></pay:ecom_billto_postal_city>
+         <pay:ecom_billto_postal_stateprov></pay:ecom_billto_postal_stateprov>
+         <pay:ecom_billto_postal_postalcode></pay:ecom_billto_postal_postalcode>
+         <pay:ecom_billto_postal_countrycode></pay:ecom_billto_postal_countrycode>
+         <pay:ecom_billto_telecom_phone_number></pay:ecom_billto_telecom_phone_number>
+         <pay:ecom_billto_online_email></pay:ecom_billto_online_email>
+         <pay:pg_billto_ssn></pay:pg_billto_ssn>
+         <pay:pg_billto_dl_number></pay:pg_billto_dl_number>
+         <pay:pg_billto_dl_state></pay:pg_billto_dl_state>
+         <pay:pg_billto_date_of_birth></pay:pg_billto_date_of_birth>
+         <pay:pg_entered_by></pay:pg_entered_by>
+         <pay:pg_schedule_quantity></pay:pg_schedule_quantity>
+         <pay:pg_schedule_frequency></pay:pg_schedule_frequency>
+         <pay:pg_schedule_recurring_amount></pay:pg_schedule_recurring_amount>
+         <pay:pg_schedule_start_date></pay:pg_schedule_start_date>
+         <pay:pg_customer_ip_address></pay:pg_customer_ip_address>
+         <pay:pg_preauth_no_decline_on_fail></pay:pg_preauth_no_decline_on_fail>
+         <pay:pg_preauth_decline_on_noanswer></pay:pg_preauth_decline_on_noanswer>
+         <pay:pg_avs_method></pay:pg_avs_method>
+         <pay:ecom_payment_card_type></pay:ecom_payment_card_type>
+         <pay:ecom_payment_card_name></pay:ecom_payment_card_name>
+         <pay:ecom_payment_card_number></pay:ecom_payment_card_number>
+         <pay:ecom_payment_card_expdate_month></pay:ecom_payment_card_expdate_month>
+         <pay:ecom_payment_card_expdate_year></pay:ecom_payment_card_expdate_year>
+         <pay:ecom_payment_card_verification></pay:ecom_payment_card_verification>
+         <pay:pg_procurement_card></pay:pg_procurement_card>
+         <pay:pg_customer_acct_code></pay:pg_customer_acct_code>
+         <pay:pg_cc_swipe_data></pay:pg_cc_swipe_data>
+         <pay:pg_mail_or_phone_order></pay:pg_mail_or_phone_order>
+         <pay:ecom_payment_check_trn>011103093</pay:ecom_payment_check_trn>
+         <pay:ecom_payment_check_account>33333333</pay:ecom_payment_check_account>
+         <pay:ecom_payment_check_account_type>C</pay:ecom_payment_check_account_type>
+         <pay:ecom_payment_check_checkno></pay:ecom_payment_check_checkno>
+         <pay:pg_original_trace_number></pay:pg_original_trace_number>
+         <pay:pg_original_authorization_code></pay:pg_original_authorization_code>
+         <pay:pg_client_id></pay:pg_client_id>
+         <pay:pg_payment_method_id></pay:pg_payment_method_id>
+         <pay:pg_entry_class_code></pay:pg_entry_class_code>
+      </pay:ExecuteSocketQuery>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://paymentsgateway.achdirect.com/PaymentGatewaySoap/ExecuteSocketQueryRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

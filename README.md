@@ -6,6 +6,7 @@ Internal test harness for Forte demos and SoapUI SOAP projects.
 
 - `api-demo-php-harness/` — PHP demo pages (Forte Checkout, REST v3, SWP, utilities)
   - `internal-toolbox/` — legacy internal tooling (renamed from `toolbox1`)
+  - `config/` — central configuration (local values live in `config.local.php`)
 - `soap-projects/` — SoapUI XML projects
   - `sandbox/`, `production/`, `templates/`
 - `docs/` — project guidance
@@ -13,12 +14,32 @@ Internal test harness for Forte demos and SoapUI SOAP projects.
 
 ## Quick start (PHP demos)
 
+1. Copy the example config and edit locally (or run `make config`):
+
+```bash
+cp api-demo-php-harness/config/config.example.php api-demo-php-harness/config/config.local.php
+```
+
+2. Run a local PHP server:
+
 ```bash
 php -S localhost:8080 -t api-demo-php-harness
 ```
 
 Open `http://localhost:8080/` in a browser.
 
+## Make targets
+
+```bash
+make setup
+make config
+make run
+make test
+```
+
 ## Security
 
-Sensitive files remain local and are ignored by `.gitignore`. Do not commit credentials, IDs, or client data.
+- `config.local.php` is gitignored and must never be committed.
+- Run `python3 tools/sanitize_placeholders.py api-demo-php-harness soap-projects` before committing demo artifacts.
+- Enable the repo hook to block unsafe pushes: `git config core.hooksPath .githooks` (or `make hooks`).
+- Do not commit credentials, IDs, or client data.

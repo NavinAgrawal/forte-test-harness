@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Template Design by www.studio7designs.com. -->
+
+<head>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=windows-1252" />
+<meta content="en-gb" http-equiv="Content-Language" />
+<title>Importer++</title>
+<link href="favicon.ico" rel="SHORTCUT ICON" />
+<link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<!-- Begin Body -->
+<body>
+
+<div id="border">
+  <div id="container">
+    <!-- navbar -->
+    <?php include 'include-navbar.php'; ?>
+    <!-- header backround image is in the style sheet-->
+    <div id="header">
+      <a href="index.php"></a>
+    </div>
+    <!-- content -->
+    <div id="content">
+      <div class="splitleft">
+        <p><span class="style4">James&#39; Importer++</span></p>
+        <p>&nbsp;</p>
+        <p>This is a REST app for importing 3rd-party data and creating export files 
+        with the customer and paymethod tokens. It also creates a csv file of the 
+        records that failed, and creates an error log of the reason why they failed.</p>
+        <form class method="POST" action="../toolbox/importer/code/IMPORT-engine.php">
+          <table border="0" cellpadding="1" cellspacing="0">
+            <tr>
+              <td>
+              <img border="0" src="images/spacer.gif" width="20" height="15"></td>
+            </tr>
+            <tr>
+              <td>
+              <a class="link" target="_blank" style="font-size:13pt" href="../../toolbox/importer/Template.xlsx">
+              Excel Template</a> - <i><font style="color:red">The import file columns 
+              must be in this order.</font></i></td>
+            </tr>
+            <!--a class="link" target="_blank" style="font-size:13pt" href="importer/code/sample.data.zip">Sample Data</a -->
+            <tr>
+              <td>
+              <img border="0" src="images/spacer.gif" width="20" height="15"></td>
+            </tr>
+          </table>
+          <ol class="importer">
+            <li class="importer">Massage the raw data and paste it into the Excel 
+            template.</li>
+            <li class="importer">Save the data files (<i>without the header row</i>) 
+            as &quot;data.CC.csv&quot; and &quot;data.ACH.csv&quot; in the /toolbox/importer folder.</li>
+            <li class="importer">Import the CC and ACH data files into an empty, 
+            live mid.</li>
+            <li class="importer">Open &quot;failure.data.csv&quot; and &quot;failure.log.txt&quot; in 
+            Notepad++</li>
+            <li class="importer">Fix the failures.</li>
+            <li class="importer">Import the failures.</li>
+            <li class="importer">Export the token files.</li>
+            <li class="importer">Move the data to the target mid using the DE job 
+            &quot;Transfer Client Data&quot;.</li>
+          </ol>
+          <img border="0" src="images/spacer.gif" width="20" height="25">
+          <div align="center" style="margin-left:30px; width:90%; background-color:#F9F9F9; padding:10px 0px 10px 0px; border-style:solid; border-width:thin; border-color:gray;">
+            <div style="margin-left:70px">
+              <table align="left" class border="0" cellpadding="2" cellspacing="1">
+                <tr>
+                  <td>
+                  <img border="0" src="images/spacer.gif" width="20" height="20"></td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                  <p align="center">Sandbox&nbsp;
+                  <input type="radio" name="base_url" value="https://sandbox.forte.net/API/v3" checked>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                  Production&nbsp;
+                  <input type="radio" name="base_url" value="https://api.forte.net/v3"></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                  <img border="0" src="images/spacer.gif" width="20" height="15"></td>
+                </tr>
+                <tr>
+                  <td align="right"><span>Organization ID: </span></td>
+                  <td>&nbsp;</td>
+                  <td>
+                  <input class="input2" type="text" name="organization_id" style="background-color:#FFFFFF; color: #696969; padding-left:4px; width:230px; height:20px; font-family:Calibri;" size="20"></td>
+                </tr>
+                <tr>
+                  <td align="right"><span>Location ID: </span></td>
+                  <td>&nbsp;</td>
+                  <td>
+                  <input type="text" name="location_id" style="color: #696969; padding-left:4px; width:230px; height:20px; font-family:Calibri;" size="20"></td>
+                </tr>
+                <tr>
+                  <td align="right"><span>API Access ID: </span></td>
+                  <td>&nbsp;</td>
+                  <td>
+                  <input type="text" name="api_access_id" style="color: #696969; padding-left:4px; width:230px; height:20px; font-family:Calibri;" size="20"></td>
+                </tr>
+                <tr>
+                  <td align="right"><span>API Secure Key: </span></td>
+                  <td>&nbsp;</td>
+                  <td>
+                  <input type="text" name="api_secure_key" style="color: #696969; padding-left:4px; width:230px; height:20px; font-family:Calibri;" size="20"></td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td align="right">
+                  <button class="button6" type="reset" value="reset">Clear the fields
+                  </button></td>
+                </tr>
+              </table>
+            </div>
+            <div style="margin-left:70px; text-align:left">
+              <table align="left" border="0" cellpadding="1" cellspacing="0">
+                <tr>
+                  <td>
+                  <img border="0" src="images/spacer.gif" width="20" height="20"></td>
+                </tr>
+                <tr>
+                  <td>
+                  <button class="button2" type="submit" name="inventory" value="inventory">
+                  Check<br>
+                  Contents</button>&nbsp;
+                  <button class="button2" type="submit" name="leftovers" value="leftovers">
+                  Delete the Leftovers</button>&nbsp; </td>
+                </tr>
+                <tr>
+                  <td>
+                  <img border="0" src="images/spacer.gif" width="20" height="30"></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <img border="0" src="images/spacer.gif" width="20" height="20"></td>
+          <div align="center" style="margin-left:30px; width:90%; background-color:#F9F9F9; padding:10px 0px 10px 0px; border-style:solid; border-width:thin; border-color:gray;">
+            <div style="margin-left:115px;text-align:left">
+              <table border="0" cellpadding="1" cellspacing="0" width="100%">
+                <tr>
+                  <td>
+                  <img border="0" src="images/spacer.gif" width="20" height="20"></td>
+                </tr>
+                <tr>
+                  <td>Import Customers<br>
+                  <button class="button2" type="submit" name="import_CC" value="import_CC">
+                  Import CC Data</button>&nbsp;
+                  <button class="button2" type="submit" name="errors_CC" value="errors_CC">
+                  Import CC Failures</button>&nbsp; </td>
+                </tr>
+                <tr>
+                  <td>
+                  <img border="0" src="images/spacer.gif" width="20" height="10"></td>
+                </tr>
+                <tr>
+                  <td>
+                  <button class="button2" type="submit" name="import_ACH" value="import_ACH">
+                  Import ACH Data</button>&nbsp;
+                  <button class="button2" type="submit" name="errors_ACH" value="errors_ACH">
+                  Import ACH Failures</button></td>
+                </tr>
+                <tr>
+                  <td>
+                  <img border="0" src="images/spacer.gif" width="20" height="30"></td>
+                </tr>
+                <tr>
+                  <td>Import Schedules<br>
+                  <button class="button2" type="submit" name="CCschedules" value="CCschedules">
+                  Import CC Schedules</button>&nbsp;
+                  <button class="button2" type="submit" name="CCcustFails" value="CCcustFails">
+                  CC Fails Customers</button>&nbsp;
+                  <button class="button2" type="submit" name="CCschedFails" value="CCschedFails">
+                  CC Fails Schedules</button>&nbsp; </td>
+                </tr>
+                <tr>
+                  <td>
+                  <img border="0" src="images/spacer.gif" width="20" height="10"></td>
+                </tr>
+                <tr>
+                  <td>
+                  <button class="button2" type="submit" name="ACHschedules" value="card">
+                  Import ACH Schedules</button>&nbsp;
+                  <button class="button2" type="submit" name="ACHcustFails" value="echeck">
+                  ACH Fails Customers</button>&nbsp;
+                  <button class="button2" type="submit" name="ACHschedFails" value="export">
+                  ACH Fails Schedules</button>&nbsp; </td>
+                </tr>
+                <tr>
+                  <td>
+                  <img border="0" src="images/spacer.gif" width="20" height="30"></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <img border="0" src="images/spacer.gif" width="20" height="20"></td>
+          <div align="center" style="margin-left:30px; width:90%; background-color:#F9F9F9; padding:10px 0px 10px 0px; border-style:solid; border-width:thin; border-color:gray;">
+            <div style="margin-left:115px;text-align:left">
+              <table border="0" cellpadding="1" cellspacing="0" width="100%">
+                <tr>
+                  <td>
+                  <img border="0" src="images/spacer.gif" width="20" height="20"></td>
+                </tr>
+                <tr>
+                  <td>Exports<br>
+                  <button class="button2" type="submit" name="card" value="card">
+                  Export CC Customers</button>&nbsp;
+                  <button class="button2" type="submit" name="echeck" value="echeck">
+                  Export ACH Customers</button>&nbsp;
+                  <button class="button2" type="submit" name="export" value="export">
+                  Export ALL Customers</button>&nbsp; </td>
+                </tr>
+                <tr>
+                  <td>
+                  <img border="0" src="images/spacer.gif" width="20" height="10"></td>
+                </tr>
+                <tr>
+                  <td>
+                  <button class="button2" type="submit" name="alarmbillerCC" value="alarmbillerCC">&nbsp;<b>AlarmBiller</b> 
+                  CC Export</button>&nbsp;
+                  <button class="button2" type="submit" name="alarmbillerACH" value="alarmbillerACH">
+                  <b>AlarmBiller</b> ACH Export</button></td>
+                </tr>
+                <tr>
+                  <td>
+                  <img border="0" src="images/spacer.gif" width="20" height="10"></td>
+                </tr>
+                <tr>
+                  <td>
+                  <button class="button2" type="submit" name="sedonaOfficeCC" value="sedonaOfficeCC">
+                  <b>SedonaOffice</b> CC Export</button>&nbsp;
+                  <button class="button2" type="submit" name="sedonaOfficeACH" value="sedonaOfficeACH">
+                  <b>SedonaOffice</b> ACH Export</button></td>
+                </tr>
+                <tr>
+                  <td>
+                  <img border="0" src="images/spacer.gif" width="20" height="10"></td>
+                </tr>
+                <tr>
+                  <td>
+                  <button class="button2" type="submit" name="schedules" value="schedules">
+                  Export Schedules</button>&nbsp;
+                  <!-- button class="button2" type="submit" name="clientless" value="clientless">
+                  Clientless Paymethods</button --></td>
+                </tr>
+                <tr>
+                  <td>
+                  <img border="0" src="images/spacer.gif" width="20" height="20"></td>
+                </tr>
+                <tr>
+                  <td>Delete Stuff<br>
+                  <button class="button5" type="submit" name="delete_customers" value="delete_customers">
+                  Delete Customers</button>&nbsp;
+                  <button class="button5" type="submit" name="delete_paymethods" value="delete_paymethods">
+                  Delete Paymethods</button>&nbsp;
+                  <button class="button5" type="submit" name="delete_schedules" value="delete_schedules">
+                  Delete Schedules</button>&nbsp; </td>
+                </tr>
+                <tr>
+                  <td>
+                  <img border="0" src="images/spacer.gif" width="20" height="10"></td>
+                </tr>
+                <tr>
+                  <td>
+                  <button class="button5" title="Think before you click!" type="submit" name="delete_everything" value="delete_everything">
+                  NUKE<br>
+                  THE MID</button>&nbsp;
+                  <!-- button class="button2" type="submit" name="clientless" value="clientless">
+                  Clientless Paymethods</button --></td>
+                </tr>
+                <tr>
+                  <td>
+                  <img border="0" src="images/spacer.gif" width="20" height="30"></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <img border="0" src="images/spacer.gif" width="20" height="25">
+          <ul class="import">
+            <li class="import">All the files you need are in the /toolbox/importer 
+            folder.</li>
+            <li class="import">&quot;Check Contents&quot; counts the customers, paymethods 
+            and schedules.</li>
+            <li class="import">&quot;<font style="color:red; font-weight:bold;">NUKE 
+            THE MID</font>&quot; deletes all the customers, paymethods and schedules.</li>
+            <li class="import">&quot;Delete the Leftovers&quot; deletes the failure logs and 
+            export files.</li>
+            <li class="import">The import rate is about 180 customers per minute. 
+            1000 customers takes about 6 minutes. Delete rate is about the same.</li>
+            <li class="import">Export rate is about 6000 per minute. Schedules take 
+            a little longer.</li>
+          </ul>
+        </form>
+      </div>
+      <!-- Begin Page Menu  -->
+      <?php include 'include-menu.php'; ?>
+    </div>
+  </div>
+  <?php include 'include-footer.php'; ?>
+</div>
+
+</body>
+
+</html>

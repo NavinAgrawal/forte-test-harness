@@ -1,5 +1,6 @@
 <html>
 <?php
+require_once __DIR__ . '/config/bootstrap.php';
 
 function utc() {
 	$curlUTC = curl_init();
@@ -14,7 +15,7 @@ function utc() {
 	curl_close($curlUTC);
 }
 
-	$APILoginID       = 'YOUR_API_LOGIN_ID';		
+	$APILoginID       = forte_config('api_login_id');		
 	$SecureTransKey   = 'I5wrc7oh6e';
 	$client_id        = '';                            //can be associated with an existing client, or it can be a clientless paymethod
 	$millitime        = microtime(true) * 1000;
@@ -25,7 +26,7 @@ function utc() {
 ?>
 <!-- sandbox -->
 <center>
-<form method='post' action='https://sandbox.paymentsgateway.net/SWP/co/capture.aspx?
+<form method='post' action='<?php echo htmlspecialchars(forte_swp_url('co/capture.aspx'), ENT_QUOTES); ?>?
 	APILoginID=<?php echo $APILoginID;?>
 	&UTCTime=<?php echo $utc_time;?>
 	&TSHash=<?php echo $hash;?>
@@ -43,7 +44,7 @@ function utc() {
 
 <!-- production -->
 <center>
-<form method='post' action='https://swp.paymentsgateway.net/co/capture.aspx?
+<form method='post' action='<?php echo htmlspecialchars(forte_swp_url('co/capture.aspx'), ENT_QUOTES); ?>?
 	APILoginID=<?php echo $APILoginID;?>
 	&UTCTime=<?php echo $utc_time;?>
 	&TSHash=<?php echo $hash;?>

@@ -3,6 +3,16 @@ AGENTS.override.md
 .env
 .env.*
 *.log
+*.tmp
+*.bak
+.coverage
+__pycache__/
+*.pyc
+
+# Local-only config / credentials
+api-demo-php-harness/config/config.local.php
+soap-projects/local.properties
+**/*.wsa
 
 # Internal-only data
 api-demo-php-harness/internal-toolbox/uploads/
@@ -11,156 +21,12 @@ api-demo-php-harness/internal-toolbox/importer/**/*.csv
 api-demo-php-harness/internal-toolbox/importer/**/*.xlsx
 api-demo-php-harness/internal-toolbox/updater/**/AU.Report*
 
-# Local artifacts
-*.tmp
-*.bak
+# Generated artifacts
+tools/secret_candidate_paths*.txt
+tools/secret_scan_paths*.txt
+tools/secret_*_paths*.txt
 
-# WSA credentials
-api-demo-php-harness/internal-toolbox/**/*.wsa
-
-# Local-only files (kept outside git)
-api-demo-php-harness/AGI-FULL.html
-api-demo-php-harness/AGI-L3.html
-api-demo-php-harness/FCO-james.php
-api-demo-php-harness/FCO-v1.php
-api-demo-php-harness/FCO-v2.php
-api-demo-php-harness/FCO.php
-api-demo-php-harness/ForteCO-v2.php
-api-demo-php-harness/REST-onetime.to.transaction.php
-api-demo-php-harness/REST-simple.php
-api-demo-php-harness/REST-v3-onetime.php
-api-demo-php-harness/REST-v3.php
-api-demo-php-harness/SFHP.php
-api-demo-php-harness/SWP-CO-signature.php
-api-demo-php-harness/SWP-EMBEDDED-charge.php
-api-demo-php-harness/SWP-Redirect-FULL.php
-api-demo-php-harness/SWP-signed.php
-api-demo-php-harness/abba.php
-api-demo-php-harness/amadeo01.php
-api-demo-php-harness/ben.php
-api-demo-php-harness/bmartin.php
-api-demo-php-harness/brad.php
-api-demo-php-harness/colby.php
-api-demo-php-harness/dominic-fco.php
-api-demo-php-harness/embassy.php
-api-demo-php-harness/fairway.php
-api-demo-php-harness/fco-damany.php
-api-demo-php-harness/fco-john.php
-api-demo-php-harness/fco-krista.php
-api-demo-php-harness/fco-rolando.php
-api-demo-php-harness/fco-simple.php
-api-demo-php-harness/fcodemo.php
-api-demo-php-harness/fortecov2emv1.php
-api-demo-php-harness/gene.php
-api-demo-php-harness/goob.php
-api-demo-php-harness/goober.php
-api-demo-php-harness/hernan_v1.php
-api-demo-php-harness/hernan_v2.php
-api-demo-php-harness/internal-toolbox/Ackerman.List.docx
-api-demo-php-harness/internal-toolbox/classes.php
-api-demo-php-harness/internal-toolbox/customers/REST-delete.customers.php
-api-demo-php-harness/internal-toolbox/customers/REST_create_customers.php
-api-demo-php-harness/internal-toolbox/data_exporter.php
-api-demo-php-harness/internal-toolbox/directions.php
-api-demo-php-harness/internal-toolbox/frontpage.htm
-api-demo-php-harness/internal-toolbox/importer GOOD.php
-api-demo-php-harness/internal-toolbox/importer.php
-api-demo-php-harness/internal-toolbox/importer/code/IMPORT-engine.php
-api-demo-php-harness/internal-toolbox/importer/code/IMPORT-export.customers.php
-api-demo-php-harness/internal-toolbox/importer/code/IMPORT-import.ACH.cust-sched-fails.php
-api-demo-php-harness/internal-toolbox/importer/code/IMPORT-import.ACH.sched-sched-fails.php
-api-demo-php-harness/internal-toolbox/importer/code/IMPORT-import.ACH.schedules.php
-api-demo-php-harness/internal-toolbox/importer/code/IMPORT-import.CC.cust-sched-fails.php
-api-demo-php-harness/internal-toolbox/importer/code/IMPORT-import.CC.sched-sched-fails.php
-api-demo-php-harness/internal-toolbox/importer/code/IMPORT-import.CC.schedules.php
-api-demo-php-harness/internal-toolbox/importer/code/IMPORT-import.data.ACH.php
-api-demo-php-harness/internal-toolbox/importer/code/IMPORT-import.data.CC.php
-api-demo-php-harness/internal-toolbox/importer/code/IMPORT-import.failures.ACH.php
-api-demo-php-harness/internal-toolbox/importer/code/IMPORT-import.failures.CC.php
-api-demo-php-harness/internal-toolbox/importer/code/IMPORT-nuke.the.mid.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/IMPORT-MAC.cc.export.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/IMPORT-MAC.export.CC.only.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/IMPORT-alarmbiller.ACH.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/IMPORT-alarmbiller.CC.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/IMPORT-delete.customers.only.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/IMPORT-delete.paymethods.only.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/IMPORT-delete.schedules.only.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/IMPORT-export.ACH.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/IMPORT-export.CC.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/IMPORT-export.customers.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/IMPORT-export.everything.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/IMPORT-import.ACH.cust-sched-fails.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/IMPORT-import.ACH.sched-sched-fails.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/IMPORT-import.ACH.schedules.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/IMPORT-import.CC.cust-sched-fails.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/IMPORT-import.CC.failures.NEW.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/IMPORT-import.CC.sched-sched-fails.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/IMPORT-import.CC.schedules.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/IMPORT-import.clientless.paymethods.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/IMPORT-import.data.ACH OLD GOOD.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/IMPORT-import.data.CC.NEW GOOD.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/IMPORT-import.failures.ACH.NEW.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/IMPORT-nuke.check2.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/IMPORT-nuke.check3.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/IMPORT-sedona.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/IMPORT-test.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/IMPORT-undo.the.import.ACH.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/RECPRO.export.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/RECPRO.import.ACH.data.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/RECPRO.import.ACH.failures.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/RECPRO.import.CC.data.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/RECPRO.import.CC.failures.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/REST-shone.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/directions.php
-api-demo-php-harness/internal-toolbox/importer/code/OLD STUFF/test.me.php
-api-demo-php-harness/internal-toolbox/importer/code/funnel-applications.php
-api-demo-php-harness/internal-toolbox/reverse_transactions.php
-api-demo-php-harness/internal-toolbox/reverse_transactions/reverse_list.php
-api-demo-php-harness/internal-toolbox/reverse_transactions/reverse_single.php
-api-demo-php-harness/internal-toolbox/send_email.php
-api-demo-php-harness/internal-toolbox/testing.php
-api-demo-php-harness/internal-toolbox/updater.php
-api-demo-php-harness/internal-toolbox/updater/OLD_STUFF/UPDATER-engine.external.php
-api-demo-php-harness/internal-toolbox/updater/OLD_STUFF/UPDATER-engine.php
-api-demo-php-harness/internal-toolbox/updater/OLD_STUFF/UPDATER-form GOOD GOOD.php
-api-demo-php-harness/internal-toolbox/updater/OLD_STUFF/UPDATER-form GOOD.php
-api-demo-php-harness/internal-toolbox/updater/OLD_STUFF/UPDATER-form.php
-api-demo-php-harness/internal-toolbox/updater/OLD_STUFF/UPDATER-internal.php
-api-demo-php-harness/internal-toolbox/updater/OLD_STUFF/UPDATER-internal2.php
-api-demo-php-harness/internal-toolbox/updater/OLD_STUFF/UPDATER-pdf MAYBE.php
-api-demo-php-harness/internal-toolbox/updater/OLD_STUFF/UPDATER-pdf.php
-api-demo-php-harness/internal-toolbox/updater/OLD_STUFF/UPDATER-reports.external.php
-api-demo-php-harness/internal-toolbox/updater/OLD_STUFF/UPDATER-reports.internal.php
-api-demo-php-harness/internal-toolbox/updater/OLD_STUFF/capture.postback-FCO.php
-api-demo-php-harness/internal-toolbox/updater/OLD_STUFF/capture.postback-SWP.php
-api-demo-php-harness/internal-toolbox/updater/OLD_STUFF/capture.webhook.php
-api-demo-php-harness/internal-toolbox/updater/OLD_STUFF/sting-engine.php
-api-demo-php-harness/internal-toolbox/updater/OLD_STUFF/sting-form.php
-api-demo-php-harness/internal-toolbox/updater/OLD_STUFF/updater_pull.php
-api-demo-php-harness/internal-toolbox/updater/OLD_STUFF_3.13.2018/UPDATER-dostuff.php
-api-demo-php-harness/internal-toolbox/updater/OLD_STUFF_3.13.2018/UPDATER-form.php
-api-demo-php-harness/internal-toolbox/updater/OLD_STUFF_3.13.2018/UPDATER-pdf.both.php
-api-demo-php-harness/internal-toolbox/updater/OLD_STUFF_3.13.2018/UPDATER-pdf.download.php
-api-demo-php-harness/internal-toolbox/updater/OLD_STUFF_3.13.2018/UPDATER-pdf.email.php
-api-demo-php-harness/internal-toolbox/updater/UPDATER-engine.php
-api-demo-php-harness/internal-toolbox/updater/UPDATER-form.php
-api-demo-php-harness/internal-toolbox/updater/UPDATER-pdf.php
-api-demo-php-harness/internal-toolbox/void_transactions.php
-api-demo-php-harness/internal-toolbox/void_transactions/VOID-void.tx.php
-api-demo-php-harness/james.php
-api-demo-php-harness/jay01.php
-api-demo-php-harness/josh.php
-api-demo-php-harness/karen.php
-api-demo-php-harness/kunal.php
-api-demo-php-harness/marc.php
-api-demo-php-harness/nec.php
-api-demo-php-harness/netsuite.php
-api-demo-php-harness/rest-settlement.php
-api-demo-php-harness/swp-simple.php
-soap-projects/production/AGI transaction-soapui-project.xml
-soap-projects/sandbox/AGI transaction-soapui-project.xml
-soap-projects/templates/AGI transaction-soapui-project.xml
-tools/secret_candidate_paths.txt
-tools/secret_candidate_paths_rel.txt
-tools/secret_scan_paths.txt
-tools/secret_scan_paths_rel.txt
+# PHP tooling
+vendor/
+.phpunit.cache/
+.phpunit.result.cache

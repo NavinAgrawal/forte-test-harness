@@ -27,3 +27,4 @@ Confidentiality: Internal / Do Not Distribute
 - Added PHP inventory dashboard generator and published `docs/php-inventory.html`.
 - Ensured PHPUnit bootstrap loads Composer autoload to prevent php-parser coverage failures.
 - Added unit tests and coverage reporting for the PHP inventory generator.
+- Documented project structure and folder responsibilities.

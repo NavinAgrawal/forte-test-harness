@@ -62,6 +62,7 @@ The HTML dashboards in `docs/` are the current status snapshots and should be ke
 - `docs/coverage-dashboard.html` (REST + non-REST coverage)
 - `docs/test-dashboard.html` (integration test status)
 - `docs/php-inventory.html` (PHP script surface inventory)
+- `docs/PROJECT_STRUCTURE.md` (folder roles and key files)
 
 Regenerate after changes with:
 

@@ -396,6 +396,9 @@ body {
 header { padding: 28px 32px 8px; }
 header h1 { margin: 0 0 6px; font-size: 28px; letter-spacing: 0.2px; }
 header p { margin: 0; color: var(--muted); }
+.nav { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
+.nav a { text-decoration: none; color: var(--muted); border: 1px solid var(--border); padding: 6px 10px; border-radius: 999px; font-size: 12px; }
+.nav a.active { color: var(--text); border-color: var(--blue); background: rgba(56,189,248,0.12); }
 main { padding: 16px 32px 40px; display: grid; gap: 18px; }
 .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 .card {
@@ -517,6 +520,11 @@ main { padding: 16px 32px 40px; display: grid; gap: 18px; }
 <header>
   <h1>Forte Test Harness Coverage Dashboard</h1>
   <p>REST v3 coverage + non‑REST integration inventory. Generated from Postman collection and PHP harness.</p>
+  <nav class="nav">
+    <a class="active" href="coverage-dashboard.html">Coverage</a>
+    <a href="test-dashboard.html">Tests</a>
+    <a href="php-inventory.html">PHP Inventory</a>
+  </nav>
 </header>
 <main>
   {cards}
@@ -654,6 +662,9 @@ body {
 header { padding: 28px 32px 8px; }
 header h1 { margin: 0 0 6px; font-size: 26px; }
 header p { margin: 0; color: var(--muted); }
+.nav { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
+.nav a { text-decoration: none; color: var(--muted); border: 1px solid var(--border); padding: 6px 10px; border-radius: 999px; font-size: 12px; }
+.nav a.active { color: var(--text); border-color: var(--good); background: rgba(34,197,94,0.12); }
 main { padding: 16px 32px 40px; display: grid; gap: 18px; }
 .card { background: #0f172a; border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
 .section-title { font-size: 14px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--muted); margin: 0 0 8px; }
@@ -721,6 +732,11 @@ main { padding: 16px 32px 40px; display: grid; gap: 18px; }
 <header>
   <h1>Integration Test Dashboard</h1>
   <p>Status tracker for REST v3 + non‑REST integration tests. Environment: <strong>{environment}</strong></p>
+  <nav class="nav">
+    <a href="coverage-dashboard.html">Coverage</a>
+    <a class="active" href="test-dashboard.html">Tests</a>
+    <a href="php-inventory.html">PHP Inventory</a>
+  </nav>
 </header>
 <main>
   <section class=\"card\">

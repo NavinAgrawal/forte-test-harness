@@ -33,3 +33,4 @@ Confidentiality: Internal / Do Not Distribute
 - Converted PHPUnit metadata from docblocks to attributes to remove deprecation warnings.
 - Added a test runbook with sandbox/production execution steps.
 - Documented credential group naming and validation buckets.
+- Added navigation links across HTML dashboards for easier browsing.

@@ -251,5 +251,5 @@ main {{ padding: 16px 32px 40px; display: grid; gap: 18px; }}
     OUTPUT_PATH.write_text(html_output, encoding="utf-8")
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     main()

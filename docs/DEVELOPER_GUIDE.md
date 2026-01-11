@@ -88,6 +88,7 @@ The generator uses `FORTE_POSTMAN_COLLECTION` if set; otherwise it looks for
 This is tracked in `docs/test-dashboard.html` and must be kept current.
 
 See `docs/TEST_RUNBOOK.md` for step-by-step execution and safety checks.
+See `docs/CREDENTIAL_GROUPS.md` for naming and validation buckets.
 
 ### Running sandbox integration tests
 

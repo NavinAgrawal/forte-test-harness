@@ -32,3 +32,4 @@ Confidentiality: Internal / Do Not Distribute
 - Updated the test dashboard to reflect the PHP inventory generator tests.
 - Converted PHPUnit metadata from docblocks to attributes to remove deprecation warnings.
 - Added a test runbook with sandbox/production execution steps.
+- Documented credential group naming and validation buckets.

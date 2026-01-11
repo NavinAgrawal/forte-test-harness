@@ -39,12 +39,14 @@ main { padding: 16px 32px 40px; display: grid; gap: 18px; }
 .badge.bad { background: rgba(239,68,68,0.15); color: var(--bad); }
 .badge.warn { background: rgba(245,158,11,0.15); color: var(--warn); }
 .badge.good { background: rgba(34,197,94,0.15); color: var(--good); }
+.footer-note { color: var(--muted); font-size: 12px; margin-top: 6px; }
 </style>
 </head>
 <body>
 <header>
   <h1>Integration Test Dashboard</h1>
   <p>Status tracker for REST v3 + non‑REST integration tests. Environment: <strong>sandbox</strong></p>
+  <p class="footer-note">Last updated: 2026-01-11 17:23:03</p>
   <nav class="nav">
     <a href="coverage-dashboard.html">Coverage</a>
     <a class="active" href="test-dashboard.html">Tests</a>

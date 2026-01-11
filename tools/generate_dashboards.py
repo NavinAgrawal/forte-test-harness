@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import os
 import re
+from datetime import datetime
 from collections import defaultdict
 from pathlib import Path
 
@@ -373,6 +374,7 @@ def render_coverage_dashboard(summary_rows, non_rest_rows):
     coverage_covered = sum(r["covered"] for r in summary_rows)
     coverage_pct = round((coverage_covered / coverage_total) * 100) if coverage_total else 0
 
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     css = """
 :root {
   --bg: #0f172a;
@@ -520,6 +522,7 @@ main { padding: 16px 32px 40px; display: grid; gap: 18px; }
 <header>
   <h1>Forte Test Harness Coverage Dashboard</h1>
   <p>REST v3 coverage + non‑REST integration inventory. Generated from Postman collection and PHP harness.</p>
+  <p class="footer-note">Last updated: {timestamp}</p>
   <nav class="nav">
     <a class="active" href="coverage-dashboard.html">Coverage</a>
     <a href="test-dashboard.html">Tests</a>
@@ -641,6 +644,7 @@ def render_test_dashboard(integration_cases: dict):
 
     environment = integration_cases.get("environment") or "—"
 
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     css = """
 :root {
   --bg: #0b1020;
@@ -676,6 +680,7 @@ main { padding: 16px 32px 40px; display: grid; gap: 18px; }
 .badge.bad { background: rgba(239,68,68,0.15); color: var(--bad); }
 .badge.warn { background: rgba(245,158,11,0.15); color: var(--warn); }
 .badge.good { background: rgba(34,197,94,0.15); color: var(--good); }
+.footer-note { color: var(--muted); font-size: 12px; margin-top: 6px; }
 """
 
     rest_rows_html = []
@@ -732,6 +737,7 @@ main { padding: 16px 32px 40px; display: grid; gap: 18px; }
 <header>
   <h1>Integration Test Dashboard</h1>
   <p>Status tracker for REST v3 + non‑REST integration tests. Environment: <strong>{environment}</strong></p>
+  <p class="footer-note">Last updated: {timestamp}</p>
   <nav class="nav">
     <a href="coverage-dashboard.html">Coverage</a>
     <a class="active" href="test-dashboard.html">Tests</a>

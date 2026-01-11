@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import html
 import re
+from datetime import datetime
 from collections import Counter
 from pathlib import Path
 
@@ -126,6 +127,7 @@ def main() -> None:
         for row in rows
     )
 
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     html_output = f"""<!doctype html>
 <html lang=\"en\">
 <head>
@@ -180,6 +182,7 @@ main {{ padding: 16px 32px 40px; display: grid; gap: 18px; }}
 .list {{ margin: 0; padding-left: 18px; }}
 .list li {{ margin: 4px 0; color: var(--muted); }}
 .section-title {{ font-size: 16px; margin: 0 0 8px; text-transform: uppercase; letter-spacing: 0.8px; color: var(--muted); }}
+.footer-note {{ color: var(--muted); font-size: 12px; margin-top: 6px; }}
 @media (max-width: 900px) {{
   main {{ padding: 16px; }}
   header {{ padding: 20px 16px 8px; }}
@@ -190,6 +193,7 @@ main {{ padding: 16px 32px 40px; display: grid; gap: 18px; }}
 <header>
   <h1>Forte Test Harness PHP Inventory</h1>
   <p>PHP script surfaces, REST resource references, and config-driven status.</p>
+  <p class=\"footer-note\">Last updated: {timestamp}</p>
   <nav class=\"nav\">
     <a href=\"coverage-dashboard.html\">Coverage</a>
     <a href=\"test-dashboard.html\">Tests</a>

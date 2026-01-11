@@ -114,6 +114,24 @@ class SanitizePlaceholdersTests(unittest.TestCase):
             self.assertEqual(count, 1)
             self.assertEqual(len(changed_paths), 1)
 
+    def test_walk_and_sanitize_respects_allowed_paths(self):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            root = Path(tmpdir)
+            allowed = root / "a.php"
+            (allowed).write_text("$api_access_id='abc';", encoding="utf-8")
+            (root / "b.php").write_text("$api_access_id='abc';", encoding="utf-8")
+            count = sp.walk_and_sanitize(str(root), allowed_paths={str(allowed)})
+            self.assertEqual(count, 1)
+
+    def test_git_tracked_files_returns_paths(self):
+        tracked = sp.git_tracked_files()
+        self.assertIsInstance(tracked, set)
+        self.assertIn(str(MODULE_PATH), tracked)
+
+    def test_git_tracked_files_handles_errors(self):
+        with mock.patch.object(sp.subprocess, "check_output", side_effect=Exception("boom")):
+            self.assertEqual(sp.git_tracked_files(), set())
+
     def test_main_outputs_summary(self):
         with tempfile.TemporaryDirectory() as tmpdir:
             root = Path(tmpdir)
@@ -131,6 +149,23 @@ class SanitizePlaceholdersTests(unittest.TestCase):
             output = stdout.getvalue()
             self.assertIn("[INFO]", output)
             self.assertIn("[WARN] Not a directory", output)
+            self.assertIn("[DONE]", output)
+
+    def test_main_tracked_only_runs(self):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            root = Path(tmpdir)
+            (root / "a.php").write_text("$api_access_id='abc';", encoding="utf-8")
+
+            stdout = StringIO()
+            old_argv = sys.argv
+            try:
+                sys.argv = ["sanitize_placeholders.py", "--tracked-only", str(root)]
+                with redirect_stdout(stdout):
+                    sp.main()
+            finally:
+                sys.argv = old_argv
+
+            output = stdout.getvalue()
             self.assertIn("[DONE]", output)
 
     def test_main_check_exits_nonzero(self):

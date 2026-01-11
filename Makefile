@@ -92,8 +92,8 @@ test-integration:
 	@bash -lc 'ulimit -n 1024 >/dev/null 2>&1 || true; if [ -f .env ]; then set -a; . .env; set +a; fi; FORTE_ENV=sandbox FORTE_TEST_CONFIG_PATH=$(FORTE_CONFIG_PATH) $(PHPUNIT) --group integration'
 
 test-python:
-	$(COVERAGE) run -m unittest discover -s tools/tests
-	$(COVERAGE) report -m
+	$(COVERAGE) run --source tools -m unittest discover -s tools/tests
+	$(COVERAGE) report --include tools/sanitize_placeholders.py -m
 
 run:
 	php -S localhost:8080 -t api-demo-php-harness

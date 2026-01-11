@@ -65,6 +65,7 @@ coverage or tests change:
 
 - `docs/coverage-dashboard.html`
 - `docs/test-dashboard.html`
+- `docs/php-inventory.html`
 
 Regenerate with:
 

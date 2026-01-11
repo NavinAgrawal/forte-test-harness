@@ -5,6 +5,8 @@
   - Safety check (tracked only): `python3 tools/sanitize_placeholders.py --check --tracked-only api-demo-php-harness soap-projects`
 - `generate_dashboards.py`: Regenerates HTML dashboards in `docs/`.
   - Usage: `python3 tools/generate_dashboards.py` or `make dashboards`
+- `generate_php_inventory.py`: Builds `docs/php-inventory.html` for PHP script coverage by surface.
+  - Usage: `python3 tools/generate_php_inventory.py` or `make inventory`
 - `generate_soap_properties.py`: Exports SoapUI `local.properties` from `config.local.php` (gitignored).
   - Usage: `python3 tools/generate_soap_properties.py`
 - `test_rest_groups.py`: Runs lightweight REST list checks for credential groups (no SSL verify by default).

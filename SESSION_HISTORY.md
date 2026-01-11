@@ -24,3 +24,4 @@ Confidentiality: Internal / Do Not Distribute
 - Added local payload templates and env-driven payload support for integration tests.
 - Hardened git safety checks (sanitize tracked files only) and updated pre-push hook.
 - Documented KB references, test data sources, and expanded config/env guide.
+- Added PHP inventory dashboard generator and published `docs/php-inventory.html`.

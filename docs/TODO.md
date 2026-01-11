@@ -21,7 +21,7 @@ Status keys: [ ] not started, [~] in progress, [x] done
 17. [x] Add integration tests for Disputes endpoints.
 18. [x] Add integration tests for Vendors endpoints.
 19. [x] Build non-REST integration tests (AGI/SWP/SOAP/FCO/Forte.js/Risk/Routing/Webhooks/Freshdesk/HTML2PDF/Importer).
-20. [ ] Collect sandbox credentials + test org/location IDs for full integration testing. (needs input)
+20. [x] Generate PHP script inventory dashboard for surface coverage review.
 
 Notes:
 - SWP/AGI/SOAP credential check scripts exist; next step is running them with real test data + wiring results into integration tests.
@@ -32,6 +32,7 @@ Notes:
 
 ## Blocked / Needs Input (move to bottom)
 
+- [ ] Collect sandbox credentials + test org/location IDs for full integration testing.
 - [ ] Non-REST inputs missing (webhook URL, importer CSV path, risk tag key) and API keys (Freshdesk, HTML2PDF).
 - [ ] Non-REST creds missing in `api-demo-php-harness/config/config.local.php` (pg_merchant_id, pg_password, secure_transaction_key/api_login_id). Needed to run AGI/SWP/SOAP tests.
 - [ ] AGI production auth failing with `E10 INVALID MERCH OR PASSWD` for `pg_merchant_id=173185` (TEST1234). Need correct prod password or confirm merchant setup.

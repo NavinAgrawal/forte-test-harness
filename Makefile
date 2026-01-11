@@ -86,7 +86,7 @@ soap-groups:
 test: test-php test-python
 
 test-php:
-	XDEBUG_MODE=coverage $(PHPUNIT) --exclude-group integration --coverage-text
+	@bash -lc 'ulimit -n 1024 >/dev/null 2>&1 || true; XDEBUG_MODE=coverage $(PHPUNIT) --exclude-group integration --coverage-text'
 
 test-integration:
 	@bash -lc 'ulimit -n 1024 >/dev/null 2>&1 || true; if [ -f .env ]; then set -a; . .env; set +a; fi; FORTE_ENV=sandbox FORTE_TEST_CONFIG_PATH=$(FORTE_CONFIG_PATH) $(PHPUNIT) --group integration'

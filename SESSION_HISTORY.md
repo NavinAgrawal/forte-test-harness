@@ -20,7 +20,7 @@ Confidentiality: Internal / Do Not Distribute
 ## 2026-01-11
 
 - Centralized REST integration coverage and updated dashboards to show 100% REST endpoint coverage.
-- Added non-REST integration scaffolding (AGI/SWP/SOAP) with real network tests that skip if creds are missing.
+- Added non-REST integration scaffolding (AGI/SWP/SOAP + smoke tests for FCO/Forte.js/Risk/Routing/Webhooks/Freshdesk/HTML2PDF/Importer).
 - Added local payload templates and env-driven payload support for integration tests.
 - Hardened git safety checks (sanitize tracked files only) and updated pre-push hook.
 - Documented KB references, test data sources, and expanded config/env guide.

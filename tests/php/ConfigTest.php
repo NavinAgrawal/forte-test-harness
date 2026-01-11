@@ -12,6 +12,10 @@ class ConfigTest extends TestCase
         if (function_exists('forte_config_reset')) {
             forte_config_reset();
         }
+        $GLOBALS['base_url'] = '';
+        $GLOBALS['js_url'] = '';
+        $GLOBALS['pg_action_url'] = '';
+        unset($GLOBALS['organization_id'], $GLOBALS['location_id']);
     }
 
     protected function tearDown(): void

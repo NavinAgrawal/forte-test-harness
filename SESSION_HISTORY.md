@@ -31,3 +31,4 @@ Confidentiality: Internal / Do Not Distribute
 - Added a PHP script usage guide for surfaces and local running.
 - Updated the test dashboard to reflect the PHP inventory generator tests.
 - Converted PHPUnit metadata from docblocks to attributes to remove deprecation warnings.
+- Added a test runbook with sandbox/production execution steps.

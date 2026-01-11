@@ -87,6 +87,8 @@ The generator uses `FORTE_POSTMAN_COLLECTION` if set; otherwise it looks for
 
 This is tracked in `docs/test-dashboard.html` and must be kept current.
 
+See `docs/TEST_RUNBOOK.md` for step-by-step execution and safety checks.
+
 ### Running sandbox integration tests
 
 Integration cases live in `tests/php/integration/rest_sandbox_cases.json`.

@@ -4,12 +4,11 @@ namespace ForteTestHarness\Tests\Integration;
 
 use ForteTestHarness\Tests\Support\FormClient;
 use ForteTestHarness\Tests\Support\IntegrationTestCase;
+use PHPUnit\Framework\Attributes\Group;
 
-/**
- * @group integration
- * @group non-rest
- * @group agi
- */
+#[Group('integration')]
+#[Group('non-rest')]
+#[Group('agi')]
 class AgiSandboxFlowTest extends IntegrationTestCase
 {
     private FormClient $formClient;

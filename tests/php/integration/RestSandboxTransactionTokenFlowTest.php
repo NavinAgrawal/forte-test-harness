@@ -3,10 +3,10 @@
 namespace ForteTestHarness\Tests\Integration;
 
 use ForteTestHarness\Tests\Support\IntegrationTestCase;
+use PHPUnit\Framework\Attributes\Depends;
+use PHPUnit\Framework\Attributes\Group;
 
-/**
- * @group integration
- */
+#[Group('integration')]
 class RestSandboxTransactionTokenFlowTest extends IntegrationTestCase
 {
     public function testCreateCustomerAndPaymethods(): array
@@ -22,9 +22,7 @@ class RestSandboxTransactionTokenFlowTest extends IntegrationTestCase
         ];
     }
 
-    /**
-     * @depends testCreateCustomerAndPaymethods
-     */
+    #[Depends('testCreateCustomerAndPaymethods')]
     public function testCardTokenSale(array $state): array
     {
         $payload = [
@@ -51,9 +49,7 @@ class RestSandboxTransactionTokenFlowTest extends IntegrationTestCase
         return $state;
     }
 
-    /**
-     * @depends testCardTokenSale
-     */
+    #[Depends('testCardTokenSale')]
     public function testVoidCardTokenSale(array $state): array
     {
         if (empty($state['card_transaction_id']) || empty($state['card_authorization_code'])) {
@@ -78,9 +74,7 @@ class RestSandboxTransactionTokenFlowTest extends IntegrationTestCase
         return $state;
     }
 
-    /**
-     * @depends testCreateCustomerAndPaymethods
-     */
+    #[Depends('testCreateCustomerAndPaymethods')]
     public function testEcheckTokenSale(array $state): array
     {
         $payload = [
@@ -107,9 +101,7 @@ class RestSandboxTransactionTokenFlowTest extends IntegrationTestCase
         return $state;
     }
 
-    /**
-     * @depends testEcheckTokenSale
-     */
+    #[Depends('testEcheckTokenSale')]
     public function testVoidEcheckTokenSale(array $state): array
     {
         if (empty($state['echeck_transaction_id']) || empty($state['echeck_authorization_code'])) {
@@ -134,9 +126,7 @@ class RestSandboxTransactionTokenFlowTest extends IntegrationTestCase
         return $state;
     }
 
-    /**
-     * @depends testVoidEcheckTokenSale
-     */
+    #[Depends('testVoidEcheckTokenSale')]
     public function testCleanupTokens(array $state): void
     {
         $response = $this->client->request(

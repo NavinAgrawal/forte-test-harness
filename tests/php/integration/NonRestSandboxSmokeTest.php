@@ -4,11 +4,10 @@ namespace ForteTestHarness\Tests\Integration;
 
 use ForteTestHarness\Tests\Support\FormClient;
 use ForteTestHarness\Tests\Support\IntegrationTestCase;
+use PHPUnit\Framework\Attributes\Group;
 
-/**
- * @group integration
- * @group non-rest
- */
+#[Group('integration')]
+#[Group('non-rest')]
 class NonRestSandboxSmokeTest extends IntegrationTestCase
 {
     private FormClient $formClient;

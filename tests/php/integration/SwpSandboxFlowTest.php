@@ -4,12 +4,11 @@ namespace ForteTestHarness\Tests\Integration;
 
 use ForteTestHarness\Tests\Support\FormClient;
 use ForteTestHarness\Tests\Support\IntegrationTestCase;
+use PHPUnit\Framework\Attributes\Group;
 
-/**
- * @group integration
- * @group non-rest
- * @group swp
- */
+#[Group('integration')]
+#[Group('non-rest')]
+#[Group('swp')]
 class SwpSandboxFlowTest extends IntegrationTestCase
 {
     private FormClient $formClient;

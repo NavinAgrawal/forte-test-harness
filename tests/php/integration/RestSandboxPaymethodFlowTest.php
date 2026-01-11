@@ -3,10 +3,10 @@
 namespace ForteTestHarness\Tests\Integration;
 
 use ForteTestHarness\Tests\Support\IntegrationTestCase;
+use PHPUnit\Framework\Attributes\Depends;
+use PHPUnit\Framework\Attributes\Group;
 
-/**
- * @group integration
- */
+#[Group('integration')]
 class RestSandboxPaymethodFlowTest extends IntegrationTestCase
 {
     public function testCreatePaymethod(): array
@@ -38,9 +38,7 @@ class RestSandboxPaymethodFlowTest extends IntegrationTestCase
         ];
     }
 
-    /**
-     * @depends testCreatePaymethod
-     */
+    #[Depends('testCreatePaymethod')]
     public function testGetPaymethod(array $state): array
     {
         $response = $this->client->request(
@@ -52,9 +50,7 @@ class RestSandboxPaymethodFlowTest extends IntegrationTestCase
         return $state;
     }
 
-    /**
-     * @depends testCreatePaymethod
-     */
+    #[Depends('testCreatePaymethod')]
     public function testUpdatePaymethod(array $state): array
     {
         $payload = [
@@ -72,9 +68,7 @@ class RestSandboxPaymethodFlowTest extends IntegrationTestCase
         return $state;
     }
 
-    /**
-     * @depends testCreatePaymethod
-     */
+    #[Depends('testCreatePaymethod')]
     public function testDeletePaymethod(array $state): array
     {
         $response = $this->client->request(
@@ -86,9 +80,7 @@ class RestSandboxPaymethodFlowTest extends IntegrationTestCase
         return $state;
     }
 
-    /**
-     * @depends testCreatePaymethod
-     */
+    #[Depends('testCreatePaymethod')]
     public function testDeleteCustomer(array $state): void
     {
         $response = $this->client->request(

@@ -3,10 +3,10 @@
 namespace ForteTestHarness\Tests\Integration;
 
 use ForteTestHarness\Tests\Support\IntegrationTestCase;
+use PHPUnit\Framework\Attributes\Depends;
+use PHPUnit\Framework\Attributes\Group;
 
-/**
- * @group integration
- */
+#[Group('integration')]
 class RestSandboxAddressFlowTest extends IntegrationTestCase
 {
     public function testCreateAddress(): array
@@ -39,9 +39,7 @@ class RestSandboxAddressFlowTest extends IntegrationTestCase
         ];
     }
 
-    /**
-     * @depends testCreateAddress
-     */
+    #[Depends('testCreateAddress')]
     public function testGetAddress(array $state): array
     {
         $response = $this->client->request(
@@ -53,9 +51,7 @@ class RestSandboxAddressFlowTest extends IntegrationTestCase
         return $state;
     }
 
-    /**
-     * @depends testCreateAddress
-     */
+    #[Depends('testCreateAddress')]
     public function testUpdateAddress(array $state): array
     {
         $payload = [
@@ -79,9 +75,7 @@ class RestSandboxAddressFlowTest extends IntegrationTestCase
         return $state;
     }
 
-    /**
-     * @depends testUpdateAddress
-     */
+    #[Depends('testUpdateAddress')]
     public function testDeleteAddress(array $state): array
     {
         $response = $this->client->request(
@@ -93,9 +87,7 @@ class RestSandboxAddressFlowTest extends IntegrationTestCase
         return $state;
     }
 
-    /**
-     * @depends testDeleteAddress
-     */
+    #[Depends('testDeleteAddress')]
     public function testDeleteCustomer(array $state): void
     {
         $response = $this->client->request(

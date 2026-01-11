@@ -4,12 +4,11 @@ namespace ForteTestHarness\Tests\Integration;
 
 use ForteTestHarness\Tests\Support\IntegrationTestCase;
 use ForteTestHarness\Tests\Support\SoapClient;
+use PHPUnit\Framework\Attributes\Group;
 
-/**
- * @group integration
- * @group non-rest
- * @group soap
- */
+#[Group('integration')]
+#[Group('non-rest')]
+#[Group('soap')]
 class SoapSandboxFlowTest extends IntegrationTestCase
 {
     private SoapClient $soapClient;

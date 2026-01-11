@@ -3,10 +3,9 @@
 namespace ForteTestHarness\Tests\Integration;
 
 use ForteTestHarness\Tests\Support\IntegrationTestCase;
+use PHPUnit\Framework\Attributes\Group;
 
-/**
- * @group integration
- */
+#[Group('integration')]
 class RestSandboxDocumentFlowTest extends IntegrationTestCase
 {
     public function testUploadAndDeleteDocument(): void

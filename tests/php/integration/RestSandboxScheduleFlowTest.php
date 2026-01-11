@@ -3,10 +3,10 @@
 namespace ForteTestHarness\Tests\Integration;
 
 use ForteTestHarness\Tests\Support\IntegrationTestCase;
+use PHPUnit\Framework\Attributes\Depends;
+use PHPUnit\Framework\Attributes\Group;
 
-/**
- * @group integration
- */
+#[Group('integration')]
 class RestSandboxScheduleFlowTest extends IntegrationTestCase
 {
     public function testCreateSchedule(): array
@@ -42,9 +42,7 @@ class RestSandboxScheduleFlowTest extends IntegrationTestCase
         ];
     }
 
-    /**
-     * @depends testCreateSchedule
-     */
+    #[Depends('testCreateSchedule')]
     public function testGetSchedule(array $state): array
     {
         $response = $this->client->request(
@@ -56,9 +54,7 @@ class RestSandboxScheduleFlowTest extends IntegrationTestCase
         return $state;
     }
 
-    /**
-     * @depends testCreateSchedule
-     */
+    #[Depends('testCreateSchedule')]
     public function testUpdateSchedule(array $state): array
     {
         $payload = [
@@ -76,9 +72,7 @@ class RestSandboxScheduleFlowTest extends IntegrationTestCase
         return $state;
     }
 
-    /**
-     * @depends testCreateSchedule
-     */
+    #[Depends('testCreateSchedule')]
     public function testCreateScheduleItem(array $state): array
     {
         $payload = [
@@ -105,9 +99,7 @@ class RestSandboxScheduleFlowTest extends IntegrationTestCase
         return $state;
     }
 
-    /**
-     * @depends testCreateScheduleItem
-     */
+    #[Depends('testCreateScheduleItem')]
     public function testGetScheduleItem(array $state): array
     {
         $response = $this->client->request(
@@ -119,9 +111,7 @@ class RestSandboxScheduleFlowTest extends IntegrationTestCase
         return $state;
     }
 
-    /**
-     * @depends testCreateScheduleItem
-     */
+    #[Depends('testCreateScheduleItem')]
     public function testUpdateScheduleItem(array $state): array
     {
         $payload = [
@@ -140,9 +130,7 @@ class RestSandboxScheduleFlowTest extends IntegrationTestCase
         return $state;
     }
 
-    /**
-     * @depends testUpdateScheduleItem
-     */
+    #[Depends('testUpdateScheduleItem')]
     public function testDeleteScheduleItem(array $state): array
     {
         $response = $this->client->request(
@@ -154,9 +142,7 @@ class RestSandboxScheduleFlowTest extends IntegrationTestCase
         return $state;
     }
 
-    /**
-     * @depends testDeleteScheduleItem
-     */
+    #[Depends('testDeleteScheduleItem')]
     public function testDeleteSchedule(array $state): array
     {
         $response = $this->client->request(
@@ -168,9 +154,7 @@ class RestSandboxScheduleFlowTest extends IntegrationTestCase
         return $state;
     }
 
-    /**
-     * @depends testDeleteSchedule
-     */
+    #[Depends('testDeleteSchedule')]
     public function testDeletePaymethodAndCustomer(array $state): void
     {
         $response = $this->client->request(

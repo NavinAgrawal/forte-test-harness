@@ -3,10 +3,10 @@
 namespace ForteTestHarness\Tests\Integration;
 
 use ForteTestHarness\Tests\Support\IntegrationTestCase;
+use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Attributes\Group;
 
-/**
- * @group integration
- */
+#[Group('integration')]
 class RestSandboxListTest extends IntegrationTestCase
 {
     private const CASES_PATH = __DIR__ . '/../integration/rest_sandbox_cases.json';
@@ -17,10 +17,8 @@ class RestSandboxListTest extends IntegrationTestCase
         $this->assertStringContainsString('sandbox', $this->baseUrl, 'Base URL should point to sandbox.');
     }
 
-    /**
-     * @dataProvider restCases
-     * @group integration
-     */
+    #[Group('integration')]
+    #[DataProvider('restCases')]
     public function testRestListEndpoints(array $case): void
     {
         $method = strtoupper($case['method'] ?? 'GET');

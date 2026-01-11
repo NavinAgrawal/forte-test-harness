@@ -3,10 +3,10 @@
 namespace ForteTestHarness\Tests\Integration;
 
 use ForteTestHarness\Tests\Support\IntegrationTestCase;
+use PHPUnit\Framework\Attributes\Depends;
+use PHPUnit\Framework\Attributes\Group;
 
-/**
- * @group integration
- */
+#[Group('integration')]
 class RestSandboxCustomerFlowTest extends IntegrationTestCase
 {
     public function testCreateCustomer(): array
@@ -25,9 +25,7 @@ class RestSandboxCustomerFlowTest extends IntegrationTestCase
         return ['customer_token' => $customerToken];
     }
 
-    /**
-     * @depends testCreateCustomer
-     */
+    #[Depends('testCreateCustomer')]
     public function testGetCustomer(array $state): array
     {
         $response = $this->client->request(
@@ -39,9 +37,7 @@ class RestSandboxCustomerFlowTest extends IntegrationTestCase
         return $state;
     }
 
-    /**
-     * @depends testCreateCustomer
-     */
+    #[Depends('testCreateCustomer')]
     public function testUpdateCustomer(array $state): array
     {
         $payload = $this->buildCustomerPayload('update');
@@ -55,9 +51,7 @@ class RestSandboxCustomerFlowTest extends IntegrationTestCase
         return $state;
     }
 
-    /**
-     * @depends testCreateCustomer
-     */
+    #[Depends('testCreateCustomer')]
     public function testUpdateCustomerAlternateUri(array $state): array
     {
         $payload = $this->buildCustomerPayload('update-alt');
@@ -71,9 +65,7 @@ class RestSandboxCustomerFlowTest extends IntegrationTestCase
         return $state;
     }
 
-    /**
-     * @depends testCreateCustomer
-     */
+    #[Depends('testCreateCustomer')]
     public function testDeleteCustomer(array $state): void
     {
         $response = $this->client->request(

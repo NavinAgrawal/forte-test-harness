@@ -25,3 +25,4 @@ Confidentiality: Internal / Do Not Distribute
 - Hardened git safety checks (sanitize tracked files only) and updated pre-push hook.
 - Documented KB references, test data sources, and expanded config/env guide.
 - Added PHP inventory dashboard generator and published `docs/php-inventory.html`.
+- Ensured PHPUnit bootstrap loads Composer autoload to prevent php-parser coverage failures.

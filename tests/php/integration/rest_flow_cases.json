@@ -1,0 +1,597 @@
+{
+  "environment": "sandbox",
+  "rest": [
+    {
+      "group": "Transactions",
+      "name": "Transaction (Credit Card)",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/transactions"
+    },
+    {
+      "group": "Transactions",
+      "name": "Void a Transaction",
+      "method": "PUT",
+      "path": "/organizations/{org}/locations/{loc}/transactions"
+    },
+    {
+      "group": "Transactions",
+      "name": "Transaction (ECheck)",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/transactions"
+    },
+    {
+      "group": "Transactions",
+      "name": "Void a Refund",
+      "method": "PUT",
+      "path": "/organizations/{org}/locations/{loc}/transactions"
+    },
+    {
+      "group": "Transactions",
+      "name": "Sale Transaction",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/transactions/sale"
+    },
+    {
+      "group": "Transactions",
+      "name": "Authorize Transaction",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/transactions/authorize"
+    },
+    {
+      "group": "Transactions",
+      "name": "Credit Transaction",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/transactions/credit"
+    },
+    {
+      "group": "Transactions",
+      "name": "Forte Validate Plus+ Transaction",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/transactions/verify"
+    },
+    {
+      "group": "Transactions",
+      "name": "Authenticate Transaction",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/transactions/authenticate"
+    },
+    {
+      "group": "Transactions",
+      "name": "Capture a Transaction",
+      "method": "PUT",
+      "path": "/organizations/{org}/locations/{loc}/transactions"
+    },
+    {
+      "group": "Transactions",
+      "name": "Fully Refund a Transaction",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/transactions"
+    },
+    {
+      "group": "Transactions",
+      "name": "Void an Authorization",
+      "method": "PUT",
+      "path": "/organizations/{org}/locations/{loc}/transactions/{trn}"
+    },
+    {
+      "group": "Transactions",
+      "name": "Transaction with Credit Card Token",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/transactions"
+    },
+    {
+      "group": "Transactions",
+      "name": "Transaction with eCheck Token",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/transactions"
+    },
+    {
+      "group": "Transactions",
+      "name": "Force Transaction",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/transactions/force"
+    },
+    {
+      "group": "Transactions",
+      "name": "Transaction from a One-Time Token",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/transactions"
+    },
+    {
+      "group": "Transactions",
+      "name": "Transaction (PayPal)",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/transactions"
+    },
+    {
+      "group": "Transactions",
+      "name": "Transaction with PayPal Token",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/transactions"
+    },
+    {
+      "group": "Transactions",
+      "name": "Initial Sale Transaction (Digital Wallets)",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/transactions"
+    },
+    {
+      "group": "Transactions",
+      "name": "Subsequent Transaction with DPAN (Digital Wallets)",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/transactions"
+    },
+    {
+      "group": "Transactions",
+      "name": "Subsequent Transaction with Token (Digital Wallets)",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/transactions"
+    },
+    {
+      "group": "Transactions",
+      "name": "Swiped Credit Card Transaction",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/transactions"
+    },
+    {
+      "group": "Transactions",
+      "name": "Paymethod Token from a Swiped Transaction",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/transactions"
+    },
+    {
+      "group": "Transactions",
+      "name": "EMV Transaction (eDynamo)",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/transactions"
+    },
+    {
+      "group": "Transactions",
+      "name": "EMV Transaction (DynaFlex II Go)",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/transactions"
+    },
+    {
+      "group": "Transactions",
+      "name": "EMV Transaction (V400c)",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/transactions"
+    },
+    {
+      "group": "Transactions",
+      "name": "Transaction with Service Fee",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/transactions"
+    },
+    {
+      "group": "Transactions",
+      "name": "Transaction with Surcharge",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/transactions"
+    },
+    {
+      "group": "Transactions",
+      "name": "Transaction with Line Items",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/transactions"
+    },
+    {
+      "group": "Transactions",
+      "name": "Transaction with XDATA",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/transactions"
+    },
+    {
+      "group": "Transactions",
+      "name": "Partially Refund a Transaction",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/transactions"
+    },
+    {
+      "group": "Transactions",
+      "name": "Transaction (Alternative URI)",
+      "method": "POST",
+      "path": "/organizations/{org}/transactions"
+    },
+    {
+      "group": "Customers",
+      "name": "Create customer",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/customers"
+    },
+    {
+      "group": "Customers",
+      "name": "Create customer (simple)",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/customers"
+    },
+    {
+      "group": "Customers",
+      "name": "Create customer (first/last only)",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/customers"
+    },
+    {
+      "group": "Customers",
+      "name": "Create customer (addresses)",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/customers"
+    },
+    {
+      "group": "Customers",
+      "name": "Create customer (paymethod)",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/customers"
+    },
+    {
+      "group": "Customers",
+      "name": "Create customer (addresses + paymethod)",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/customers"
+    },
+    {
+      "group": "Customers",
+      "name": "Create customer (paypal)",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/customers"
+    },
+    {
+      "group": "Customers",
+      "name": "Create customer (addresses + paypal)",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/customers"
+    },
+    {
+      "group": "Customers",
+      "name": "Create locationless customer",
+      "method": "POST",
+      "path": "/customers"
+    },
+    {
+      "group": "Customers",
+      "name": "Update customer",
+      "method": "PUT",
+      "path": "/organizations/{org}/locations/{loc}/customers/{cst}"
+    },
+    {
+      "group": "Customers",
+      "name": "Update customer (alternate URI)",
+      "method": "PUT",
+      "path": "/organizations/{org}/customers/{cst}"
+    },
+    {
+      "group": "Customers",
+      "name": "Update customer with paymethod",
+      "method": "PUT",
+      "path": "/organizations/{org}/locations/{loc}/customers/{cst}/paymethods"
+    },
+    {
+      "group": "Customers",
+      "name": "Delete customer",
+      "method": "DELETE",
+      "path": "/organizations/{org}/locations/{loc}/customers/{cst}"
+    },
+    {
+      "group": "Paymethods",
+      "name": "Create clientless paymethod (card)",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/paymethods"
+    },
+    {
+      "group": "Paymethods",
+      "name": "Create clientless paymethod (echeck)",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/paymethods"
+    },
+    {
+      "group": "Paymethods",
+      "name": "Customer credit card paymethod",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/customers/{cst}/paymethods"
+    },
+    {
+      "group": "Paymethods",
+      "name": "Customer eCheck paymethod",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/customers/{cst}/paymethods"
+    },
+    {
+      "group": "Paymethods",
+      "name": "Customer PayPal paymethod",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/customers/{cst}/paymethods"
+    },
+    {
+      "group": "Paymethods",
+      "name": "Paymethod to locationless customer",
+      "method": "POST",
+      "path": "/customers/{cst}/paymethods"
+    },
+    {
+      "group": "Paymethods",
+      "name": "Clientless PayPal paymethod",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/paymethods"
+    },
+    {
+      "group": "Paymethods",
+      "name": "Permanent token from one-time token (card)",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/customers/{cst}/paymethods"
+    },
+    {
+      "group": "Paymethods",
+      "name": "Permanent token from one-time token (echeck)",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/customers/{cst}/paymethods"
+    },
+    {
+      "group": "Paymethods",
+      "name": "Update paymethod customer token",
+      "method": "PUT",
+      "path": "/organizations/{org}/locations/{loc}/paymethods/{mth}"
+    },
+    {
+      "group": "Paymethods",
+      "name": "Update eCheck paymethod",
+      "method": "PUT",
+      "path": "/organizations/{org}/locations/{loc}/paymethods/{mth}"
+    },
+    {
+      "group": "Paymethods",
+      "name": "Update billing address for paymethod",
+      "method": "PUT",
+      "path": "/organizations/{org}/locations/{loc}/paymethods/{mth}"
+    },
+    {
+      "group": "Paymethods",
+      "name": "Update clientless card details",
+      "method": "PUT",
+      "path": "/organizations/{org}/locations/{loc}/paymethods/{mth}"
+    },
+    {
+      "group": "Paymethods",
+      "name": "Update clientless eCheck details",
+      "method": "PUT",
+      "path": "/organizations/{org}/locations/{loc}/paymethods/{mth}"
+    },
+    {
+      "group": "Paymethods",
+      "name": "Exclude paymethod from account updater",
+      "method": "PUT",
+      "path": "/organizations/{org}/locations/{loc}/paymethods/{mth}"
+    },
+    {
+      "group": "Paymethods",
+      "name": "Delete paymethod",
+      "method": "DELETE",
+      "path": "/organizations/{org}/locations/{loc}/paymethods/{mth}"
+    },
+    {
+      "group": "Addresses",
+      "name": "Create address",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/customers/{cst}/addresses"
+    },
+    {
+      "group": "Addresses",
+      "name": "Create address (simple)",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/customers/{cst}/addresses"
+    },
+    {
+      "group": "Addresses",
+      "name": "Create address (alternate URI)",
+      "method": "POST",
+      "path": "/organizations/{org}/customers/{cst}/addresses"
+    },
+    {
+      "group": "Addresses",
+      "name": "Update address",
+      "method": "PUT",
+      "path": "/organizations/{org}/locations/{loc}/customers/{cst}/addresses/{add}"
+    },
+    {
+      "group": "Addresses",
+      "name": "Update address (alternate URI)",
+      "method": "PUT",
+      "path": "/organizations/{org}/customers/{cst}/addresses/{add}"
+    },
+    {
+      "group": "Addresses",
+      "name": "Delete address",
+      "method": "DELETE",
+      "path": "/organizations/{org}/locations/{loc}/addresses/{add}"
+    },
+    {
+      "group": "Schedules",
+      "name": "Create schedule",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/schedules"
+    },
+    {
+      "group": "Schedules",
+      "name": "Create schedule (customer endpoint)",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/customers/{cst}/schedules"
+    },
+    {
+      "group": "Schedules",
+      "name": "Create 12-month schedule",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/schedules"
+    },
+    {
+      "group": "Schedules",
+      "name": "Create weekly schedule",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/schedules"
+    },
+    {
+      "group": "Schedules",
+      "name": "Create one-time future schedule",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/schedules"
+    },
+    {
+      "group": "Schedules",
+      "name": "Create continuous schedule",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/schedules"
+    },
+    {
+      "group": "Schedules",
+      "name": "Update schedule",
+      "method": "PUT",
+      "path": "/organizations/{org}/locations/{loc}/schedules/{sch}"
+    },
+    {
+      "group": "Schedules",
+      "name": "Delete schedule",
+      "method": "DELETE",
+      "path": "/organizations/{org}/locations/{loc}/schedules/{sch}"
+    },
+    {
+      "group": "Applications",
+      "name": "Create application (payload)",
+      "method": "POST",
+      "path": "/organizations/{org}/applications"
+    },
+    {
+      "group": "Locations",
+      "name": "Update location address (payload)",
+      "method": "PUT",
+      "path": "/organizations/{org}/locations/{loc}"
+    },
+    {
+      "group": "Locations",
+      "name": "Update location limits (payload)",
+      "method": "PUT",
+      "path": "/organizations/{org}/locations/{loc}"
+    },
+    {
+      "group": "Scheduleitems",
+      "name": "Create scheduleitem",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/schedules/{sch}/scheduleitems"
+    },
+    {
+      "group": "Scheduleitems",
+      "name": "Update scheduleitem",
+      "method": "PUT",
+      "path": "/organizations/{org}/locations/{loc}/scheduleitems/{sci}"
+    },
+    {
+      "group": "Scheduleitems",
+      "name": "Delete scheduleitem",
+      "method": "DELETE",
+      "path": "/organizations/{org}/locations/{loc}/scheduleitems/{sci}"
+    },
+    {
+      "group": "Vendors",
+      "name": "Create agreement token",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/vendors/{ven}/agreements"
+    },
+    {
+      "group": "Vendors",
+      "name": "Get agreement token",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/vendors/{ven}/agreements/{agg}"
+    },
+    {
+      "group": "Vendors",
+      "name": "Create order with shipping address",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/vendors/{ven}/orders"
+    },
+    {
+      "group": "Vendors",
+      "name": "Create order without shipping address",
+      "method": "POST",
+      "path": "/organizations/{org}/locations/{loc}/vendors/{ven}/orders"
+    },
+    {
+      "group": "Vendors",
+      "name": "Get order by ID",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/vendors/{ven}/orders/{ord}"
+    },
+    {
+      "group": "Vendors",
+      "name": "Update PayPal order",
+      "method": "PUT",
+      "path": "/organizations/{org}/locations/{loc}/vendors/{ven}/orders/{ord}"
+    },
+    {
+      "group": "Documents",
+      "name": "Upload document",
+      "method": "POST",
+      "path": "/organizations/{org}/documents"
+    },
+    {
+      "group": "Documents",
+      "name": "Delete document",
+      "method": "DELETE",
+      "path": "/organizations/{org}/documents/{doc}"
+    }
+  ],
+  "non_rest": [
+    {
+      "category": "AGI / Payments Gateway",
+      "name": "AGI card sale + void"
+    },
+    {
+      "category": "AGI / Payments Gateway",
+      "name": "AGI ACH sale + void"
+    },
+    {
+      "category": "Forte Checkout (FCO)",
+      "name": "FCO checkout JS loads"
+    },
+    {
+      "category": "Forte Checkout (FCO)",
+      "name": "FCO getUTC endpoint"
+    },
+    {
+      "category": "Forte.js / Tokenization",
+      "name": "Forte.js library loads"
+    },
+    {
+      "category": "SWP (Simple Web Payments)",
+      "name": "SWP embedded charge"
+    },
+    {
+      "category": "SWP (Simple Web Payments)",
+      "name": "SWP redirect checkout"
+    },
+    {
+      "category": "SOAP Helpers",
+      "name": "SOAP transaction service request"
+    },
+    {
+      "category": "Risk/Fraud Tags",
+      "name": "Risk tags JS loads"
+    },
+    {
+      "category": "Routing / Validation Utilities",
+      "name": "Routing number lookup"
+    },
+    {
+      "category": "Webhooks / Notifications",
+      "name": "Webhook receiver smoke test"
+    },
+    {
+      "category": "Freshdesk",
+      "name": "Freshdesk API health check"
+    },
+    {
+      "category": "HTML2PDF Rocket",
+      "name": "HTML2PDF Rocket health check"
+    },
+    {
+      "category": "Importer/Exporter Tools",
+      "name": "Importer sample file check"
+    }
+  ]
+}

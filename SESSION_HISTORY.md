@@ -16,3 +16,11 @@ Confidentiality: Internal / Do Not Distribute
 - Removed secret-bearing files from git history and added `.gitignore` entries to keep local copies untracked.
 - Removed internal-only files (uploads, working files, logs) from the repo.
 - Added project scaffolding docs and agent rules.
+
+## 2026-01-11
+
+- Centralized REST integration coverage and updated dashboards to show 100% REST endpoint coverage.
+- Added non-REST integration scaffolding (AGI/SWP/SOAP) with real network tests that skip if creds are missing.
+- Added local payload templates and env-driven payload support for integration tests.
+- Hardened git safety checks (sanitize tracked files only) and updated pre-push hook.
+- Documented KB references, test data sources, and expanded config/env guide.

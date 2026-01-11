@@ -179,8 +179,8 @@
    <soap:Header/>
    <soap:Body>
       <pay:ExecuteSocketQuery>
-         <pay:pg_merchant_id>YOUR_PG_MERCHANT_ID</pay:pg_merchant_id>
-         <pay:pg_password>YOUR_PG_PASSWORD</pay:pg_password>
+         <pay:pg_merchant_id>${#Project#pg_merchant_id}</pay:pg_merchant_id>
+         <pay:pg_password>${#Project#pg_password}</pay:pg_password>
          <pay:pg_transaction_type>11</pay:pg_transaction_type>
          <pay:pg_total_amount>0.01</pay:pg_total_amount>
          <pay:pg_billto_postal_name_company>James Inc.</pay:pg_billto_postal_name_company>
@@ -207,8 +207,8 @@
    <soap:Header/>\r
    <soap:Body>
       <pay:ExecuteSocketQuery>
-         <pay:pg_merchant_id>YOUR_PG_MERCHANT_ID</pay:pg_merchant_id>
-         <pay:pg_password>YOUR_PG_PASSWORD</pay:pg_password>
+         <pay:pg_merchant_id>${#Project#pg_merchant_id}</pay:pg_merchant_id>
+         <pay:pg_password>${#Project#pg_password}</pay:pg_password>
          <pay:pg_transaction_type>20</pay:pg_transaction_type>
          <pay:pg_merchant_data_1></pay:pg_merchant_data_1>
          <pay:pg_merchant_data_2></pay:pg_merchant_data_2>
@@ -274,8 +274,8 @@
    <soap:Header/>
    <soap:Body>
       <pay:ExecuteSocketQuery>
-         <pay:pg_merchant_id>YOUR_PG_MERCHANT_ID</pay:pg_merchant_id>
-         <pay:pg_password>YOUR_PG_PASSWORD</pay:pg_password>
+         <pay:pg_merchant_id>${#Project#pg_merchant_id}</pay:pg_merchant_id>
+         <pay:pg_password>${#Project#pg_password}</pay:pg_password>
          <pay:pg_transaction_type>10</pay:pg_transaction_type>
          <pay:pg_total_amount>0.02</pay:pg_total_amount>
          <pay:ecom_payment_card_type>AMER</pay:ecom_payment_card_type>
@@ -291,4 +291,4 @@
          <pay:ecom_payment_card_name></pay:ecom_payment_card_name>
       </pay:ExecuteSocketQuery>
    </soap:Body>
-</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://paymentsgateway.achdirect.com/PaymentGatewaySoap/ExecuteSocketQueryRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://paymentsgateway.achdirect.com/PaymentGatewaySoap/ExecuteSocketQueryRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties><con:property><con:name>pg_merchant_id</con:name><con:value>YOUR_PG_MERCHANT_ID</con:value></con:property><con:property><con:name>pg_password</con:name><con:value>YOUR_PG_PASSWORD</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

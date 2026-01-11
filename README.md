@@ -35,6 +35,17 @@ make setup
 make config
 make run
 make test
+make test-integration
+```
+
+## Integration tests (sandbox)
+
+- Integration tests use real credentials and hit sandbox endpoints (no mocks).
+- Ensure `api-demo-php-harness/config/config.local.php` is populated.
+- Run:
+
+```bash
+make test-integration
 ```
 
 ## Security
@@ -43,3 +54,20 @@ make test
 - Run `python3 tools/sanitize_placeholders.py api-demo-php-harness soap-projects` before committing demo artifacts.
 - Enable the repo hook to block unsafe pushes: `git config core.hooksPath .githooks` (or `make hooks`).
 - Do not commit credentials, IDs, or client data.
+
+## Dashboards (WIP)
+
+The HTML dashboards in `docs/` are the current status snapshots and should be kept up to date:
+
+- `docs/coverage-dashboard.html` (REST + non-REST coverage)
+- `docs/test-dashboard.html` (integration test status)
+
+Regenerate after changes with:
+
+```bash
+make dashboards
+```
+
+The generator reads the Postman collection from `FORTE_POSTMAN_COLLECTION` if set. If not set,
+it will look for `Original - Forte REST API v3-collection.json` in the repo root or the default
+DevTools path.

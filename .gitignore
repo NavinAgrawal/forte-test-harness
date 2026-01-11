@@ -11,6 +11,21 @@ __pycache__/
 
 # Local-only config / credentials
 api-demo-php-harness/config/config.local.php
+api-demo-php-harness/config/config.review.local.php
+api-demo-php-harness/config/config.review.local.json
+api-demo-php-harness/config/config.review.shortlist.json
+api-demo-php-harness/config/config.review.sandbox.success.json
+api-demo-php-harness/config/config.review.sandbox.tested.json
+api-demo-php-harness/config/config.review.production.tested.json
+api-demo-php-harness/config/config.review.sandbox.300382-173185.tested.json
+api-demo-php-harness/config/config.review.swp.tested.json
+api-demo-php-harness/config/config.review.agi.tested.json
+api-demo-php-harness/config/config.review.agi.sandbox.tested.json
+api-demo-php-harness/config/config.review.agi.production.tested.json
+api-demo-php-harness/config/config.review.soap.tested.json
+api-demo-php-harness/config/config.review.summary.json
+api-demo-php-harness/config/credential-groups.local.json
+api-demo-php-harness/config/payload-templates.local.json
 soap-projects/local.properties
 **/*.wsa
 
@@ -25,6 +40,7 @@ api-demo-php-harness/internal-toolbox/updater/**/AU.Report*
 tools/secret_candidate_paths*.txt
 tools/secret_scan_paths*.txt
 tools/secret_*_paths*.txt
+tools/tmp_config_values.json
 
 # PHP tooling
 vendor/

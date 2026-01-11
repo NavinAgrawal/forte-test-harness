@@ -1,8 +1,8 @@
 #!/bin/sh
 set -e
 
-echo "[pre-push] Running sanitize check..."
-python3 tools/sanitize_placeholders.py --check api-demo-php-harness soap-projects
+echo "[pre-push] Running sanitize check (tracked files only)..."
+python3 tools/sanitize_placeholders.py --check --tracked-only api-demo-php-harness soap-projects
 
 echo "[pre-push] Running test suite..."
 make test

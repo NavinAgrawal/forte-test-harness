@@ -31,6 +31,17 @@ Import the XMLs into SoapUI:
 
 Before running, replace placeholders (e.g., `YOUR_API_ACCESS_ID`, `YOUR_PG_PASSWORD`, `org_xxxxx`, `loc_xxxxx`).
 
+SoapUI central config (recommended):
+
+- The XMLs reference project properties for `pg_merchant_id` and `pg_password`.
+- Generate `soap-projects/local.properties` from `config.local.php`:
+
+```bash
+make soap-properties
+```
+
+Then load `soap-projects/local.properties` in SoapUI project properties.
+
 ## Central config and placeholders
 
 This repo uses placeholders and a central config. To run locally:
@@ -47,7 +58,56 @@ Before committing changes to demo artifacts, run:
 python3 tools/sanitize_placeholders.py api-demo-php-harness soap-projects
 ```
 
+## Dashboards (WIP, keep current)
+
+The HTML dashboards in `docs/` are living status snapshots and must be updated whenever
+coverage or tests change:
+
+- `docs/coverage-dashboard.html`
+- `docs/test-dashboard.html`
+
+Regenerate with:
+
+```bash
+make dashboards
+```
+
+The generator uses `FORTE_POSTMAN_COLLECTION` if set; otherwise it looks for
+`Original - Forte REST API v3-collection.json` in the repo root or the default DevTools path.
+
+## Testing Policy (Production Quality)
+
+- Integration tests are required for every REST and non‑REST endpoint.
+- No mocks or fake data: tests must use real credentials, real endpoints, and real data.
+- 100% pass rate is the definition of “ready”.
+- For destructive operations, use dedicated sandbox accounts and idempotent setup/teardown.
+- Follow `docs/TEST_DATA_POLICY.md` for naming, cleanup, and data safety rules.
+
+This is tracked in `docs/test-dashboard.html` and must be kept current.
+
+### Running sandbox integration tests
+
+Integration cases live in `tests/php/integration/rest_sandbox_cases.json`.
+
+Run:
+
+```bash
+make test-integration
+```
+
+This sets `FORTE_ENV=sandbox` and uses `api-demo-php-harness/config/config.local.php` by default.
+
 ## Data hygiene
 
 - Do not add raw exports, logs, or uploads containing customer data.
 - Keep internal URLs and credentials out of git.
+- See `docs/TEST_DATA_SOURCES.md` for local-only test data sources.
+
+## Knowledge base references
+
+Local reference roots (do not commit copies of these files into the repo):
+
+- `/Users/nba/Library/CloudStorage/OneDrive-CSGSystemsInc/Documents/SolutionEngineering/Knowledge Base/`
+- `/Users/nba/Library/CloudStorage/OneDrive-CSGSystemsInc/Documents/SolutionEngineering/ECOSYSTEM/Webtools`
+
+See `docs/KB_RESOURCES.md` for curated Forte docs used by this project.

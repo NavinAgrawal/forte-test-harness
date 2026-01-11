@@ -1,0 +1,342 @@
+{
+  "environment": "sandbox",
+  "rest": [
+    {
+      "group": "Organizations",
+      "name": "List organizations",
+      "method": "GET",
+      "path": "/organizations"
+    },
+    {
+      "group": "Organizations",
+      "name": "Get organization",
+      "method": "GET",
+      "path": "/organizations/{org}"
+    },
+    {
+      "group": "Locations",
+      "name": "List locations",
+      "method": "GET",
+      "path": "/organizations/{org}/locations"
+    },
+    {
+      "group": "Locations",
+      "name": "Get location",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}"
+    },
+    {
+      "group": "Locations",
+      "name": "Get location (payfac)",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}"
+    },
+    {
+      "group": "Addresses",
+      "name": "List addresses",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/addresses"
+    },
+    {
+      "group": "Addresses",
+      "name": "List organization addresses",
+      "method": "GET",
+      "path": "/organizations/{org}/addresses"
+    },
+    {
+      "group": "Addresses",
+      "name": "List customer addresses",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/customers/{cst}/addresses"
+    },
+    {
+      "group": "Addresses",
+      "name": "Get address",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/addresses/{add}"
+    },
+    {
+      "group": "Transactions",
+      "name": "List transactions",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/transactions"
+    },
+    {
+      "group": "Transactions",
+      "name": "List transactions (filtered)",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/transactions?filter=start_received_date+eq+%272018-01-01%27+and+end_received_date+eq+%272018-08-03%27"
+    },
+    {
+      "group": "Transactions",
+      "name": "List sale transactions",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/transactions/sale"
+    },
+    {
+      "group": "Transactions",
+      "name": "List credit transactions",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/transactions/credit"
+    },
+    {
+      "group": "Transactions",
+      "name": "List authorize transactions",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/transactions/authorize"
+    },
+    {
+      "group": "Transactions",
+      "name": "List verify transactions",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/transactions/verify"
+    },
+    {
+      "group": "Transactions",
+      "name": "List authenticate transactions",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/transactions/authenticate"
+    },
+    {
+      "group": "Transactions",
+      "name": "List inquiry transactions",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/transactions/inquiry"
+    },
+    {
+      "group": "Transactions",
+      "name": "List customer transactions",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/customers/{cst}/transactions"
+    },
+    {
+      "group": "Transactions",
+      "name": "Get transaction",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/transactions/{trn}"
+    },
+    {
+      "group": "Customers",
+      "name": "List organization customers",
+      "method": "GET",
+      "path": "/organizations/{org}/customers"
+    },
+    {
+      "group": "Customers",
+      "name": "List customers",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/customers"
+    },
+    {
+      "group": "Customers",
+      "name": "List customers (filtered)",
+      "method": "GET",
+      "path": "/organizations/{org}/customers?filter=last_name+eq+%27McFly%27"
+    },
+    {
+      "group": "Customers",
+      "name": "Get customer",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/customers/{cst}"
+    },
+    {
+      "group": "Paymethods",
+      "name": "List paymethods",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/paymethods"
+    },
+    {
+      "group": "Paymethods",
+      "name": "List organization paymethods",
+      "method": "GET",
+      "path": "/organizations/{org}/paymethods"
+    },
+    {
+      "group": "Paymethods",
+      "name": "List account updater paymethods",
+      "method": "GET",
+      "path": "/organizations/{org}/paymethods?filter=start_au_updated_date+eq+%272020-01-08%27+and+end_au_updated_date+eq+%272020-12-08%27"
+    },
+    {
+      "group": "Paymethods",
+      "name": "List customer paymethods",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/customers/{cst}/paymethods"
+    },
+    {
+      "group": "Paymethods",
+      "name": "Get paymethod",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/paymethods/{mth}"
+    },
+    {
+      "group": "Schedules",
+      "name": "List schedules",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/schedules"
+    },
+    {
+      "group": "Schedules",
+      "name": "List customer schedules",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/customers/{cst}/schedules"
+    },
+    {
+      "group": "Schedules",
+      "name": "Get schedule",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/schedules/{sch}"
+    },
+    {
+      "group": "Schedules",
+      "name": "Get deleted schedule",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/schedules/{sch}?filter=schedule_status+eq+deleted"
+    },
+    {
+      "group": "Scheduleitems",
+      "name": "List organization scheduleitems",
+      "method": "GET",
+      "path": "/organizations/{org}/scheduleitems"
+    },
+    {
+      "group": "Scheduleitems",
+      "name": "Get organization scheduleitem",
+      "method": "GET",
+      "path": "/organizations/{org}/scheduleitems/{sci}"
+    },
+    {
+      "group": "Scheduleitems",
+      "name": "List scheduleitems",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/scheduleitems"
+    },
+    {
+      "group": "Scheduleitems",
+      "name": "List customer scheduleitems",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/customers/{cst}/scheduleitems?filter=schedule_item_status+eq+%27scheduled%27"
+    },
+    {
+      "group": "Scheduleitems",
+      "name": "List paymethod scheduleitems",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/paymethods/{mth}/scheduleitems?filter=schedule_item_status+eq+%27scheduled%27"
+    },
+    {
+      "group": "Scheduleitems",
+      "name": "Get scheduleitem",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/scheduleitems/{sci}"
+    },
+    {
+      "group": "Settlements",
+      "name": "List settlements",
+      "method": "GET",
+      "path": "/organizations/{org}/settlements"
+    },
+    {
+      "group": "Settlements",
+      "name": "List location settlements",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/settlements"
+    },
+    {
+      "group": "Settlements",
+      "name": "List settlements (filtered)",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/settlements?filter=start_settle_date+eq+%272016-10-01%27+AND+end_settle_date+eq+%272016-10-31%27"
+    },
+    {
+      "group": "Applications",
+      "name": "List applications",
+      "method": "GET",
+      "path": "/organizations/{org}/applications"
+    },
+    {
+      "group": "Applications",
+      "name": "List applications (filtered)",
+      "method": "GET",
+      "path": "/organizations/{org}/applications?filter=start_received_date+eq+%272017-01-01%27+and+end_received_date+eq+%272017-06-30%27"
+    },
+    {
+      "group": "Applications",
+      "name": "Get application",
+      "method": "GET",
+      "path": "/organizations/{org}/applications/{app}"
+    },
+    {
+      "group": "Documents",
+      "name": "List documents",
+      "method": "GET",
+      "path": "/organizations/{org}/documents"
+    },
+    {
+      "group": "Documents",
+      "name": "Get document",
+      "method": "GET",
+      "path": "/organizations/{org}/documents/{doc}"
+    },
+    {
+      "group": "Fundings",
+      "name": "List fundings",
+      "method": "GET",
+      "path": "/organizations/{org}/fundings"
+    },
+    {
+      "group": "Fundings",
+      "name": "List fundings (filtered)",
+      "method": "GET",
+      "path": "/organizations/{org}/fundings?filter=start_effective_date+eq+%272023-03-01T00:00:00%27+and+end_effective_date+eq+%272023-03-15T00:00:00%27+and+last_4_account_number+eq+2312"
+    },
+    {
+      "group": "Fundings",
+      "name": "Get funding",
+      "method": "GET",
+      "path": "/organizations/{org}/fundings/{fnd}"
+    },
+    {
+      "group": "Fundings",
+      "name": "Get funding settlements",
+      "method": "GET",
+      "path": "/organizations/{org}/fundings/{fnd}/settlements"
+    },
+    {
+      "group": "Fundings",
+      "name": "Get funding transactions",
+      "method": "GET",
+      "path": "/organizations/{org}/fundings/{fnd}/transactions"
+    },
+    {
+      "group": "Disputes",
+      "name": "List disputes",
+      "method": "GET",
+      "path": "/organizations/{org}/disputes"
+    },
+    {
+      "group": "Disputes",
+      "name": "List disputes (filtered)",
+      "method": "GET",
+      "path": "/organizations/{org}/disputes?filter=start_received_date+eq+%272018-12-07%27+and+end_received_date+eq+%272018-12-12%27"
+    },
+    {
+      "group": "Disputes",
+      "name": "Get dispute",
+      "method": "GET",
+      "path": "/organizations/{org}/disputes/{dsp}"
+    },
+    {
+      "group": "Settlements",
+      "name": "Get transaction settlements",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/transactions/{trn}/settlements"
+    },
+    {
+      "group": "Vendors",
+      "name": "Get vendor agreement token",
+      "method": "GET",
+      "path": "/organizations/{org}/locations/{loc}/vendors/{ven}/agreements/{agg}"
+    }
+  ],
+  "non_rest": []
+}

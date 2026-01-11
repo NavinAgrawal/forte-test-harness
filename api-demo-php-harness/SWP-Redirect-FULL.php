@@ -16,8 +16,9 @@ function utc() {
 }
 
 
-	$APILoginID       = forte_config('api_login_id');		
-	$SecureTransKey   = '*************';
+	$APILoginID       = forte_config('api_login_id');
+	$secure_keys      = (array)forte_config('secure_transaction_keys', []);
+	$SecureTransKey   = $secure_keys['swp_redirect_full'] ?? forte_config('secure_transaction_key');
 	$transType          = '10';
 	$totalAmount        = '0.01'; 
 	$version            = '2.0';

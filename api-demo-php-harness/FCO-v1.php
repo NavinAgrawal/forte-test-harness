@@ -3,7 +3,8 @@
 <?php
 require_once __DIR__ . '/config/bootstrap.php';
 	$APILoginID         = forte_config('api_login_id');
-	$SecureTransKey     = 'I5wrc7oh6e';	
+	$secure_keys        = (array)forte_config('secure_transaction_keys', []);
+	$SecureTransKey     = $secure_keys['fco_v1'] ?? forte_config('secure_transaction_key');
 	$ordernumber        = 'COR-199287';
 	$totalamount        = 10.98;
 	$method             = 'sale';

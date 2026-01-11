@@ -1,0 +1,345 @@
+{
+  "FORTE_TEST_FORCE_TRANSACTION_PAYLOAD": {
+    "authorization_amount": 0.01,
+    "authorization_code": "123456",
+    "billing_address": {
+      "first_name": "Forte",
+      "last_name": "Harness",
+      "physical_address": {
+        "street_line1": "2123 Einstein Way",
+        "street_line2": "Suite 200",
+        "locality": "Hill Valley",
+        "region": "CA",
+        "country": "US",
+        "postal_code": "90217"
+      }
+    },
+    "card": {
+      "card_type": "visa",
+      "name_on_card": "Forte Harness",
+      "account_number": "4111111111111111",
+      "expire_month": 12,
+      "expire_year": 2030,
+      "customer_accounting_code": "123"
+    }
+  },
+  "FORTE_TEST_ONE_TIME_TOKEN_PAYLOAD": {
+    "action": "sale",
+    "authorization_amount": 0.01,
+    "billing_address": {
+      "first_name": "Forte",
+      "last_name": "Harness"
+    },
+    "card": {
+      "one_time_token": "ott_SAMPLE_TOKEN"
+    }
+  },
+  "FORTE_TEST_TRANSACTION_PAYPAL_PAYLOAD": {
+    "action": "sale",
+    "customer_id": "Customer1",
+    "reference_id": "ref_id",
+    "vendor": {
+      "vendor_type": "paypal",
+      "vendor_order_number": "ORDER_NUMBER_SAMPLE"
+    },
+    "billing_address": {
+      "first_name": "Forte",
+      "last_name": "Harness",
+      "phone": "888-888-8888",
+      "email": "account_holder@paypal.com",
+      "physical_address": {
+        "street_line1": "BA Line 1",
+        "locality": "Allen",
+        "region": "TX",
+        "postal_code": "560013",
+        "country": "US"
+      }
+    },
+    "shipping_address": {
+      "first_name": "Forte",
+      "last_name": "Harness",
+      "physical_address": {
+        "street_line1": "SA Line 1",
+        "locality": "Allen",
+        "region": "TX",
+        "postal_code": "560013",
+        "country": "US"
+      }
+    }
+  },
+  "FORTE_TEST_TRANSACTION_PAYPAL_TOKEN_PAYLOAD": {
+    "action": "sale",
+    "authorization_amount": 0.01,
+    "paymethod_token": "mth_SAMPLE",
+    "vendor": {
+      "vendor_type": "paypal",
+      "vendor_billing_agreement_id": "B-AGREEMENT-SAMPLE"
+    }
+  },
+  "FORTE_TEST_TRANSACTION_DIGITAL_WALLET_INITIAL_PAYLOAD": {
+    "action": "sale",
+    "authorization_amount": 0.01,
+    "service_fee_amount": 0.01,
+    "billing_address": {
+      "first_name": "Forte",
+      "last_name": "Harness"
+    },
+    "card": {
+      "name_on_card": "Forte Harness",
+      "account_number": "4111111111111111",
+      "card_type": "visa",
+      "expire_month": "12",
+      "expire_year": "2030",
+      "wallet_type": "ApplePay",
+      "wallet_source": "Web",
+      "wallet_cryptogram": "1K4ortp4uVams7mfCPohYcF"
+    }
+  },
+  "FORTE_TEST_TRANSACTION_DIGITAL_WALLET_DPAN_PAYLOAD": {
+    "action": "sale",
+    "authorization_amount": 0.01,
+    "service_fee_amount": 0.01,
+    "billing_address": {
+      "first_name": "Forte",
+      "last_name": "Harness"
+    },
+    "card": {
+      "name_on_card": "Forte Harness",
+      "account_number": "4111111111111111",
+      "card_type": "visa",
+      "expire_month": "12",
+      "expire_year": "2030",
+      "wallet_type": "ApplePay",
+      "wallet_source": "Web"
+    },
+    "cof_transaction_type": "0",
+    "cof_initial_transaction_id": "123123123123"
+  },
+  "FORTE_TEST_TRANSACTION_DIGITAL_WALLET_TOKEN_PAYLOAD": {
+    "action": "sale",
+    "authorization_amount": 0.01,
+    "service_fee_amount": 0.01,
+    "paymethod_token": "mth_SAMPLE",
+    "card": {
+      "wallet_source": "web"
+    },
+    "billing_address": {
+      "first_name": "Forte",
+      "last_name": "Harness"
+    },
+    "cof_transaction_type": "0",
+    "cof_initial_transaction_id": "295070186326529"
+  },
+  "FORTE_TEST_TRANSACTION_SWIPED_PAYLOAD": {
+    "action": "sale",
+    "authorization_amount": 0.01,
+    "subtotal_amount": 0.01,
+    "billing_address": {
+      "first_name": "Forte",
+      "last_name": "Harness"
+    },
+    "card": {
+      "card_reader": "30050202",
+      "card_data": "0~IPAD100KB|24~98CE04601007130D|1~11|2~87687687687876876876|4~|5~516F2DCD1EB18A99E775E36457E3454AA4C1448635D9067F3151A112D49A6F02F9CAC15F2B608D2E915EBA99846E81AC763AE89D29437B31|6~%B4445220002000007^TESTCARD/TEST^17120000011111000?|7~;4445220002000007=17120000000000000000?|8~|9~00000000|10~000001|11~9500020000C8892001C7|12~00002200|"
+    }
+  },
+  "FORTE_TEST_TRANSACTION_SWIPED_TOKEN_PAYLOAD": {
+    "action": "authorize",
+    "authorization_amount": 0.01,
+    "save_token": "paymethod",
+    "card": {
+      "card_reader": "30050202",
+      "card_data": "0~IPAD100KB|24~98CE04601007130D|1~11|2~87687687687876876876|4~|5~516F2DCD1EB18A99E775E36457E3454AA4C1448635D9067F3151A112D49A6F02F9CAC15F2B608D2E915EBA99846E81AC763AE89D29437B31|6~%B4445220002000007^TESTCARD/TEST^17120000011111000?|7~;4445220002000007=17120000000000000000?|8~|9~00000000|10~000001|11~9500020000C8892001C7|12~00002200|"
+    }
+  },
+  "FORTE_TEST_TRANSACTION_EMV_EDYNAMO_PAYLOAD": {
+    "action": "sale",
+    "authorization_amount": 0.01,
+    "billing_address": {
+      "first_name": "Forte",
+      "last_name": "Harness",
+      "phone": "444-444-4444",
+      "physical_address": {
+        "street_line1": "8003 Clock Tower Ln",
+        "street_line2": "Suite 200",
+        "locality": "Hill Valley",
+        "region": "CA",
+        "postal_code": "46203"
+      }
+    },
+    "card": {
+      "card_reader": "21079802",
+      "card_emv_data": "9011880B43A7710002B0|963A2FBE21EB8FDDB43CEEFBA158720272930EE43574E88906D6E05222C46DEB1675DA87496C8B1FE6A126F2D3DD1BC4036534DFBE7720E6B0AE80C08C06D5F00573591DD926627718B38F96037C26635AE8D7CFBC4552DAB59B0D26362EA4B31D328BC2EDA3C2807474CB79436116D5A21FADA42EAF0971B6BA73B46C965C73203D56DEB927AE9E09D32A64DBC5B6D17486D97892F0C2BC2C5F7105AFAB46257183BFFBA9E6D4EAA03BAC5F300F61ACA3F315A7ED15B90D79D8D09F92F21634CD8577E46F77730433D73946E1393320CEE7AD523B4C2A102DD0936E37875374BFFA835FDF03A955FEB3C913774B16419FACC10E6E032A2CC46E9103DC70ED655D38989ED6FA3DB5B202AFCFC1D1CAA825BC8E0DCE06CDC4E4FC5584B04D3F210A695626A3E779E5230708BE3280F379570B7EC3215EE4319D2308A0718C5F4F4DFB28924C8B123C"
+    }
+  },
+  "FORTE_TEST_TRANSACTION_EMV_DYNAFLEX_PAYLOAD": {
+    "action": "sale",
+    "authorization_amount": 0.01,
+    "service_fee_amount": 0.01,
+    "billing_address": {
+      "first_name": "Forte",
+      "last_name": "Harness",
+      "phone": "444-444-4444",
+      "physical_address": {
+        "street_line1": "8003 Clock Tower Ln",
+        "street_line2": "Suite 200",
+        "locality": "Hill Valley",
+        "region": "CA",
+        "postal_code": "46203"
+      }
+    },
+    "card": {
+      "card_reader": "dynaflex2go",
+      "card_emv_data": "{\"DeviceID\":\"[USBDynaFlex]B54E7W23\",\"TransactionOutput\":{\"TransactionType\":1,\"TransactionStatus\":0,\"OperationStatus\":0,\"DataType\":2,\"ApplicationIdentifier\":\"A0000000031010\",\"CardBrand\":\"Visa\",\"ARQCData\":\"0188F9820184DFDF540A9070050B54E7A500006ADFDF550182DFDF250742353445374135FA8201627082015E82021800DFDF530100DFDF4D223B343736313733303030303030303032393D3030303030303030303030303030303FDFDF520105F8820126DFDF59820108DDEDCAC94F314B2DF4F51ED4C7A3041F36C46DB29AEECCB36897A5D614D4FE6409FAA5AD3639FF29F6412C92CD25172E9CCD52C8606CE1BE34991435FB729F5781F3D71C6E1879E2AE5D421C6D04BC1A7A26865CFEFE69BC559C24BA398B3D091B32167CF67635AFF3E03D39F3E6F8B8A2BA47BB9A5F5ED3EC796346884B83A8D06CEB5D80C43283CBDDA49CE1995B07059C4838F30B0D369111A11C8F98E94BCED466A26565C7A07E52057F4F8306D40BE5F172C8BCC4A7302AB04FF31D64233068FC04245A83EA5935B7AD06C6C903F75810E276E9C4F926AB3F81F29BC1558D891958881ACCBCAC94EB4AEC15533C3A2BE01B42C52CCF23B3364004F7123DCCDB75A45CEDCAD5DFDF560A9070050B54E7A500006ADFDF570180DFDF5801000000000000001F0C1A64\"}}"
+    }
+  },
+  "FORTE_TEST_TRANSACTION_EMV_V400C_PAYLOAD": {
+    "action": "sale",
+    "authorization_amount": 0.01,
+    "serial_number": "401-333-444"
+  },
+  "FORTE_TEST_TRANSACTION_SURCHARGE_PAYLOAD": {
+    "action": "sale",
+    "authorization_amount": 0.01,
+    "surcharge_fee_amount": 0.01,
+    "billing_address": {
+      "first_name": "Forte",
+      "last_name": "Harness"
+    },
+    "card": {
+      "card_type": "visa",
+      "name_on_card": "Forte Harness",
+      "account_number": "4111111111111111",
+      "expire_month": "12",
+      "expire_year": "2030",
+      "card_verification_value": "123"
+    }
+  },
+  "FORTE_TEST_PAYMETHOD_ONE_TIME_CARD_PAYLOAD": {
+    "label": "Visa - OneTime",
+    "notes": "One-time token card",
+    "card": {
+      "one_time_token": "ott_SAMPLE_TOKEN",
+      "name_on_card": "Forte Harness"
+    }
+  },
+  "FORTE_TEST_PAYMETHOD_ONE_TIME_ECHECK_PAYLOAD": {
+    "notes": "One-time token echeck",
+    "echeck": {
+      "one_time_token": "ott_SAMPLE_TOKEN",
+      "account_holder": "Forte Harness"
+    }
+  },
+  "FORTE_TEST_VENDOR_AGREEMENT_PAYLOAD": {
+    "return_url": "https://example.com/return",
+    "cancel_url": "https://example.com/cancel",
+    "shipping_address": {
+      "first_name": "Forte",
+      "last_name": "Harness",
+      "physical_address": {
+        "street_line1": "8003 Clock Tower Ln",
+        "locality": "Hill Valley",
+        "region": "CA",
+        "postal_code": "46203",
+        "country": "US"
+      }
+    }
+  },
+  "FORTE_TEST_VENDOR_ORDER_PAYLOAD": {
+    "amount": 0.01,
+    "currency": "USD",
+    "intent": "sale",
+    "shipping_address": {
+      "first_name": "Forte",
+      "last_name": "Harness",
+      "physical_address": {
+        "street_line1": "8003 Clock Tower Ln",
+        "locality": "Hill Valley",
+        "region": "CA",
+        "postal_code": "46203",
+        "country": "US"
+      }
+    }
+  },
+  "FORTE_TEST_VENDOR_ORDER_NO_SHIP_PAYLOAD": {
+    "amount": 0.01,
+    "currency": "USD",
+    "intent": "sale"
+  },
+  "FORTE_TEST_VENDOR_ORDER_UPDATE_PAYLOAD": {
+    "intent": "sale"
+  },
+  "FORTE_TEST_LOCATION_UPDATE_PAYLOAD": {
+    "street_address1": "1200 Clock Tower Lane",
+    "street_address2": "Suite 500",
+    "locality": "Hill Valley",
+    "region": "CA",
+    "postal_code": "90214",
+    "country": "US"
+  },
+  "FORTE_TEST_LOCATION_LIMITS_PAYLOAD": {
+    "services": {
+      "echeck": {
+        "daily_debit": 1000,
+        "daily_credit": 1000,
+        "monthly_debit": 50000,
+        "monthly_credit": 50000,
+        "per_trans_debit": 501.0,
+        "per_trans_credit": 500.0
+      },
+      "card": {
+        "daily_debit": 10000,
+        "daily_credit": 10000,
+        "monthly_debit": 100000,
+        "monthly_credit": 100000,
+        "per_trans_debit": 501.0,
+        "per_trans_credit": 500.0
+      }
+    }
+  },
+  "FORTE_TEST_APPLICATION_PAYLOAD": {
+    "fee_id": 1648,
+    "source_ip": "55.5.55.55",
+    "annual_volume": "100000",
+    "average_transaction_amount": "10000",
+    "maximum_transaction_amount": "5000",
+    "average_payable_amount": "2500",
+    "maximum_payable_amount": "10000",
+    "monthly_payable_volume": "1000",
+    "market_type": "internet",
+    "t_and_c_version": "Tc1",
+    "t_and_c_time_stamp": "4/3/2016",
+    "risk_session_id": "s3AH5fDIdXjI7y1disbZChw8Qrgl6Bz7uKZLjRrgNhYmuWApi2FhdhB5wW4MgqknPHx1WR7s4RX1vWs",
+    "applicant_organization": {
+      "legal_name": "George McFly Enterprises",
+      "tax_id_number": "123456789",
+      "legal_structure": "partnership_general_or_limited",
+      "dba_name": "GMF Enterprises",
+      "street_address1": "503 DeLorean Way",
+      "locality": "Hill Valley",
+      "region": "CA",
+      "postal_code": "95420-4344",
+      "customer_service_phone": "5555236987",
+      "website": "www.GMFEnterprises.com",
+      "business_type": "A10100",
+      "bank_routing_number": "211170101",
+      "bank_account_number": "121245611",
+      "bank_account_type": "checking"
+    },
+    "owner": {
+      "first_name": "George",
+      "last_name": "McFly",
+      "street_address1": "49 Great Scott! Drive",
+      "locality": "Hill Valley",
+      "region": "CA",
+      "postal_code": "95420-4345",
+      "country": "USA",
+      "citizenship": "USA",
+      "email_address": "george.mcfly@GMFEnterprises.com",
+      "mobile_phone": "214-448-5393",
+      "last4_ssn": "6789",
+      "date_of_birth": "3/3/1938",
+      "percentage": "40"
+    }
+  }
+}

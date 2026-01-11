@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Forte Test Harness Coverage Dashboard</title>
+<style>
+:root {
+  --bg: #0f172a;
+  --panel: #111827;
+  --muted: #94a3b8;
+  --text: #e5e7eb;
+  --accent: #22c55e;
+  --warn: #f59e0b;
+  --bad: #ef4444;
+  --good: #22c55e;
+  --blue: #38bdf8;
+  --border: #1f2937;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  background: radial-gradient(1200px 600px at 20% -10%, #1f2937 0%, #0f172a 55%);
+  color: var(--text);
+}
+header { padding: 28px 32px 8px; }
+header h1 { margin: 0 0 6px; font-size: 28px; letter-spacing: 0.2px; }
+header p { margin: 0; color: var(--muted); }
+main { padding: 16px 32px 40px; display: grid; gap: 18px; }
+.grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.card {
+  background: linear-gradient(180deg, #111827 0%, #0b1220 100%);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+}
+.card h3 { margin: 0 0 6px; font-size: 14px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.8px; }
+.card .value { font-size: 28px; font-weight: 700; }
+.card .sub { color: var(--muted); font-size: 12px; }
+.progress {
+  height: 10px; background: #1f2937; border-radius: 999px; overflow: hidden; margin-top: 10px;
+}
+.progress span { display: block; height: 100%; background: linear-gradient(90deg, #22c55e, #84cc16); width: 0; }
+.table-wrap { overflow: auto; border-radius: 12px; border: 1px solid var(--border); }
+.table { width: 100%; border-collapse: collapse; min-width: 980px; }
+.table th, .table td { padding: 10px 12px; border-bottom: 1px solid var(--border); text-align: left; }
+.table th { position: sticky; top: 0; background: #0b1220; font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.6px; }
+.badge { padding: 4px 8px; border-radius: 999px; font-size: 11px; font-weight: 700; display: inline-block; }
+.badge.good { background: rgba(34,197,94,0.15); color: var(--good); }
+.badge.warn { background: rgba(245,158,11,0.15); color: var(--warn); }
+.badge.bad { background: rgba(239,68,68,0.15); color: var(--bad); }
+.badge.neutral { background: rgba(148,163,184,0.15); color: var(--muted); }
+.bar {
+  height: 8px; border-radius: 999px; background: #1f2937; overflow: hidden; margin-top: 6px;
+}
+.bar span { height: 100%; display: block; background: var(--blue); }
+.section-title { font-size: 16px; margin: 0 0 8px; text-transform: uppercase; letter-spacing: 0.8px; color: var(--muted); }
+.list { margin: 0; padding-left: 18px; }
+.list li { margin: 4px 0; color: var(--muted); }
+.footer-note { color: var(--muted); font-size: 12px; }
+
+@media (max-width: 900px) {
+  main { padding: 16px; }
+  header { padding: 20px 16px 8px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Forte Test Harness Coverage Dashboard</h1>
+  <p>REST v3 coverage + non‑REST integration inventory. Generated from Postman collection and PHP harness.</p>
+</header>
+<main>
+  
+<div class="grid">
+  <div class="card">
+    <h3>Total REST Endpoints</h3>
+    <div class="value">143</div>
+    <div class="sub">From Postman v3 collection</div>
+  </div>
+  <div class="card">
+    <h3>Covered Endpoints</h3>
+    <div class="value">143</div>
+    <div class="sub">Path coverage in PHP scripts</div>
+  </div>
+  <div class="card">
+    <h3>Coverage %</h3>
+    <div class="value">100%</div>
+    <div class="progress"><span style="width:100%;"></span></div>
+    <div class="sub">Commented examples included</div>
+  </div>
+  <div class="card">
+    <h3>Config-driven Coverage</h3>
+    <div class="value">14 / 14</div>
+    <div class="sub">Resource groups fully config-driven</div>
+  </div>
+</div>
+
+
+  <section class="card">
+    <h2 class="section-title">REST v3 Coverage Summary</h2>
+    <div class="table-wrap">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Resource Group</th>
+            <th>Endpoints</th>
+            <th>Covered</th>
+            <th>Not Covered</th>
+            <th>Coverage %</th>
+            <th>Config-driven</th>
+            <th>Centralizable</th>
+            <th>Example PHP Files</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Addresses</strong><div class='bar'><span style='width:100%;'></span></div></td><td>10</td><td>10</td><td>0</td><td><span class='badge good'>100%</span></td><td><span class='badge good'>Yes</span></td><td><span class='badge good'>Already</span></td><td><small class='muted'>—</small></td></tr><tr><td><strong>Applications</strong><div class='bar'><span style='width:100%;'></span></div></td><td>4</td><td>4</td><td>0</td><td><span class='badge good'>100%</span></td><td><span class='badge good'>Yes</span></td><td><span class='badge good'>Already</span></td><td><small class='muted'>REST-v3-onetime.php<br>REST-v3.php</small></td></tr><tr><td><strong>Customers</strong><div class='bar'><span style='width:100%;'></span></div></td><td>17</td><td>17</td><td>0</td><td><span class='badge good'>100%</span></td><td><span class='badge good'>Yes</span></td><td><span class='badge good'>Already</span></td><td><small class='muted'>REST-v3-onetime.php<br>REST-v3.php<br>internal-toolbox/customers/REST_create_customers.php<br>internal-toolbox/data_exporter.php</small></td></tr><tr><td><strong>Disputes</strong><div class='bar'><span style='width:100%;'></span></div></td><td>3</td><td>3</td><td>0</td><td><span class='badge good'>100%</span></td><td><span class='badge good'>Yes</span></td><td><span class='badge good'>Already</span></td><td><small class='muted'>—</small></td></tr><tr><td><strong>Documents</strong><div class='bar'><span style='width:100%;'></span></div></td><td>4</td><td>4</td><td>0</td><td><span class='badge good'>100%</span></td><td><span class='badge good'>Yes</span></td><td><span class='badge good'>Already</span></td><td><small class='muted'>REST-doc.upload.shone.works.php</small></td></tr><tr><td><strong>Fundings</strong><div class='bar'><span style='width:100%;'></span></div></td><td>5</td><td>5</td><td>0</td><td><span class='badge good'>100%</span></td><td><span class='badge good'>Yes</span></td><td><span class='badge good'>Already</span></td><td><small class='muted'>—</small></td></tr><tr><td><strong>Locations</strong><div class='bar'><span style='width:100%;'></span></div></td><td>5</td><td>5</td><td>0</td><td><span class='badge good'>100%</span></td><td><span class='badge good'>Yes</span></td><td><span class='badge good'>Already</span></td><td><small class='muted'>—</small></td></tr><tr><td><strong>Organizations</strong><div class='bar'><span style='width:100%;'></span></div></td><td>2</td><td>2</td><td>0</td><td><span class='badge good'>100%</span></td><td><span class='badge good'>Yes</span></td><td><span class='badge good'>Already</span></td><td><small class='muted'>—</small></td></tr><tr><td><strong>Paymethods</strong><div class='bar'><span style='width:100%;'></span></div></td><td>21</td><td>21</td><td>0</td><td><span class='badge good'>100%</span></td><td><span class='badge good'>Yes</span></td><td><span class='badge good'>Already</span></td><td><small class='muted'>REST-v3-onetime.php<br>REST-v3.php<br>internal-toolbox/importer/code/IMPORT-count.everything.php<br>internal-toolbox/importer/code/IMPORT-export.paymethods.php</small></td></tr><tr><td><strong>Scheduleitems</strong><div class='bar'><span style='width:100%;'></span></div></td><td>8</td><td>8</td><td>0</td><td><span class='badge good'>100%</span></td><td><span class='badge good'>Yes</span></td><td><span class='badge good'>Already</span></td><td><small class='muted'>REST-v3-onetime.php<br>REST-v3.php</small></td></tr><tr><td><strong>Schedules</strong><div class='bar'><span style='width:100%;'></span></div></td><td>12</td><td>12</td><td>0</td><td><span class='badge good'>100%</span></td><td><span class='badge good'>Yes</span></td><td><span class='badge good'>Already</span></td><td><small class='muted'>REST-v3-onetime.php<br>REST-v3.php<br>internal-toolbox/importer/code/IMPORT-count.everything.php<br>internal-toolbox/importer/code/IMPORT-engine.php</small></td></tr><tr><td><strong>Settlements</strong><div class='bar'><span style='width:100%;'></span></div></td><td>4</td><td>4</td><td>0</td><td><span class='badge good'>100%</span></td><td><span class='badge good'>Yes</span></td><td><span class='badge good'>Already</span></td><td><small class='muted'>REST-v3-onetime.php<br>REST-v3.php<br>rest-settlement.php</small></td></tr><tr><td><strong>Transactions</strong><div class='bar'><span style='width:100%;'></span></div></td><td>42</td><td>42</td><td>0</td><td><span class='badge good'>100%</span></td><td><span class='badge good'>Yes</span></td><td><span class='badge good'>Already</span></td><td><small class='muted'>REST-onetime.to.transaction.php<br>REST-simple.php<br>REST-v3-onetime.php<br>REST-v3.php</small></td></tr><tr><td><strong>Vendors</strong><div class='bar'><span style='width:100%;'></span></div></td><td>6</td><td>6</td><td>0</td><td><span class='badge good'>100%</span></td><td><span class='badge good'>Yes</span></td><td><span class='badge good'>Already</span></td><td><small class='muted'>—</small></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="footer-note">Coverage is based on paths referenced in PHP (including commented examples).</p>
+  </section>
+
+  <section class="card">
+    <h2 class="section-title">Non‑REST Coverage</h2>
+    <div class="table-wrap">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Files</th>
+            <th>Config-driven</th>
+            <th>Centralizable</th>
+            <th>Example Files</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>AGI / Payments Gateway</strong></td><td>2</td><td><span class='badge good'>Yes</span></td><td><span class='badge good'>Already</span></td><td><small class='muted'>AGI-FULL.php<br>AGI-L3.php</small></td></tr><tr><td><strong>Forte Checkout (FCO)</strong></td><td>18</td><td><span class='badge warn'>Partial</span></td><td><span class='badge warn'>Yes (needs refactor)</span></td><td><small class='muted'>ABBA-send_notification.php<br>FCO-james.php<br>FCO-v1.php<br>FCO-v2.php</small></td></tr><tr><td><strong>Forte.js / Tokenization</strong></td><td>3</td><td><span class='badge good'>Yes</span></td><td><span class='badge good'>Already</span></td><td><small class='muted'>Forte.js.onetime.to.transaction.php<br>forte.js.GOOD.php<br>forte.js.transaction.krista.php</small></td></tr><tr><td><strong>Freshdesk</strong></td><td>7</td><td><span class='badge warn'>Partial</span></td><td><span class='badge warn'>Yes (needs refactor)</span></td><td><small class='muted'>config/bootstrap.php<br>config/config.example.php<br>config/config.local.php<br>internal-toolbox/classes.php</small></td></tr><tr><td><strong>HTML2PDF Rocket</strong></td><td>18</td><td><span class='badge warn'>Partial</span></td><td><span class='badge warn'>Yes (needs refactor)</span></td><td><small class='muted'>internal-toolbox/updater/OLD_STUFF/UPDATER-engine.external.php<br>internal-toolbox/updater/OLD_STUFF/UPDATER-engine.php<br>internal-toolbox/updater/OLD_STUFF/UPDATER-pdf MAYBE.php<br>internal-toolbox/updater/OLD_STUFF/UPDATER-pdf.footer.php</small></td></tr><tr><td><strong>Importer/Exporter Tools</strong></td><td>98</td><td><span class='badge warn'>Partial</span></td><td><span class='badge warn'>Yes (needs refactor)</span></td><td><small class='muted'>internal-toolbox/data_exporter.php<br>internal-toolbox/directions.php<br>internal-toolbox/importer GOOD.php<br>internal-toolbox/importer.directions SIMPLE.php</small></td></tr><tr><td><strong>Risk/Fraud Tags</strong></td><td>2</td><td><span class='badge good'>Yes</span></td><td><span class='badge good'>Already</span></td><td><small class='muted'>REST-risk.session.id.php<br>risk_session_id.php</small></td></tr><tr><td><strong>Routing / Validation Utilities</strong></td><td>41</td><td><span class='badge warn'>Partial</span></td><td><span class='badge warn'>Yes (needs refactor)</span></td><td><small class='muted'>Forte.js.onetime.to.transaction.php<br>REST-v3-onetime.php<br>REST-v3.php<br>forte.js.GOOD.php</small></td></tr><tr><td><strong>SOAP Helpers</strong></td><td>3</td><td><span class='badge warn'>Partial</span></td><td><span class='badge warn'>Yes (needs refactor)</span></td><td><small class='muted'>SOAP-hash.php<br>config/config.example.php<br>config/config.local.php</small></td></tr><tr><td><strong>SWP (Simple Web Payments)</strong></td><td>15</td><td><span class='badge warn'>Partial</span></td><td><span class='badge warn'>Yes (needs refactor)</span></td><td><small class='muted'>SWP-CO-signature.php<br>SWP-EMBEDDED-capture.php<br>SWP-EMBEDDED-charge.php<br>SWP-Redirect-FULL.php</small></td></tr><tr><td><strong>Webhooks / Notifications</strong></td><td>6</td><td><span class='badge warn'>Partial</span></td><td><span class='badge warn'>Yes (needs refactor)</span></td><td><small class='muted'>ABBA-send_notification.php<br>VYRD-send_notification.php<br>capture.webhook OLD.php<br>capture.webhook.php</small></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 class="section-title">Not Covered (REST v3)</h2>
+    <ul class="list"></ul>
+  </section>
+
+  <section class="card">
+    <h2 class="section-title">What It Takes for Full Coverage</h2>
+    <ul class="list">
+      <li>Implement missing endpoints per resource group (GET/POST/PUT/DELETE as required).</li>
+      <li>Add standardized REST client helpers (auth headers, base URL, logging, retries).</li>
+      <li>Introduce integration tests with sandbox credentials and clean test data.</li>
+      <li>Define teardown policies for destructive endpoints (delete, void, purge).</li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>

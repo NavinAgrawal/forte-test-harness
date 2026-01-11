@@ -6,6 +6,8 @@ Replaces known credential fields and tokens with placeholders.
 import argparse
 import os
 import re
+import subprocess
+
 
 TEXT_EXTS = {
     ".php", ".html", ".htm", ".js", ".css", ".xml", ".txt", ".csv", ".md", ".json", ".wsa"
@@ -99,16 +101,39 @@ def process_file(path: str, check: bool = False) -> bool:
     return False
 
 
-def walk_and_sanitize(root: str, check: bool = False, changed_paths=None) -> int:
+def walk_and_sanitize(root: str, check: bool = False, changed_paths=None, allowed_paths=None) -> int:
     changed = 0
     for dirpath, _, filenames in os.walk(root):
         for name in filenames:
             path = os.path.join(dirpath, name)
+            if allowed_paths is not None and os.path.normpath(path) not in allowed_paths:
+                continue
             if process_file(path, check=check):
                 changed += 1
                 if changed_paths is not None:
                     changed_paths.append(path)
     return changed
+
+
+def git_tracked_files() -> set[str]:
+    try:
+        repo_root = subprocess.check_output(
+            ["git", "rev-parse", "--show-toplevel"], text=True, stderr=subprocess.DEVNULL
+        ).strip()
+        output = subprocess.check_output(
+            ["git", "ls-files", "-z"], cwd=repo_root
+        )
+    except Exception:
+        return set()
+
+    tracked = set()
+    for raw in output.split(b"\x00"):
+        if not raw:
+            continue
+        rel = raw.decode("utf-8", errors="ignore")
+        path = os.path.normpath(os.path.join(repo_root, rel))
+        tracked.add(path)
+    return tracked
 
 
 def main() -> None:
@@ -118,17 +143,32 @@ def main() -> None:
         action="store_true",
         help="Detect files that would be updated without modifying them.",
     )
+    parser.add_argument(
+        "--tracked-only",
+        action="store_true",
+        help="Only scan files tracked by git (ignores gitignored local files).",
+    )
     parser.add_argument("roots", nargs="+", help="Root folders to sanitize")
     args = parser.parse_args()
 
     total_changed = 0
     changed_paths = []
+    tracked_paths = git_tracked_files() if args.tracked_only else None
     for root in args.roots:
         if not os.path.isdir(root):
             print(f"[WARN] Not a directory: {root}")
             continue
+        allowed = None
+        if tracked_paths is not None:
+            root_abs = os.path.normpath(os.path.abspath(root))
+            allowed = {p for p in tracked_paths if p.startswith(root_abs + os.sep) or p == root_abs}
         per_root_paths = [] if args.check else None
-        changed = walk_and_sanitize(root, check=args.check, changed_paths=per_root_paths)
+        changed = walk_and_sanitize(
+            root,
+            check=args.check,
+            changed_paths=per_root_paths,
+            allowed_paths=allowed,
+        )
         print(f"[INFO] {root}: updated {changed} files")
         total_changed += changed
         if args.check and per_root_paths:

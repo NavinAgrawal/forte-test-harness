@@ -169,7 +169,7 @@
    <soap:Header/>
    <soap:Body>
       <pay:ExecuteSocketDelimitedQuery>
-         <pay:strParameters>pg_merchant_id=YOUR_PG_MERCHANT_ID|pg_password=YOUR_PG_PASSWORD|pg_transaction_type=20|pg_entry_class_code=CCD|pg_create_token=cst_|ecom_payment_check_trn=000000000|ecom_payment_check_account=0000000000|ecom_payment_check_account_type=C|pg_total_amount=1.01|ecom_billto_postal_name_first=Brian|ecom_billto_postal_name_last=Morales|ecom_billto_postal_street_line1=1616 Main Street|ecom_billto_postal_city=Clark|ecom_billto_postal_stateprov=CO|ecom_billto_postal_postalcode=80111|endofdata|</pay:strParameters>
+         <pay:strParameters>pg_merchant_id=${#Project#pg_merchant_id}|pg_password=${#Project#pg_password}|pg_transaction_type=20|pg_entry_class_code=CCD|pg_create_token=cst_|ecom_payment_check_trn=000000000|ecom_payment_check_account=0000000000|ecom_payment_check_account_type=C|pg_total_amount=1.01|ecom_billto_postal_name_first=Brian|ecom_billto_postal_name_last=Morales|ecom_billto_postal_street_line1=1616 Main Street|ecom_billto_postal_city=Clark|ecom_billto_postal_stateprov=CO|ecom_billto_postal_postalcode=80111|endofdata|</pay:strParameters>
          <pay:strDelimiter>|</pay:strDelimiter>
       </pay:ExecuteSocketDelimitedQuery>
    </soap:Body>
@@ -181,8 +181,8 @@
    <soap:Header/>
    <soap:Body>
       <pay:ExecuteSocketQuery>
-         <pay:pg_merchant_id>YOUR_PG_MERCHANT_ID</pay:pg_merchant_id>
-         <pay:pg_password>YOUR_PG_PASSWORD</pay:pg_password>
+         <pay:pg_merchant_id>${#Project#pg_merchant_id}</pay:pg_merchant_id>
+         <pay:pg_password>${#Project#pg_password}</pay:pg_password>
          <pay:pg_transaction_type>10</pay:pg_transaction_type>
          <pay:pg_merchant_data_1></pay:pg_merchant_data_1>
          <pay:pg_merchant_data_2></pay:pg_merchant_data_2>
@@ -254,8 +254,8 @@
    <soap:Header/>
    <soap:Body>
       <pay:ExecuteSocketQuery>
-         <pay:pg_merchant_id>YOUR_PG_MERCHANT_ID</pay:pg_merchant_id>
-         <pay:pg_password>YOUR_PG_PASSWORD</pay:pg_password>
+         <pay:pg_merchant_id>${#Project#pg_merchant_id}</pay:pg_merchant_id>
+         <pay:pg_password>${#Project#pg_password}</pay:pg_password>
          <pay:pg_transaction_type>10</pay:pg_transaction_type>
          <pay:pg_total_amount>0.02</pay:pg_total_amount>
          <pay:ecom_payment_card_type>AMER</pay:ecom_payment_card_type>
@@ -279,8 +279,8 @@
    <soap:Header/>
    <soap:Body>
       <pay:ExecuteSocketQuery>
-         <pay:pg_merchant_id>YOUR_PG_MERCHANT_ID</pay:pg_merchant_id>
-         <pay:pg_password>YOUR_PG_PASSWORD</pay:pg_password>
+         <pay:pg_merchant_id>${#Project#pg_merchant_id}</pay:pg_merchant_id>
+         <pay:pg_password>${#Project#pg_password}</pay:pg_password>
          <pay:pg_transaction_type>20</pay:pg_transaction_type>
          <pay:pg_merchant_data_1></pay:pg_merchant_data_1>
          <pay:pg_merchant_data_2></pay:pg_merchant_data_2>
@@ -342,4 +342,4 @@
          <pay:pg_entry_class_code></pay:pg_entry_class_code>
       </pay:ExecuteSocketQuery>
    </soap:Body>
-</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://paymentsgateway.achdirect.com/PaymentGatewaySoap/ExecuteSocketQueryRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://paymentsgateway.achdirect.com/PaymentGatewaySoap/ExecuteSocketQueryRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties><con:property><con:name>pg_merchant_id</con:name><con:value>YOUR_PG_MERCHANT_ID</con:value></con:property><con:property><con:name>pg_password</con:name><con:value>YOUR_PG_PASSWORD</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

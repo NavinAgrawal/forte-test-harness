@@ -16,7 +16,8 @@ function utc() {
 }
 
 	$APILoginID       = forte_config('api_login_id');		
-	$SecureTransKey   = 'I5wrc7oh6e';
+	$secure_keys      = (array)forte_config('secure_transaction_keys', []);
+	$SecureTransKey   = $secure_keys['swp_embedded_capture'] ?? forte_config('secure_transaction_key');
 	$client_id        = '';                            //can be associated with an existing client, or it can be a clientless paymethod
 	$millitime        = microtime(true) * 1000;
 	//$utc_time         = number_format(($millitime * 10000) + 621355968000000000 , 0, '.', '');

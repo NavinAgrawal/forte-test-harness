@@ -63,6 +63,7 @@ The HTML dashboards in `docs/` are the current status snapshots and should be ke
 - `docs/test-dashboard.html` (integration test status)
 - `docs/php-inventory.html` (PHP script surface inventory)
 - `docs/PROJECT_STRUCTURE.md` (folder roles and key files)
+- `docs/PHP_SCRIPT_GUIDE.md` (how to run and what the PHP scripts cover)
 
 Regenerate after changes with:
 

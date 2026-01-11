@@ -20,6 +20,7 @@ Confidentiality: Internal / Do Not Distribute
 4. Open examples:
    - Main demos: `http://localhost:8080/`
    - Internal toolbox: `http://localhost:8080/internal-toolbox/index.php`
+   - See `docs/PHP_SCRIPT_GUIDE.md` for script coverage by surface.
 
 ## SoapUI projects
 

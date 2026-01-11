@@ -89,6 +89,7 @@ This is tracked in `docs/test-dashboard.html` and must be kept current.
 
 See `docs/TEST_RUNBOOK.md` for step-by-step execution and safety checks.
 See `docs/CREDENTIAL_GROUPS.md` for naming and validation buckets.
+See `docs/SECURITY_SAFEGUARDS.md` for repo safety guardrails.
 
 ### Running sandbox integration tests
 

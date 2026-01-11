@@ -35,3 +35,4 @@ Confidentiality: Internal / Do Not Distribute
 - Documented credential group naming and validation buckets.
 - Added navigation links across HTML dashboards for easier browsing.
 - Added last-updated timestamps to HTML dashboards.
+- Documented security safeguards and safe commit workflow.

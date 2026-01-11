@@ -66,6 +66,7 @@ The HTML dashboards in `docs/` are the current status snapshots and should be ke
 - `docs/PHP_SCRIPT_GUIDE.md` (how to run and what the PHP scripts cover)
 - `docs/TEST_RUNBOOK.md` (step-by-step testing runbook)
 - `docs/CREDENTIAL_GROUPS.md` (credential group naming and status buckets)
+- `docs/SECURITY_SAFEGUARDS.md` (how we prevent secret leaks)
 
 Regenerate after changes with:
 

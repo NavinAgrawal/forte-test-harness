@@ -37,3 +37,4 @@ Confidentiality: Internal / Do Not Distribute
 - Added last-updated timestamps to HTML dashboards.
 - Documented security safeguards and safe commit workflow.
 - Added `make verify` for sanitize + tests.
+- Improved PHP inventory detection for config-driven scripts.

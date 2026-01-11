@@ -32,7 +32,9 @@ CATEGORY_PATTERNS = [
     ("Routing / Validation", [r"routing"]),
 ]
 
-CONFIG_DRIVEN_PATTERN = re.compile(r"forte_(config|base_url|js_url|pg_action_url|swp_base_url)\s*\(")
+CONFIG_DRIVEN_PATTERN = re.compile(
+    r"forte_(config|base_url|js_url|pg_action_url|swp_base_url)\s*\(|config/bootstrap\.php"
+)
 
 
 def load_php_files() -> list[Path]:

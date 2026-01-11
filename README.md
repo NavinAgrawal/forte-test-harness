@@ -74,6 +74,12 @@ Regenerate after changes with:
 make dashboards
 ```
 
+Quick safety check:
+
+```bash
+make verify
+```
+
 The generator reads the Postman collection from `FORTE_POSTMAN_COLLECTION` if set. If not set,
 it will look for `Original - Forte REST API v3-collection.json` in the repo root or the default
 DevTools path.

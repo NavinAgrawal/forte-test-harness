@@ -36,3 +36,4 @@ Confidentiality: Internal / Do Not Distribute
 - Added navigation links across HTML dashboards for easier browsing.
 - Added last-updated timestamps to HTML dashboards.
 - Documented security safeguards and safe commit workflow.
+- Added `make verify` for sanitize + tests.

@@ -7,7 +7,7 @@ PHPUNIT ?= vendor/bin/phpunit
 export FORTE_ENV
 export FORTE_CONFIG_PATH
 
-.PHONY: help setup config sanitize sanitize-check dashboards inventory soap-properties credential-groups rest-groups swp-groups agi-groups soap-groups test test-php test-integration test-python run hooks
+.PHONY: help setup config sanitize sanitize-check verify dashboards inventory soap-properties credential-groups rest-groups swp-groups agi-groups soap-groups test test-php test-integration test-python run hooks
 
 help:
 	@echo "Targets:"
@@ -15,6 +15,7 @@ help:
 	@echo "  config      Create local config from example if missing"
 	@echo "  sanitize    Redact credentials/placeholders in demo artifacts"
 	@echo "  sanitize-check Validate no redactions are needed"
+	@echo "  verify      Run sanitize-check + tests"
 	@echo "  dashboards  Regenerate HTML dashboards"
 	@echo "  inventory   Regenerate PHP inventory dashboard"
 	@echo "  soap-properties Export SoapUI local.properties from config.local.php"
@@ -41,6 +42,8 @@ sanitize:
 
 sanitize-check:
 	$(PYTHON) tools/sanitize_placeholders.py --check --tracked-only api-demo-php-harness soap-projects
+
+verify: sanitize-check test
 
 dashboards: inventory
 	$(PYTHON) tools/generate_dashboards.py

@@ -31,8 +31,7 @@ make hooks
 ## Safe workflow
 
 1. Make changes.
-2. Run `make sanitize-check` (verifies tracked files only).
-3. Run tests (`make test`).
+2. Run `make verify` (sanitize-check + tests).
 4. Push (hook runs steps 2–3 automatically).
 
 ## Redaction patterns

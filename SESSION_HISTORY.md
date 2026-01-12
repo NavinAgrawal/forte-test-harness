@@ -38,3 +38,4 @@ Confidentiality: Internal / Do Not Distribute
 - Documented security safeguards and safe commit workflow.
 - Added `make verify` for sanitize + tests.
 - Improved PHP inventory detection for config-driven scripts.
+- Added unit tests for the dashboard generator helpers.

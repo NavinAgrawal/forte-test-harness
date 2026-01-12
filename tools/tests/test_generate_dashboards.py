@@ -1,0 +1,197 @@
+import importlib.util
+import json
+import os
+import tempfile
+import unittest
+from pathlib import Path
+
+MODULE_PATH = Path(__file__).resolve().parents[1] / "generate_dashboards.py"
+
+spec = importlib.util.spec_from_file_location("generate_dashboards", MODULE_PATH)
+mod = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(mod)
+
+
+class GenerateDashboardsTests(unittest.TestCase):
+    def setUp(self):
+        self.tmpdir = tempfile.TemporaryDirectory()
+        self.root = Path(self.tmpdir.name)
+        (self.root / "api-demo-php-harness").mkdir(parents=True)
+        (self.root / "docs").mkdir(parents=True)
+        (self.root / "tests/php/integration").mkdir(parents=True)
+
+        self.collection_path = self.root / "collection.json"
+        self.collection_path.write_text(
+            json.dumps(
+                {
+                    "item": [
+                        {
+                            "name": "Customers",
+                            "item": [
+                                {
+                                    "name": "List Customers",
+                                    "request": {
+                                        "method": "GET",
+                                        "url": {"path": ["organizations", "{{org}}", "locations", "{{loc}}", "customers"]},
+                                    },
+                                },
+                                {
+                                    "name": "Create Customer",
+                                    "request": {
+                                        "method": "POST",
+                                        "url": {"path": ["organizations", "{{org}}", "locations", "{{loc}}", "customers"]},
+                                    },
+                                },
+                            ],
+                        }
+                    ]
+                }
+            ),
+            encoding="utf-8",
+        )
+
+        self.cases_path = self.root / "tests/php/integration/rest_sandbox_cases.json"
+        self.cases_path.write_text(
+            json.dumps(
+                {
+                    "environment": "sandbox",
+                    "rest": [
+                        {
+                            "group": "Customers",
+                            "method": "GET",
+                            "path": "/organizations/{org}/locations/{loc}/customers",
+                        }
+                    ],
+                    "non_rest": [
+                        {"category": "Forte Checkout (FCO)"},
+                    ],
+                }
+            ),
+            encoding="utf-8",
+        )
+
+        self.flow_cases_path = self.root / "tests/php/integration/rest_flow_cases.json"
+        self.flow_cases_path.write_text(
+            json.dumps({"rest": [], "non_rest": []}),
+            encoding="utf-8",
+        )
+
+        php_with_config = (
+            "<?php\nrequire_once __DIR__ . '/config/bootstrap.php';\n"
+            "// FCO\n"
+            "// /organizations/org_123/locations/loc_456/customers\n"
+            "$path = '/organizations/' . $organization_id . '/locations/' . $location_id . '/customers';\n"
+        )
+        (self.root / "api-demo-php-harness" / "rest.php").write_text(php_with_config, encoding="utf-8")
+
+        php_without_config = "<?php\n// /transactions/trn_123\n$path = '/transactions/trn_123';\n"
+        (self.root / "api-demo-php-harness" / "plain.php").write_text(php_without_config, encoding="utf-8")
+
+        self._orig = {
+            "ROOT": mod.ROOT,
+            "PHP_ROOT": mod.PHP_ROOT,
+            "DOCS_DIR": mod.DOCS_DIR,
+            "INTEGRATION_CASES_PATH": mod.INTEGRATION_CASES_PATH,
+            "INTEGRATION_FLOW_CASES_PATH": mod.INTEGRATION_FLOW_CASES_PATH,
+            "DEFAULT_COLLECTION_CANDIDATES": list(mod.DEFAULT_COLLECTION_CANDIDATES),
+        }
+        mod.ROOT = self.root
+        mod.PHP_ROOT = self.root / "api-demo-php-harness"
+        mod.DOCS_DIR = self.root / "docs"
+        mod.INTEGRATION_CASES_PATH = self.cases_path
+        mod.INTEGRATION_FLOW_CASES_PATH = self.flow_cases_path
+        mod.DEFAULT_COLLECTION_CANDIDATES = []
+
+    def tearDown(self):
+        mod.ROOT = self._orig["ROOT"]
+        mod.PHP_ROOT = self._orig["PHP_ROOT"]
+        mod.DOCS_DIR = self._orig["DOCS_DIR"]
+        mod.INTEGRATION_CASES_PATH = self._orig["INTEGRATION_CASES_PATH"]
+        mod.INTEGRATION_FLOW_CASES_PATH = self._orig["INTEGRATION_FLOW_CASES_PATH"]
+        mod.DEFAULT_COLLECTION_CANDIDATES = self._orig["DEFAULT_COLLECTION_CANDIDATES"]
+        self.tmpdir.cleanup()
+
+    def test_normalize_paths(self):
+        self.assertEqual(mod.normalize_path("/v3/organizations/{{org}}/locations/{{loc}}/customers?x=1"),
+                         "/organizations/VAR/locations/VAR/customers")
+        self.assertEqual(mod.normalize_case_path("/v3/organizations/{org}/locations/{loc}/customers"),
+                         "/organizations/org_VAR/locations/loc_VAR/customers")
+        self.assertEqual(mod.normalize_php_path("/transactions/trn_123"), "/transactions/trn_VAR")
+
+    def test_extract_php_paths(self):
+        text = "$organization_id $location_id '/organizations/' . $organization_id . '/locations/' . $location_id"
+        paths = mod.extract_php_paths(text)
+        self.assertTrue(paths)
+
+    def test_iter_items(self):
+        items = [
+            {
+                "name": "Group",
+                "item": [
+                    {"name": "Req", "request": {"method": "GET", "url": {"path": ["a", "b"]}}}
+                ],
+            }
+        ]
+        rows = list(mod.iter_items(items))
+        self.assertEqual(rows[0]["group"], "Group")
+        self.assertEqual(rows[0]["path"], "/a/b")
+
+    def test_build_coverage_with_integration_cases(self):
+        collection = json.loads(self.collection_path.read_text(encoding="utf-8"))
+        endpoints, summary, non_rest = mod.build_coverage(collection)
+        self.assertEqual(len(endpoints), 2)
+        self.assertTrue(summary)
+        self.assertTrue(non_rest)
+
+    def test_build_coverage_without_integration_cases(self):
+        mod.INTEGRATION_CASES_PATH = self.root / "missing.json"
+        collection = json.loads(self.collection_path.read_text(encoding="utf-8"))
+        _, summary, _ = mod.build_coverage(collection)
+        self.assertTrue(summary)
+
+    def test_render_dashboards(self):
+        html = mod.render_coverage_dashboard(
+            [
+                {
+                    "group": "Customers",
+                    "total": 2,
+                    "covered": 1,
+                    "not_covered": 1,
+                    "coverage_pct": 50,
+                    "config": "Partial",
+                    "centralizable": "Yes (needs refactor)",
+                    "example_files": [],
+                }
+            ],
+            [
+                {
+                    "category": "Forte Checkout (FCO)",
+                    "files_count": 1,
+                    "config": "Yes",
+                    "centralizable": "Already",
+                    "example_files": ["rest.php"],
+                }
+            ],
+        )
+        self.assertIn("Forte Test Harness Coverage Dashboard", html)
+        test_html = mod.render_test_dashboard({"environment": "sandbox", "rest": [], "non_rest": []})
+        self.assertIn("Integration Test Dashboard", test_html)
+
+    def test_load_collection_env(self):
+        os.environ["FORTE_POSTMAN_COLLECTION"] = str(self.collection_path)
+        loaded = mod.load_collection()
+        self.assertIn("item", loaded)
+        os.environ.pop("FORTE_POSTMAN_COLLECTION", None)
+
+    def test_load_collection_missing_raises(self):
+        os.environ["FORTE_POSTMAN_COLLECTION"] = str(self.root / "missing.json")
+        with self.assertRaises(FileNotFoundError):
+            mod.load_collection()
+        os.environ.pop("FORTE_POSTMAN_COLLECTION", None)
+
+    def test_main_writes_dashboards(self):
+        os.environ["FORTE_POSTMAN_COLLECTION"] = str(self.collection_path)
+        mod.main()
+        self.assertTrue((self.root / "docs/coverage-dashboard.html").is_file())
+        self.assertTrue((self.root / "docs/test-dashboard.html").is_file())
+        os.environ.pop("FORTE_POSTMAN_COLLECTION", None)

@@ -804,6 +804,7 @@ main { padding: 16px 32px 40px; display: grid; gap: 18px; }
           <tr><td>PHP config helpers</td><td><span class='badge good'>Passing</span></td><td>100% lines</td><td>config/bootstrap.php</td></tr>
           <tr><td>sanitize_placeholders</td><td><span class='badge good'>Passing</span></td><td>100% lines/branches</td><td>Pre-push safeguard</td></tr>
           <tr><td>generate_php_inventory</td><td><span class='badge good'>Passing</span></td><td>100% lines/branches</td><td>docs/php-inventory.html</td></tr>
+          <tr><td>generate_dashboards</td><td><span class='badge good'>Passing</span></td><td>100% lines/branches</td><td>coverage/test dashboards</td></tr>
         </tbody>
       </table>
     </div>

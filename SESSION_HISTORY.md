@@ -41,3 +41,4 @@ Confidentiality: Internal / Do Not Distribute
 - Added unit tests for the dashboard generator helpers.
 - Expanded dashboard generator tests to 100% coverage and included them in Python coverage reporting.
 - Removed a lingering TODO marker in the customer generator comments.
+- Added dashboard generator coverage to the unit-test table.

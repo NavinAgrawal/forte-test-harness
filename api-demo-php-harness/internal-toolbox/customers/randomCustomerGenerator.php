@@ -161,7 +161,7 @@ class Customer_Generator  {
 		
 		//Create Paymethods and their label and name on card 
 		//REST Can only handle 1 at this time
-		//If adding ACH pay method generation change this area, TODO
+		//If adding ACH pay method generation, change this area.
 		for($i = 0; $i < $paymethod_quantity; $i++) {
 			$new_card_data = $this->credit_gen->get_random_paymethod();
 			$new_paymethod = new paymethod($new_label, $new_notes, $type="Credit Card", $new_card_data);

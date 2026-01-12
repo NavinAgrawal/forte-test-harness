@@ -39,3 +39,4 @@ Confidentiality: Internal / Do Not Distribute
 - Added `make verify` for sanitize + tests.
 - Improved PHP inventory detection for config-driven scripts.
 - Added unit tests for the dashboard generator helpers.
+- Expanded dashboard generator tests to 100% coverage and included them in Python coverage reporting.

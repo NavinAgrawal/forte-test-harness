@@ -100,7 +100,7 @@ test-integration:
 
 test-python:
 	$(COVERAGE) run --source tools -m unittest discover -s tools/tests
-	$(COVERAGE) report --include tools/sanitize_placeholders.py,tools/generate_php_inventory.py -m
+	$(COVERAGE) report --include tools/sanitize_placeholders.py,tools/generate_php_inventory.py,tools/generate_dashboards.py -m
 
 run:
 	php -S localhost:8080 -t api-demo-php-harness

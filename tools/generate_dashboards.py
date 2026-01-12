@@ -350,9 +350,13 @@ def build_coverage(collection: dict):
     non_rest_rows = []
     for category in sorted(category_hits.keys()):
         files = sorted(category_hits[category])
+        if not files:  # pragma: no cover
+            continue
         config_flags = [php_file_config.get(f, False) for f in files]
-        if config_flags:
-            config_status = "Yes" if all(config_flags) else "Partial"
+        if all(config_flags):
+            config_status = "Yes"
+        elif any(config_flags):
+            config_status = "Partial"
         else:
             config_status = "No"
         centralizable = "Already" if config_status == "Yes" else "Yes (needs refactor)"
@@ -828,5 +832,5 @@ def main() -> None:
     print("[OK] Updated docs/coverage-dashboard.html and docs/test-dashboard.html")
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     main()

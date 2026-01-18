@@ -117,3 +117,16 @@ Local reference roots (do not commit copies of these files into the repo):
 - `/Users/nba/Library/CloudStorage/OneDrive-CSGSystemsInc/Documents/SolutionEngineering/ECOSYSTEM/Webtools`
 
 See `docs/KB_RESOURCES.md` for curated Forte docs used by this project.
+
+## Memory MCP usage (cross‑session)
+
+This project uses the Memory MCP to persist important decisions across sessions.
+
+Required workflow:
+
+1. **Start of session**: read Memory MCP for this project.
+2. **Mid‑session**: re‑check Memory MCP if scope or requirements shift.
+3. **End of session**: write new decisions, principles, or constraints back to Memory MCP.
+
+Use Memory MCP for long‑lived rules (e.g., “no mocks”, “100% coverage”), credential usage policy,
+project principles, and structural decisions. Do **not** store secrets or machine‑specific paths there.

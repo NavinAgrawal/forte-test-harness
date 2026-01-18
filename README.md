@@ -55,6 +55,11 @@ make test-integration
 - Enable the repo hook to block unsafe pushes: `git config core.hooksPath .githooks` (or `make hooks`).
 - Do not commit credentials, IDs, or client data.
 
+## Memory MCP (cross‑session)
+
+This project uses Memory MCP to persist important decisions across sessions.
+See `docs/DEVELOPER_GUIDE.md` for the required workflow.
+
 ## Dashboards (WIP)
 
 The HTML dashboards in `docs/` are the current status snapshots and should be kept up to date:
